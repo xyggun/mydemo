@@ -1089,38 +1089,39 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
-        public static final int loading=0x7f020058;
-        public static final int loading_1=0x7f020059;
-        public static final int loading_10=0x7f02005a;
-        public static final int loading_11=0x7f02005b;
-        public static final int loading_12=0x7f02005c;
-        public static final int loading_13=0x7f02005d;
-        public static final int loading_14=0x7f02005e;
-        public static final int loading_15=0x7f02005f;
-        public static final int loading_16=0x7f020060;
-        public static final int loading_17=0x7f020061;
-        public static final int loading_18=0x7f020062;
-        public static final int loading_19=0x7f020063;
-        public static final int loading_2=0x7f020064;
-        public static final int loading_20=0x7f020065;
-        public static final int loading_21=0x7f020066;
-        public static final int loading_22=0x7f020067;
-        public static final int loading_23=0x7f020068;
-        public static final int loading_24=0x7f020069;
-        public static final int loading_25=0x7f02006a;
-        public static final int loading_26=0x7f02006b;
-        public static final int loading_27=0x7f02006c;
-        public static final int loading_28=0x7f02006d;
-        public static final int loading_29=0x7f02006e;
-        public static final int loading_3=0x7f02006f;
-        public static final int loading_30=0x7f020070;
-        public static final int loading_4=0x7f020071;
-        public static final int loading_5=0x7f020072;
-        public static final int loading_6=0x7f020073;
-        public static final int loading_7=0x7f020074;
-        public static final int loading_8=0x7f020075;
-        public static final int loading_9=0x7f020076;
+        public static final int empty_photo=0x7f020057;
+        public static final int ic_launcher=0x7f020058;
+        public static final int loading=0x7f020059;
+        public static final int loading_1=0x7f02005a;
+        public static final int loading_10=0x7f02005b;
+        public static final int loading_11=0x7f02005c;
+        public static final int loading_12=0x7f02005d;
+        public static final int loading_13=0x7f02005e;
+        public static final int loading_14=0x7f02005f;
+        public static final int loading_15=0x7f020060;
+        public static final int loading_16=0x7f020061;
+        public static final int loading_17=0x7f020062;
+        public static final int loading_18=0x7f020063;
+        public static final int loading_19=0x7f020064;
+        public static final int loading_2=0x7f020065;
+        public static final int loading_20=0x7f020066;
+        public static final int loading_21=0x7f020067;
+        public static final int loading_22=0x7f020068;
+        public static final int loading_23=0x7f020069;
+        public static final int loading_24=0x7f02006a;
+        public static final int loading_25=0x7f02006b;
+        public static final int loading_26=0x7f02006c;
+        public static final int loading_27=0x7f02006d;
+        public static final int loading_28=0x7f02006e;
+        public static final int loading_29=0x7f02006f;
+        public static final int loading_3=0x7f020070;
+        public static final int loading_30=0x7f020071;
+        public static final int loading_4=0x7f020072;
+        public static final int loading_5=0x7f020073;
+        public static final int loading_6=0x7f020074;
+        public static final int loading_7=0x7f020075;
+        public static final int loading_8=0x7f020076;
+        public static final int loading_9=0x7f020077;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1134,7 +1135,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f05005f;
+        public static final int action_settings=0x7f050063;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1148,6 +1149,7 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
+        public static final int first_column=0x7f05005d;
         public static final int gif_test0=0x7f05003d;
         public static final int gif_test1=0x7f05003e;
         public static final int gif_test10=0x7f050047;
@@ -1184,13 +1186,14 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageView1=0x7f05005c;
+        public static final int imageView1=0x7f050060;
         public static final int imgView_test=0x7f05003c;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
-        public static final int listview_main=0x7f05005d;
-        public static final int main_list_item_txt=0x7f05005e;
+        public static final int listview_main=0x7f050061;
+        public static final int main_list_item_txt=0x7f050062;
         public static final int middle=0x7f050012;
+        public static final int my_scroll_view=0x7f05005c;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
@@ -1207,6 +1210,7 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
+        public static final int second_column=0x7f05005e;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
@@ -1214,6 +1218,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
+        public static final int third_column=0x7f05005f;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
@@ -1275,10 +1280,11 @@ containing a value of this type.
         public static final int demo1=0x7f03001a;
         public static final int demo2=0x7f03001b;
         public static final int demo3=0x7f03001c;
-        public static final int loading_view=0x7f03001d;
-        public static final int main=0x7f03001e;
-        public static final int main_list_item=0x7f03001f;
-        public static final int support_simple_spinner_dropdown_item=0x7f030020;
+        public static final int demo4=0x7f03001d;
+        public static final int loading_view=0x7f03001e;
+        public static final int main=0x7f03001f;
+        public static final int main_list_item=0x7f030020;
+        public static final int support_simple_spinner_dropdown_item=0x7f030021;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1326,9 +1332,12 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
+        public static final int border_bottom=0x7f0a0013;
+        public static final int border_top=0x7f0a0012;
         public static final int demo_text=0x7f0a0010;
         public static final int demo_text_contentdescription=0x7f0a0011;
         public static final int hello_world=0x7f0a000e;
+        public static final int image_url=0x7f0a0014;
     }
     public static final class style {
         /** 

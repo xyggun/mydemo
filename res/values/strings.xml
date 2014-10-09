@@ -6,5 +6,8 @@
     <string name="action_settings">Settings</string>
     <string name="demo_text">使用 AsyncTask 来下载图片,同时用自定义控件显示gif</string>
     <string name="demo_text_contentdescription">下载图片</string>
-
+	<string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+    
 </resources>
