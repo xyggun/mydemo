@@ -104,7 +104,6 @@ public class Demo3 extends BaseActivity implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
 		
 	}
 
