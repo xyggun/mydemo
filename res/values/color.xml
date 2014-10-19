@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="DDDDDD">#DDDDDD</color>
+    <color name="D3D3D3">#D3D3D3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_gray">#F2F7F9</color>
+    <color name="light_gray">#EEEEEE</color>
+    <color name="blank_gray">#BBBBBB</color>
+    <color name="blanks_gray">#7E7E7E</color>
+    <color name="blankss_gray">#7F7F7F</color>
+    <color name="lightBlue">#D9E0E8</color>
+    <color name="transparent">#00000000</color>
+    <color name="steelBlue">#4169E1</color>
+    <!-- 闪兰色/道奇蓝 -->
+    <color name="midnightBlue">#191970</color>
+    <!-- 午夜蓝 -->
+    <color name="doblue">#6B9EB3</color>
+    <color name="dodgerblue">#58A8E7</color>
+    <color name="lightskyblue">#87CEFA</color>
+    <color name="lightblue">#ddecff</color>
+    <color name="orange">#FFA500</color>
+    <color name="blue">#0000FF</color>
+    <color name="silver">#C0C0C0</color>
+    <!-- 银灰色 -->
+    <color name="gray">#808080</color>
+    <!-- 灰色 -->
+    <color name="dimgray">#555555</color>
+    <!-- 暗淡灰 -->
+    <color name="bg_color">#e5e5e5</color>
+    <color name="yellow">#FF8100</color>
+    <color name="red">#D41120</color>
+    <color name="green">#9ED321</color>
+    <color name="edfbff">#edfbff</color>
+    <color name="b4bfc2">#B4BFC2</color>
+    <color name="a7d4ff">#a7d4ff</color>
+    <color name="BFBFBF">#BFBFBF</color>
+    <color name="BOBOBO">#B1B1B1</color>
+    <color name="light_blue">#99BAF3</color>
+    <color name="main_color">#F2F7F9</color>
+    <color name="delay_red">#FF1100</color>
+    <color name="delay_orange">#FF6600</color>
+    <color name="delay_yellow">#FF8100</color>
+    <color name="header_but_bg">#55000000</color>
+    <color name="EAF9FF">#EAF9FF</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+
+    <!-- 订单状态 -->
+    <color name="chenggong">#f14263</color>
+    <color name="quxiao">#7a8897</color>
+    <color name="qita">#313538</color>
+    <color name="chakan_te">#59B6E3</color>
+
+    <!-- 公共颜色 -->
+    <!-- 最黑 -->
+    <color name="true_black">#313538</color>
+    
+    <!-- 浅黑常用 -->
+    <color name="black">#737C86</color>
+    
+    <!-- 输入框默认提示语 最浅黑 -->
+    <color name="edithint">#AAB8C7</color>
+    
+    <color name="teahcer_text_blue">#2EA9DF</color>
+    
+    <color name="teahcer_text_red">#f4687f</color>
+
+    <!-- 线的颜色 -->
+    <color name="line_color">#DADEE1</color>
+    <!-- 公共颜色 -->
+
+
+    <!-- 日历 -->
+    <!--  -->
+    <color name="msg_emote_divider">#ffa1a1a1</color>
+    <!-- menudraw -->
+    <color name="md__defaultBackground">#FF555555</color>
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+
+</resources>
