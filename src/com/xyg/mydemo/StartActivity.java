@@ -2,11 +2,11 @@ package com.xyg.mydemo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 
+import com.xyg.mydemo.ui.BaseActivity;
 import com.xyg.mydemo.ui.Main;
 
-public class StartActivity extends ActionBarActivity {
+public class StartActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
