@@ -1,0 +1,188 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/vcs.xml
+* .idea/workspace.xml
+* app/
+* app/build.gradle
+* app/libs/
+* app/libs/GifView.jar
+* app/src/
+* app/src/main/
+* app/src/main/AndroidManifest.xml
+* app/src/main/java/
+* app/src/main/java/com/
+* app/src/main/java/com/xyg/
+* app/src/main/java/com/xyg/mydemo/
+* app/src/main/java/com/xyg/mydemo/StartActivity.java
+* app/src/main/java/com/xyg/mydemo/app/
+* app/src/main/java/com/xyg/mydemo/app/AppContext.java
+* app/src/main/java/com/xyg/mydemo/app/AppManager.java
+* app/src/main/java/com/xyg/mydemo/app/AppRedirectUrl.java
+* app/src/main/java/com/xyg/mydemo/common/
+* app/src/main/java/com/xyg/mydemo/common/GetImageTask.java
+* app/src/main/java/com/xyg/mydemo/common/GetImageTaskOnImageView.java
+* app/src/main/java/com/xyg/mydemo/common/ImageLoader.java
+* app/src/main/java/com/xyg/mydemo/common/LoadImageTask.java
+* app/src/main/java/com/xyg/mydemo/ui/
+* app/src/main/java/com/xyg/mydemo/ui/BaseActivity.java
+* app/src/main/java/com/xyg/mydemo/ui/Demo1.java
+* app/src/main/java/com/xyg/mydemo/ui/Demo2.java
+* app/src/main/java/com/xyg/mydemo/ui/Demo3.java
+* app/src/main/java/com/xyg/mydemo/ui/Demo4.java
+* app/src/main/java/com/xyg/mydemo/ui/Main.java
+* app/src/main/java/com/xyg/mydemo/util/
+* app/src/main/java/com/xyg/mydemo/util/Images.java
+* app/src/main/java/com/xyg/mydemo/weight/
+* app/src/main/java/com/xyg/mydemo/weight/GifView.java
+* app/src/main/java/com/xyg/mydemo/weight/MyScrollView.java
+* app/src/main/res/
+* app/src/main/res/anim/
+* app/src/main/res/anim/push_left_in.xml
+* app/src/main/res/anim/push_left_out.xml
+* app/src/main/res/anim/push_right_in.xml
+* app/src/main/res/anim/push_right_out.xml
+* app/src/main/res/drawable-hdpi/
+* app/src/main/res/drawable-hdpi/empty_photo.9.png
+* app/src/main/res/drawable-hdpi/ic_launcher.png
+* app/src/main/res/drawable-hdpi/loading.gif
+* app/src/main/res/drawable-hdpi/loading_1.gif
+* app/src/main/res/drawable-hdpi/loading_10.gif
+* app/src/main/res/drawable-hdpi/loading_11.gif
+* app/src/main/res/drawable-hdpi/loading_12.gif
+* app/src/main/res/drawable-hdpi/loading_13.gif
+* app/src/main/res/drawable-hdpi/loading_14.gif
+* app/src/main/res/drawable-hdpi/loading_15.gif
+* app/src/main/res/drawable-hdpi/loading_16.gif
+* app/src/main/res/drawable-hdpi/loading_17.gif
+* app/src/main/res/drawable-hdpi/loading_18.gif
+* app/src/main/res/drawable-hdpi/loading_19.gif
+* app/src/main/res/drawable-hdpi/loading_2.gif
+* app/src/main/res/drawable-hdpi/loading_20.gif
+* app/src/main/res/drawable-hdpi/loading_21.gif
+* app/src/main/res/drawable-hdpi/loading_22.gif
+* app/src/main/res/drawable-hdpi/loading_23.gif
+* app/src/main/res/drawable-hdpi/loading_24.gif
+* app/src/main/res/drawable-hdpi/loading_25.gif
+* app/src/main/res/drawable-hdpi/loading_26.gif
+* app/src/main/res/drawable-hdpi/loading_27.gif
+* app/src/main/res/drawable-hdpi/loading_28.gif
+* app/src/main/res/drawable-hdpi/loading_29.gif
+* app/src/main/res/drawable-hdpi/loading_3.gif
+* app/src/main/res/drawable-hdpi/loading_30.gif
+* app/src/main/res/drawable-hdpi/loading_4.gif
+* app/src/main/res/drawable-hdpi/loading_5.gif
+* app/src/main/res/drawable-hdpi/loading_6.gif
+* app/src/main/res/drawable-hdpi/loading_7.gif
+* app/src/main/res/drawable-hdpi/loading_8.gif
+* app/src/main/res/drawable-hdpi/loading_9.gif
+* app/src/main/res/drawable-mdpi/
+* app/src/main/res/drawable-mdpi/ic_launcher.png
+* app/src/main/res/drawable-xhdpi/
+* app/src/main/res/drawable-xhdpi/back.png
+* app/src/main/res/drawable-xhdpi/choicebutton.png
+* app/src/main/res/drawable-xhdpi/header_but_bg_actived.png
+* app/src/main/res/drawable-xhdpi/header_but_bg_normal.png
+* app/src/main/res/drawable-xhdpi/ic_launcher.png
+* app/src/main/res/drawable-xhdpi/listbutton.png
+* app/src/main/res/drawable-xxhdpi/
+* app/src/main/res/drawable-xxhdpi/ic_launcher.png
+* app/src/main/res/drawable/
+* app/src/main/res/drawable/but_header_back.xml
+* app/src/main/res/layout/
+* app/src/main/res/layout/activity_start.xml
+* app/src/main/res/layout/demo.xml
+* app/src/main/res/layout/demo1.xml
+* app/src/main/res/layout/demo2.xml
+* app/src/main/res/layout/demo3.xml
+* app/src/main/res/layout/demo4.xml
+* app/src/main/res/layout/header_view.xml
+* app/src/main/res/layout/loading_view.xml
+* app/src/main/res/layout/main.xml
+* app/src/main/res/layout/main_list_item.xml
+* app/src/main/res/values-v11/
+* app/src/main/res/values-v11/styles.xml
+* app/src/main/res/values-v14/
+* app/src/main/res/values-v14/styles.xml
+* app/src/main/res/values-w820dp/
+* app/src/main/res/values-w820dp/dimens.xml
+* app/src/main/res/values/
+* app/src/main/res/values/attrs.xml
+* app/src/main/res/values/color.xml
+* app/src/main/res/values/dimens.xml
+* app/src/main/res/values/strings.xml
+* app/src/main/res/values/styles.xml
+* build.gradle
+* gradle/
+* gradle/wrapper/
+* gradle/wrapper/gradle-wrapper.jar
+* gradle/wrapper/gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* ic_launcher-web.png
+* mydemo.iml
+* proguard-project.txt
+* settings.gradle
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:20.0.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+appcompat-v7 => [com.android.support:appcompat-v7:20.0.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* libs/GifView.jar => app/libs/GifView.jar
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
