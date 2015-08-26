@@ -6,8 +6,13 @@ import android.widget.ImageView;
 
 import com.xyg.mydemo.R;
 import com.xyg.mydemo.common.GetImageTaskOnImageView;
+import com.xyggun.baselibrary.inject.InjectView;
+import com.xyggun.baselibrary.inject.SetContentView;
+import com.xyggun.baselibrary.inject.base.BaseActivity;
 
+@SetContentView(R.layout.activity_demo2)
 public class Demo2Activity extends BaseActivity {
+    @InjectView(R.id.imgView_test)
     ImageView imgViewTest;
 
     @Override

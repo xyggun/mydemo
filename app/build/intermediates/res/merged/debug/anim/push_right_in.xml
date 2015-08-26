@@ -3,4 +3,4 @@
 	<translate android:fromXDelta="-100%" android:toXDelta="0"
 		android:duration="300" />
 </set>
-<!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/res/anim/push_right_in.xml -->
+<!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/baselibrary/src/main/res/anim/push_right_in.xml --><!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/res/anim/push_right_in.xml -->

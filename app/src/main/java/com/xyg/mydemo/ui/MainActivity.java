@@ -10,25 +10,25 @@ import android.widget.ListView;
 
 import com.xyg.mydemo.R;
 import com.xyg.mydemo.app.AppRedirectUrl;
+import com.xyggun.baselibrary.inject.InjectView;
+import com.xyggun.baselibrary.inject.SetContentView;
+import com.xyggun.baselibrary.inject.base.BaseActivity;
 
+@SetContentView(R.layout.activity_main)
 public class MainActivity extends BaseActivity {
 
+    @InjectView(R.id.listview_main)
     ListView lvMain;
+
     ArrayAdapter<String> lvAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
         System.out.println("进入" + this.toString());
 
-        getControls();
         initView();
-    }
-
-    private void getControls() { //获取控件
-        lvMain = (ListView) findViewById(R.id.listview_main);
     }
 
     private void initView() { //对控件添加事件，及（简单数据初始化[不建议]）

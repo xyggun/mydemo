@@ -7,11 +7,13 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/common/GetImageTaskOnImageView.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/common/ImageLoader.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/common/LoadImageTask.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/ui/Demo1.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/ui/Demo2.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/ui/Demo3.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/ui/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/ui/Demo1Activity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/ui/Demo2Activity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/ui/Demo3Activity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/ui/MainActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/weight/GifView.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyg/mydemo/weight/MyScrollView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/baselibrary/src/main/java/com/xyggun/baselibrary/inject/InjectorFactory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/baselibrary/src/main/java/com/xyggun/baselibrary/inject/base/BaseActivity.java" charset="UTF-8" />
   </component>
 </project>

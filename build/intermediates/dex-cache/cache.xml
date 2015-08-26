@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/xyggun/Documents/android/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jar="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-16dd0c354dbe4ec6d742a49c075c78c8fab71726.jar" />
+        sha1="8faef90f4f4d874835431066e709b5db6b09420f">
+        <dex dex="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/pre-dexed/debug/classes-2742d486204d4842635754f7c33a1c3213f4712a.jar" />
     </item>
     <item
         jar="/Users/xyggun/AndroidStudioProjects/mydemo/app/libs/GifView.jar"
@@ -16,18 +16,11 @@
         <dex dex="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/pre-dexed/debug/GifView-6dab3bbb77fdc716917dd886e0406de7b287ec94.jar" />
     </item>
     <item
-        jar="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/jars/classes.jar"
+        jar="/Users/xyggun/Documents/android/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/pre-dexed/debug/classes-bfe9ca9556f788e86cd1273435a09da9a0038dba.jar" />
-    </item>
-    <item
-        jar="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/pre-dexed/debug/classes-60214ce661bb10956844947500e926a39ebd5bd4.jar" />
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-16dd0c354dbe4ec6d742a49c075c78c8fab71726.jar" />
     </item>
     <item
         jar="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
@@ -35,6 +28,13 @@
         revision="23.0.0"
         sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
         <dex dex="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-759968b896eb89fab757873c64466336012e6d05.jar" />
+    </item>
+    <item
+        jar="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/pre-dexed/debug/classes-60214ce661bb10956844947500e926a39ebd5bd4.jar" />
     </item>
 
 </items>

@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="21" />
+        android:minSdkVersion="15"
+        android:targetSdkVersion="20" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -25,11 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.xyg.mydemo.ui.Main" />
-        <activity android:name="com.xyg.mydemo.ui.Demo1" />
-        <activity android:name="com.xyg.mydemo.ui.Demo2" />
-        <activity android:name="com.xyg.mydemo.ui.Demo3" />
-        <activity android:name="com.xyg.mydemo.ui.Demo4" />
+        <activity android:name="com.xyg.mydemo.ui.MainActivity" />
+        <activity android:name="com.xyg.mydemo.ui.Demo1Activity" />
+        <activity android:name="com.xyg.mydemo.ui.Demo2Activity" />
+        <activity android:name="com.xyg.mydemo.ui.Demo3Activity" />
+        <activity android:name="com.xyg.mydemo.ui.Demo4Activity" />
     </application>
 
 </manifest>

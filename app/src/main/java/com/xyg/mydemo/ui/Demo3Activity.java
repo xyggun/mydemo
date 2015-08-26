@@ -7,6 +7,7 @@ import android.view.View.OnClickListener;
 import com.ant.liao.GifView;
 import com.ant.liao.GifView.GifImageType;
 import com.xyg.mydemo.R;
+import com.xyggun.baselibrary.inject.base.BaseActivity;
 
 public class Demo3Activity extends BaseActivity implements OnClickListener{
 	GifView gifTest0,gifTest1,gifTest2,gifTest3,gifTest4,gifTest5,gifTest6,gifTest7,gifTest8,gifTest9,gifTest10

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Toast;
 
+import com.xyggun.baselibrary.R;
 import com.xyggun.baselibrary.inject.InjectorFactory;
 
 
@@ -39,10 +40,12 @@ public class BaseActivity extends FragmentActivity {
 
 	public void startActivitys(Intent intent) {
 		startActivity(intent);
+		overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
 	}
 
 	public void finishs() {
 		super.finish();
+		overridePendingTransition(R.anim.push_right_in, R.anim.push_right_out);
 	}
 
 	public void defaultFinish() {
@@ -57,33 +60,33 @@ public class BaseActivity extends FragmentActivity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		InjectorFactory.Destory(this);// 垃圾回收
+		InjectorFactory.Destory(this); // 垃圾回收
 	}
 
 	@Override
 	protected void onNewIntent(Intent intent) {
 		super.onNewIntent(intent);
 		if (intent != null) {
-			InjectorFactory.injectOnNewIntent(this);// 当有新的意图是 解析注解
+			InjectorFactory.injectOnNewIntent(this); // 当有新的意图是 解析注解
 		}
 	}
 
 	@Override
 	public void setContentView(int layoutResID) {
 		super.setContentView(layoutResID);
-		InjectorFactory.injectAfterSetContentView(this);// 放入内容后对注解解析
+		InjectorFactory.injectAfterSetContentView(this); // 放入内容后对注解解析
 	}
 
 	@Override
 	public void setContentView(View view) {
 		super.setContentView(view);
-		InjectorFactory.injectAfterSetContentView(this);// 放入内容后对注解解析
+		InjectorFactory.injectAfterSetContentView(this); // 放入内容后对注解解析
 	}
 
 	@Override
 	public void setContentView(View view, LayoutParams params) {
 		super.setContentView(view, params);
-		InjectorFactory.injectAfterSetContentView(this);// 放入内容后对注解解析
+		InjectorFactory.injectAfterSetContentView(this); // 放入内容后对注解解析
 	}
 
 	/**

@@ -6,26 +6,26 @@ import android.widget.ImageView;
 
 import com.xyg.mydemo.R;
 import com.xyg.mydemo.common.GetImageTask;
+import com.xyggun.baselibrary.inject.InjectView;
+import com.xyggun.baselibrary.inject.SetContentView;
+import com.xyggun.baselibrary.inject.base.BaseActivity;
 
 /**
  * 异步加载网络图片
  * 2014-9-29 17：52 xiangyg
  **/
+
+@SetContentView(R.layout.activity_demo1)
 public class Demo1Activity extends BaseActivity {
 
+    @InjectView(R.id.imgView_test)
     ImageView imgViewTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_demo1);
 
-        getControls();
         initView();
-    }
-
-    private void getControls() {
-        imgViewTest = (ImageView) findViewById(R.id.imgView_test);
     }
 
     private void initView() {
