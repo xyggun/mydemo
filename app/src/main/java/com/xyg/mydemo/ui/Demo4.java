@@ -6,11 +6,11 @@ import com.xyg.mydemo.R;
 
 public class Demo4 extends BaseActivity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.demo4);
-	}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_demo4);
+    }
 
 }
                                                                                            

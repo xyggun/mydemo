@@ -38,7 +38,7 @@ public class GetImageTask extends AsyncTask<String, Void, Bitmap> {
 		mImageHeight = height;
 
 		loadingview = ((Activity) context).getLayoutInflater().inflate(
-				R.layout.loading_view, null);
+				R.layout.view_loading, null);
 		if (dialog != null && dialog.isShowing()) {
 			dialog.dismiss();
 		} else {

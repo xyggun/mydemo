@@ -15,7 +15,7 @@ public class Demo3 extends BaseActivity implements OnClickListener{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.demo3);
+		setContentView(R.layout.activity_demo3);
 		
 		getControls();
 		initView();

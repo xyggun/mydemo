@@ -13,38 +13,38 @@ import com.xyg.mydemo.app.AppRedirectUrl;
 
 public class Main extends BaseActivity {
 
-	ListView lvMian;
-	ArrayAdapter<String> lvAdapter;
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
-		
-		System.out.println("进入"+this.toString());
-			
-		getControls();
-		initView();
-	}
+    ListView lvMain;
+    ArrayAdapter<String> lvAdapter;
 
-	private void getControls() {//获取控件
-		lvMian=(ListView)findViewById(R.id.listview_main);
-	}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-	private void initView() {//对控件添加事件，及（简单数据初始化[不建议]）
-		lvAdapter=new ArrayAdapter<String>(this,R.layout.main_list_item, AppRedirectUrl.UrlTitle);
-		lvMian.setAdapter(lvAdapter);
-		
-		lvMian.setOnItemClickListener(new OnItemClickListener() {
+        System.out.println("进入" + this.toString());
 
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view, int position,
-					long id) {
-				@SuppressWarnings("static-access")
-				Intent intent=new AppRedirectUrl(Main.this).UrlActivity[position];
-				startActivitys(intent);
-			}
-		});
-	}
+        getControls();
+        initView();
+    }
+
+    private void getControls() { //获取控件
+        lvMain = (ListView) findViewById(R.id.listview_main);
+    }
+
+    private void initView() { //对控件添加事件，及（简单数据初始化[不建议]）
+        lvAdapter = new ArrayAdapter<String>(this, R.layout.item_main_list, AppRedirectUrl.UrlTitle);
+        lvMain.setAdapter(lvAdapter);
+
+        lvMain.setOnItemClickListener(new OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position,
+                                    long id) {
+                @SuppressWarnings("static-access")
+                Intent intent = new AppRedirectUrl(Main.this).UrlActivity[position];
+                startActivitys(intent);
+            }
+        });
+    }
 
 }
