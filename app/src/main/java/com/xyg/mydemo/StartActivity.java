@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.xyg.mydemo.ui.BaseActivity;
-import com.xyg.mydemo.ui.Main;
+import com.xyg.mydemo.ui.MainActivity;
 
 public class StartActivity extends BaseActivity {
 
@@ -13,7 +13,7 @@ public class StartActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start);
 
-		Intent intent = new Intent(this, Main.class);
+		Intent intent = new Intent(this, MainActivity.class);
 		startActivity(intent);
 		finish();
 	}

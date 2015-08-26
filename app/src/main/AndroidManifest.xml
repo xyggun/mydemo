@@ -27,11 +27,11 @@
             </intent-filter>
         </activity>
         
-       	<activity android:name="com.xyg.mydemo.ui.Main"></activity>
-        <activity android:name="com.xyg.mydemo.ui.Demo1"></activity>
-       	<activity android:name="com.xyg.mydemo.ui.Demo2"></activity>
-       	<activity android:name="com.xyg.mydemo.ui.Demo3"></activity>
-       	<activity android:name="com.xyg.mydemo.ui.Demo4"></activity>
+       	<activity android:name=".ui.MainActivity"></activity>
+        <activity android:name=".ui.Demo1Activity"></activity>
+       	<activity android:name=".ui.Demo2Activity"></activity>
+       	<activity android:name=".ui.Demo3Activity"></activity>
+       	<activity android:name=".ui.Demo4Activity"></activity>
     </application>
 
 </manifest>

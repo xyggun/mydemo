@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import com.xyg.mydemo.R;
 import com.xyg.mydemo.common.GetImageTaskOnImageView;
 
-public class Demo2 extends BaseActivity {
+public class Demo2Activity extends BaseActivity {
     ImageView imgViewTest;
 
     @Override

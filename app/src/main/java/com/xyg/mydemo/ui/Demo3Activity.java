@@ -8,7 +8,7 @@ import com.ant.liao.GifView;
 import com.ant.liao.GifView.GifImageType;
 import com.xyg.mydemo.R;
 
-public class Demo3 extends BaseActivity implements OnClickListener{
+public class Demo3Activity extends BaseActivity implements OnClickListener{
 	GifView gifTest0,gifTest1,gifTest2,gifTest3,gifTest4,gifTest5,gifTest6,gifTest7,gifTest8,gifTest9,gifTest10
 	,gifTest11,gifTest12,gifTest13,gifTest14,gifTest15,gifTest16,gifTest17,gifTest18,gifTest19,gifTest20
 	,gifTest21,gifTest22,gifTest23,gifTest24,gifTest25,gifTest26,gifTest27,gifTest28,gifTest29,gifTest30;

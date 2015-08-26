@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.xyg.mydemo.R;
 
-public class Demo4 extends BaseActivity {
+public class Demo4Activity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

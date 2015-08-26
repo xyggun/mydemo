@@ -11,7 +11,7 @@ import android.widget.ListView;
 import com.xyg.mydemo.R;
 import com.xyg.mydemo.app.AppRedirectUrl;
 
-public class Main extends BaseActivity {
+public class MainActivity extends BaseActivity {
 
     ListView lvMain;
     ArrayAdapter<String> lvAdapter;
@@ -41,7 +41,7 @@ public class Main extends BaseActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
                 @SuppressWarnings("static-access")
-                Intent intent = new AppRedirectUrl(Main.this).UrlActivity[position];
+                Intent intent = new AppRedirectUrl(MainActivity.this).UrlActivity[position];
                 startActivitys(intent);
             }
         });
