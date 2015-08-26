@@ -1,6 +1,6 @@
 package com.xyggun.baselibrary.inject.base;
 
-import com.tecoming.t_base.inject.InjectorFactory;
+import com.xyggun.baselibrary.inject.InjectorFactory;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class BaseFragment extends Fragment {
-	private View decorView;// ��ǰ��ͼ
+	private View decorView;// 当前视图
 
 	@Override
 	public void onAttach(Activity activity) {
@@ -32,7 +32,7 @@ public class BaseFragment extends Fragment {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		InjectorFactory.Destory(this);// ��������
+		InjectorFactory.Destory(this);// 垃圾回收
 		this.decorView = null;
 	}
 

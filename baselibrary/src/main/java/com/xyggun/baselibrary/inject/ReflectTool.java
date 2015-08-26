@@ -8,8 +8,8 @@ import java.util.List;
 public class ReflectTool {
 
 	/**
-	 * ���Ҷ�Ӧ�����������б���ע�����ֶΡ�
-	 * 
+	 * 查找对应的类型中所有被标注过的字段。
+	 *
 	 * @param clazz
 	 * @param annotated
 	 * @return
@@ -21,17 +21,17 @@ public class ReflectTool {
 		}
 		return fields;
 	}
-
 	/**
-	 * ���Ҷ�Ӧ�����������б���ע�����ֶΡ�����������еݹ��ѯ�������е��ֶ�Ҳ����е�����
-	 * 
+	 * 查找对应的类型中所有被标注过的字段。本方法会进行递归查询，父类中的字段也会进行迭代。
+	 *
 	 * @param clazz
 	 * @param annotated
 	 * @return
 	 */
 	public static List<Field> getAnnotedFieldsWithParent(Class<?> clazz) {
 		List<Field> fields = new LinkedList<Field>();
-		for (Class<?> currentClass = clazz; currentClass != Object.class; currentClass = currentClass.getSuperclass()) {
+		for (Class<?> currentClass = clazz; currentClass != Object.class; currentClass = currentClass
+				.getSuperclass()) {
 			for (Field field : currentClass.getDeclaredFields()) {
 				fields.add(field);
 			}
@@ -40,8 +40,8 @@ public class ReflectTool {
 	}
 
 	/**
-	 * �õ����з��� ����ȡ ����ķ����� Ϊ������
-	 * 
+	 * 得到所有方法
+	 * 不获取 父类的方法， 为了性能
 	 * @param clazz
 	 * @return
 	 */
@@ -53,8 +53,8 @@ public class ReflectTool {
 	}
 
 	/**
-	 * 
-	 * @param clazz��ȡ�������������ע�ⷽ��
+	 *
+	 * @param clazz获取方法包括父类的注解方法
 	 * @param annotated
 	 * @return
 	 */

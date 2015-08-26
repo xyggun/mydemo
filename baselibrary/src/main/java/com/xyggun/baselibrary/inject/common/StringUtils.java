@@ -1,20 +1,20 @@
 package com.xyggun.baselibrary.inject.common;
 
-import java.lang.reflect.Field;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import android.annotation.SuppressLint;
 import android.text.Html;
 import android.text.Spanned;
 import android.text.TextUtils;
 
-@SuppressLint("SimpleDateFormat") 
+import java.lang.reflect.Field;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+@SuppressLint("SimpleDateFormat")
 public class StringUtils {
 
 	/**
-	 * �ַ���ת����
-	 * 
+	 * 字符串转整数
+	 *
 	 * @param str
 	 * @param defValue
 	 * @return
@@ -28,10 +28,10 @@ public class StringUtils {
 	}
 
 	/**
-	 * ����ת����
-	 * 
+	 * 对象转整数
+	 *
 	 * @param obj
-	 * @return ת���쳣���� 0
+	 * @return 转换异常返回 0
 	 */
 	public static int toInt(Object obj) {
 		if (obj == null)
@@ -40,7 +40,7 @@ public class StringUtils {
 	}
 
 	/**
-	 * �жϸ����ַ����Ƿ�հ״��� �հ״���ָ�ɿո��Ʊ�����س��������з���ɵ��ַ��� �������ַ���Ϊnull����ַ���������true
+	 * 判断给定字符串是否空白串。 空白串是指由空格、制表符、回车符、换行符组成的字符串 若输入字符串为null或空字符串，返回true
 	 */
 	public static boolean isEmpty(String input) {
 		if (input == null || "".equals(input))
@@ -54,13 +54,13 @@ public class StringUtils {
 		}
 		return true;
 	}
-	
+
 	public static Long getlongDate() {
 		long str = System.currentTimeMillis() / 1000;
 		return str;
 	}
 
-	public static String getDate() {	
+	public static String getDate() {
 		SimpleDateFormat sDateFormat = new SimpleDateFormat("hh:mm");
 		String date = sDateFormat.format(new Date());
 		return date;
@@ -121,7 +121,7 @@ public class StringUtils {
 			return "";
 		}
 
-		String data = timeStr1.substring(5, 10).replace("-", "��") + "��";
+		String data = timeStr1.substring(5, 10).replace("-", "月") + "日";
 		String time = timeStr1.substring(11, 16) + "-" + timeStr2.substring(11, 16);
 
 		return data + " " + time;
@@ -132,7 +132,7 @@ public class StringUtils {
 			return "";
 		}
 
-		String data = timeStr1.substring(5, 10).replace("-", "��") + "��";
+		String data = timeStr1.substring(5, 10).replace("-", "月") + "日";
 		return data;
 	}
 
@@ -152,7 +152,7 @@ public class StringUtils {
 			return "";
 		}
 
-		String data = timeStr1.substring(0, 7).replace("-", "��") + "��";
+		String data = timeStr1.substring(0, 7).replace("-", "年") + "月";
 		return data;
 	}
 
@@ -164,17 +164,17 @@ public class StringUtils {
 	}
 
 	/**
-	 * ��֤�ֻ���ʽ
+	 * 验证手机格式
 	 */
 	public static boolean isMobileNO(String mobiles) {
 		/*
-		 * �ƶ���134��135��136��137��138��139��150��151��157(TD)��158��159��187��188
-		 * ��ͨ��130��131��132��152��155��156��185��186 ���ţ�133��153��180��189����1349��ͨ��
-		 * �ܽ��������ǵ�һλ�ض�Ϊ1���ڶ�λ�ض�Ϊ3��5��8������λ�õĿ���Ϊ0-9
+		 * 移动：134、135、136、137、138、139、150、151、157(TD)、158、159、187、188
+		 * 联通：130、131、132、152、155、156、185、186 电信：133、153、180、189、（1349卫通）
+		 * 总结起来就是第一位必定为1，第二位必定为3或5或8，其他位置的可以为0-9
 		 */
-		String telRegex = "[1]\\d{10}";// "[1]"�����1λΪ����1��"[358]"����ڶ�λ����Ϊ3��5��8�е�һ����"\\d{9}"��������ǿ�����0��9�����֣���9λ��
+		String telRegex = "[1]\\d{10}";// "[1]"代表第1位为数字1，"[358]"代表第二位可以为3、5、8中的一个，"\\d{9}"代表后面是可以是0～9的数字，有9位。
 		// String telRegex = "[1][3578]\\d{9}";//
-		// "[1]"�����1λΪ����1��"[358]"����ڶ�λ����Ϊ3��5��8�е�һ����"\\d{9}"��������ǿ�����0��9�����֣���9λ��
+		// "[1]"代表第1位为数字1，"[358]"代表第二位可以为3、5、8中的一个，"\\d{9}"代表后面是可以是0～9的数字，有9位。
 		if (!TextUtils.isEmpty(mobiles)){
 			return mobiles.matches(telRegex);
 		} else {
@@ -183,16 +183,16 @@ public class StringUtils {
 	}
 
 	/**
-	 * �������ҳ�� ����
+	 * 清楚掉网页端 代码
 	 */
 	public static Spanned replaceHTML(String str) {
 		return Html.fromHtml(str);
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * @Title: initialUpper
-	 * @Description: ����ĸ��д,ȥ����_������֮�����ĸ��ɴ�д
+	 * @Description: 首字母大写,去除“_”并将之后的字母变成大写
 	 * @param str
 	 * @return String
 	 * @throws
@@ -215,9 +215,9 @@ public class StringUtils {
 		}
 		return sb.toString();
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * @param str
 	 * @return
 	 */
@@ -229,9 +229,9 @@ public class StringUtils {
 		firstLetter = Character.toLowerCase(firstLetter);
 		return firstLetter + str.substring(1);
 	}
-	
+
 	/**
-	 * �ж��ַ��Ƿ�integer
+	 * 判断字符是否integer
 	 */
 	public static boolean isInteger(String str) {
 		try {
@@ -241,9 +241,9 @@ public class StringUtils {
 			return false;
 		}
 	}
-	
+
 	/**
-	 * �ж��ַ��Ƿ�Long
+	 * 判断字符是否Long
 	 */
 	public static boolean isLong(String str) {
 		try {
@@ -253,9 +253,9 @@ public class StringUtils {
 			return false;
 		}
 	}
-	
+
 	/**
-	 * �ж��ַ��Ƿ�Float
+	 * 判断字符是否Float
 	 */
 	public static boolean isFloat(String str) {
 		try {
@@ -265,9 +265,9 @@ public class StringUtils {
 			return false;
 		}
 	}
-	
+
 	/**
-	 * �ж��ַ��Ƿ�Double
+	 * 判断字符是否Double
 	 */
 	public static boolean isDouble(String str) {
 		try {
@@ -277,9 +277,9 @@ public class StringUtils {
 			return false;
 		}
 	}
-	
+
 	/**
-	 * ���һ��������������Ժ�ֵ
+	 * 输出一个对象的所有属性和值
 	 * @param model
 	 * @return
 	 */
@@ -307,9 +307,9 @@ public class StringUtils {
 		}
 		return result;
 	}
-	
+
 	/**
-	 * ����������׺
+	 * 计算排名后缀
 	 * @param evalRanking
 	 * @return
 	 */

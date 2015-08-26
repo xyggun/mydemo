@@ -1,11 +1,11 @@
 package com.xyggun.baselibrary.inject;
 
-import com.tecoming.t_base.app.BaseFragment;
-
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.xyggun.baselibrary.inject.base.BaseFragment;
 
 public class SetContentViewInject {
 	/**

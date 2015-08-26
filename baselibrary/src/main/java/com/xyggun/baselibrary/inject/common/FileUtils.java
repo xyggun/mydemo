@@ -15,17 +15,16 @@ import android.os.StatFs;
 import android.util.Log;
 
 /**
- * �ļ��������߰�
- * 
+ * 文件操作工具包
+ *
  * @version 1.0
  * @created 2012-3-21
  */
 public class FileUtils {
 	/**
-	 * д�ı��ļ� ��Androidϵͳ�У��ļ������� /data/data/PACKAGE_NAME/files Ŀ¼��
-	 * 
+	 * 写文本文件 在Android系统中，文件保存在 /data/data/PACKAGE_NAME/files 目录下
+	 *
 	 * @param context
-	 * @param msg
 	 */
 	public static void write(Context context, String fileName, String content) {
 		if (content == null)
@@ -41,8 +40,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ��ȡ�ı��ļ�
-	 * 
+	 * 读取文本文件
+	 *
 	 * @param context
 	 * @param fileName
 	 * @return
@@ -95,8 +94,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ���ֻ�дͼƬ
-	 * 
+	 * 向手机写图片
+	 *
 	 * @param buffer
 	 * @param folder
 	 * @param fileName
@@ -105,7 +104,7 @@ public class FileUtils {
 	public static boolean writeFile(byte[] buffer, String folder, String fileName) {
 		boolean writeSucc = false;
 
-		boolean sdCardExist = Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED);
+		boolean sdCardExist = Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
 
 		String folderPath = "";
 		if (sdCardExist) {
@@ -139,8 +138,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * �����ļ�����·����ȡ�ļ���
-	 * 
+	 * 根据文件绝对路径获取文件名
+	 *
 	 * @param filePath
 	 * @return
 	 */
@@ -151,8 +150,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * �����ļ��ľ���·����ȡ�ļ�������������չ��
-	 * 
+	 * 根据文件的绝对路径获取文件名但不包含扩展名
+	 *
 	 * @param filePath
 	 * @return
 	 */
@@ -193,9 +192,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ��ȡ�ļ���չ��
-	 * 
-	 * @param fileName
+	 * 获取文件扩展名
+	 *
 	 * @return
 	 */
 	public static String getFileFormat(String filePath) {
@@ -223,8 +221,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ��ȡ�ļ���С
-	 * 
+	 * 获取文件大小
+	 *
 	 * @param filePath
 	 * @return
 	 */
@@ -239,9 +237,9 @@ public class FileUtils {
 	}
 
 	/**
-	 * ��ȡ�ļ���С
-	 * 
-	 * @param size �ֽ�
+	 * 获取文件大小
+	 *
+	 * @param size 字节
 	 * @return
 	 */
 	public static String getFileSize(long size) {
@@ -257,8 +255,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ת���ļ���С
-	 * 
+	 * 转换文件大小
+	 *
 	 * @param fileS
 	 * @return B/KB/MB/GB
 	 */
@@ -278,8 +276,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ��ȡĿ¼�ļ���С
-	 * 
+	 * 获取目录文件大小
+	 *
 	 * @param dir
 	 * @return
 	 */
@@ -297,16 +295,15 @@ public class FileUtils {
 				dirSize += file.length();
 			} else if (file.isDirectory()) {
 				dirSize += file.length();
-				dirSize += getDirSize(file); // �ݹ���ü���ͳ��
+				dirSize += getDirSize(file); // 递归调用继续统计
 			}
 		}
 		return dirSize;
 	}
 
 	/**
-	 * ��ȡĿ¼�ļ�����
-	 * 
-	 * @param f
+	 * 获取目录文件个数
+	 *
 	 * @return
 	 */
 	public long getFileList(File dir) {
@@ -315,7 +312,7 @@ public class FileUtils {
 		count = files.length;
 		for (File file : files) {
 			if (file.isDirectory()) {
-				count = count + getFileList(file);// �ݹ�
+				count = count + getFileList(file);// 递归
 				count--;
 			}
 		}
@@ -334,8 +331,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ����ļ��Ƿ����
-	 * 
+	 * 检查文件是否存在
+	 *
 	 * @param name
 	 * @return
 	 */
@@ -352,8 +349,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * �ж�SD�����ļ��Ƿ����
-	 * 
+	 * 判断SD卡上文件是否存在
+	 *
 	 * @param fileName
 	 * @return
 	 */
@@ -363,8 +360,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ��һ��inputStream���������д��SD����
-	 * 
+	 * 将一个inputStream里面的数据写到SD卡中
+	 *
 	 * @param path
 	 * @param fileName
 	 * @param inputStream
@@ -395,8 +392,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ���·���Ƿ����
-	 * 
+	 * 检查路径是否存在
+	 *
 	 * @param path
 	 * @return
 	 */
@@ -408,9 +405,9 @@ public class FileUtils {
 	}
 
 	/**
-	 * ����SD����ʣ��ռ�
-	 * 
-	 * @return ����-1��˵��û�а�װsd��
+	 * 计算SD卡的剩余空间
+	 *
+	 * @return 返回-1，说明没有安装sd卡
 	 */
 	public static long getFreeDiskSpace() {
 		String status = Environment.getExternalStorageState();
@@ -432,8 +429,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * �½�Ŀ¼
-	 * 
+	 * 新建目录
+	 *
 	 * @param directoryName
 	 * @return
 	 */
@@ -450,8 +447,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ����Ƿ�װSD��
-	 * 
+	 * 检查是否安装SD卡
+	 *
 	 * @return
 	 */
 	public static boolean checkSaveLocationExists() {
@@ -465,8 +462,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ɾ��Ŀ¼(������Ŀ¼��������ļ�)
-	 * 
+	 * 删除目录(包括：目录里的所有文件)
+	 *
 	 * @param fileName
 	 * @return
 	 */
@@ -504,8 +501,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ɾ���ļ�
-	 * 
+	 * 删除文件
+	 *
 	 * @param fileName
 	 * @return
 	 */
@@ -535,10 +532,10 @@ public class FileUtils {
 	}
 
 	/**
-	 * ɾ����Ŀ¼
-	 * 
-	 * ���� 0����ɹ� ,1 ����û��ɾ��Ȩ��, 2�����ǿ�Ŀ¼,3 ����δ֪����
-	 * 
+	 * 删除空目录
+	 *
+	 * 返回 0代表成功 ,1 代表没有删除权限, 2代表不是空目录,3 代表未知错误
+	 *
 	 * @return
 	 */
 	public static int deleteBlankPath(String path) {
@@ -556,8 +553,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ������
-	 * 
+	 * 重命名
+	 *
 	 * @param oldName
 	 * @param newName
 	 * @return
@@ -568,8 +565,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ɾ���ļ�
-	 * 
+	 * 删除文件
+	 *
 	 * @param filePath
 	 */
 	public static boolean deleteFileWithPath(String filePath) {
@@ -585,8 +582,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ��ȡSD���ĸ�Ŀ¼��ĩβ��\
-	 * 
+	 * 获取SD卡的根目录，末尾带\
+	 *
 	 * @return
 	 */
 	public static String getSDRoot() {
@@ -606,9 +603,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ����Ŀ¼
-	 * 
-	 * @param path
+	 * 创建目录
+	 *
 	 */
 	public static PathStatus createPath(String newPath) {
 		File path = new File(newPath);
@@ -623,9 +619,9 @@ public class FileUtils {
 	}
 
 	public static boolean iscreatePath(String filename) {
-		if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+		if (android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED)) {
 			File recordFile = new File(filename);
-			// �����ļ���
+			// 创建文件夹
 			recordFile.getParentFile().mkdirs();
 			if (!recordFile.exists()) {
 				try {
@@ -640,8 +636,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * ��ȡ·����
-	 * 
+	 * 截取路径名
+	 *
 	 * @return
 	 */
 	public static String getPathName(String absolutePath) {
@@ -651,8 +647,8 @@ public class FileUtils {
 	}
 
 	/**
-	 * dip תpx px תdip
-	 * 
+	 * dip 转px px 转dip
+	 *
 	 * @return
 	 */
 
@@ -667,12 +663,12 @@ public class FileUtils {
 	}
 
 	/**
-	 * �����ļ���׺����ö�Ӧ��MIME���͡�
-	 * 
+	 * 根据文件后缀名获得对应的MIME类型。
+	 *
 	 * @param file
 	 */
 	public static String getMIMEType(File file) {
-		// {��׺����MIME����}
+		// {后缀名，MIME类型}
 		final String[][] MIME_MapTable = { { ".3gp", "video/3gpp" }, { ".apk", "application/vnd.android.package-archive" }, { ".asf", "video/x-ms-asf" }, { ".avi", "video/x-msvideo" }, { ".bin", "application/octet-stream" }, { ".bmp", "image/bmp" }, { ".c", "text/plain" }, { ".class", "application/octet-stream" }, { ".conf", "text/plain" }, { ".cpp", "text/plain" }, { ".doc", "application/msword" }, { ".docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document" },
 				{ ".xls", "application/vnd.ms-excel" }, { ".xlsx", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }, { ".exe", "application/octet-stream" }, { ".gif", "image/gif" }, { ".gtar", "application/x-gtar" }, { ".gz", "application/x-gzip" }, { ".h", "text/plain" }, { ".htm", "text/html" }, { ".html", "text/html" }, { ".jar", "application/java-archive" }, { ".java", "text/plain" }, { ".jpeg", "image/jpeg" }, { ".jpg", "image/jpeg" },
 				{ ".js", "application/x-javascript" }, { ".log", "text/plain" }, { ".m3u", "audio/x-mpegurl" }, { ".m4a", "audio/mp4a-latm" }, { ".m4b", "audio/mp4a-latm" }, { ".m4p", "audio/mp4a-latm" }, { ".m4u", "video/vnd.mpegurl" }, { ".m4v", "video/x-m4v" }, { ".mov", "video/quicktime" }, { ".mp2", "audio/x-mpeg" }, { ".mp3", "audio/x-mpeg" }, { ".mp4", "video/mp4" }, { ".mpc", "application/vnd.mpohun.certificate" }, { ".mpe", "video/mpeg" }, { ".mpeg", "video/mpeg" },

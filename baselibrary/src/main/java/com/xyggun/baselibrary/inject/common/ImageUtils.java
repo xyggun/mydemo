@@ -1,17 +1,5 @@
 package com.xyggun.baselibrary.inject.common;
 
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -44,9 +32,21 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 
+import java.io.BufferedOutputStream;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+
 /**
- * ͼƬ�������߰�
- * 
+ * 图片操作工具包
+ *
  * @author liux (http://my.oschina.net/liux)
  * @version 1.0
  * @created 2012-3-21
@@ -56,16 +56,16 @@ public class ImageUtils {
 	public final static String SDCARD_MNT = "/mnt/sdcard";
 	public final static String SDCARD = "/sdcard";
 
-	/** ������� */
+	/** 请求相册 */
 	public static final int REQUEST_CODE_GETIMAGE_BYSDCARD = 0;
-	/** ������� */
+	/** 请求相机 */
 	public static final int REQUEST_CODE_GETIMAGE_BYCAMERA = 1;
-	/** ����ü� */
+	/** 请求裁剪 */
 	public static final int REQUEST_CODE_GETIMAGE_BYCROP = 2;
 
 	/**
-	 * дͼƬ�ļ� ��Androidϵͳ�У��ļ������� /data/data/PACKAGE_NAME/files Ŀ¼��
-	 * 
+	 * 写图片文件 在Android系统中，文件保存在 /data/data/PACKAGE_NAME/files 目录下
+	 *
 	 * @throws IOException
 	 */
 	public static void saveImage(Context context, String fileName, Bitmap bitmap)
@@ -74,7 +74,7 @@ public class ImageUtils {
 	}
 
 	public static void saveImage(Context context, String fileName,
-			Bitmap bitmap, int quality) throws IOException {
+								 Bitmap bitmap, int quality) throws IOException {
 		if (bitmap == null || fileName == null || context == null)
 			return;
 
@@ -88,12 +88,12 @@ public class ImageUtils {
 	}
 
 	/**
-	 * дͼƬ�ļ���SD��
-	 * 
+	 * 写图片文件到SD卡
+	 *
 	 * @throws IOException
 	 */
 	public static void saveImageToSD(Context ctx, String filePath,
-			Bitmap bitmap, int quality) throws IOException {
+									 Bitmap bitmap, int quality) throws IOException {
 		if (bitmap != null) {
 			File file = new File(filePath.substring(0,
 					filePath.lastIndexOf(File.separator)));
@@ -112,7 +112,7 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��Gallery�������Ͽ�����ͼƬ
+	 * 让Gallery上能马上看到该图片
 	 */
 	private static void scanPhoto(Context ctx, String imgFileName) {
 		Intent mediaScanIntent = new Intent(
@@ -124,8 +124,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��ȡbitmap
-	 * 
+	 * 获取bitmap
+	 *
 	 * @param context
 	 * @param fileName
 	 * @return
@@ -150,8 +150,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��ȡbitmap
-	 * 
+	 * 获取bitmap
+	 *
 	 * @param filePath
 	 * @return
 	 */
@@ -160,7 +160,7 @@ public class ImageUtils {
 	}
 
 	public static Bitmap getBitmapByPath(String filePath,
-			BitmapFactory.Options opts) {
+										 BitmapFactory.Options opts) {
 		FileInputStream fis = null;
 		Bitmap bitmap = null;
 		try {
@@ -181,8 +181,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��ȡbitmap
-	 * 
+	 * 获取bitmap
+	 *
 	 * @param file
 	 * @return
 	 */
@@ -206,9 +206,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ʹ�õ�ǰʱ���ƴ��һ��Ψһ���ļ���
-	 * 
-	 * @param format
+	 * 使用当前时间戳拼接一个唯一的文件名
+	 *
 	 * @return
 	 */
 	public static String getTempFileName() {
@@ -219,28 +218,27 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��ȡ�����ʹ�õ�Ŀ¼
-	 * 
+	 * 获取照相机使用的目录
+	 *
 	 * @return
 	 */
 	public static String getCamerPath() {
 		return Environment.getExternalStorageDirectory() + File.separator
 				+ "FounderNews" + File.separator;
 	}
-	
-	
+
+
 	public static LinearLayout.LayoutParams params(){
-		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
-                LayoutParams.WRAP_CONTENT));  
-        layoutParams.leftMargin = 6;  
-        layoutParams.rightMargin = 6;  
-        return layoutParams;
+		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(new ViewGroup.LayoutParams(LayoutParams.WRAP_CONTENT,
+				LayoutParams.WRAP_CONTENT));
+		layoutParams.leftMargin = 6;
+		layoutParams.rightMargin = 6;
+		return layoutParams;
 	}
 
 	/**
-	 * �жϵ�ǰUrl�Ƿ��׼��content://��ʽ��������ǣ��򷵻ؾ���·��
-	 * 
-	 * @param uri
+	 * 判断当前Url是否标准的content://样式，如果不是，则返回绝对路径
+	 *
 	 * @return
 	 */
 	public static String getAbsolutePathFromNoStandardUri(Uri mUri) {
@@ -263,8 +261,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ͨ��uri��ȡ�ļ��ľ���·��
-	 * 
+	 * 通过uri获取文件的绝对路径
+	 *
 	 * @param uri
 	 * @return
 	 */
@@ -272,7 +270,7 @@ public class ImageUtils {
 		String imagePath = "";
 		String[] proj = { MediaStore.Images.Media.DATA };
 		Cursor cursor = context.managedQuery(uri, proj, // Which columns to
-														// return
+				// return
 				null, // WHERE clause; which rows to return (all rows)
 				null, // WHERE clause selection arguments (none)
 				null); // Order-by clause (ascending by name)
@@ -289,10 +287,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��ȡͼƬ����ͼ ֻ��Android2.1���ϰ汾֧��
-	 * 
-	 * @param imgName
-	 * @param kind
+	 * 获取图片缩略图 只有Android2.1以上版本支持
+	 *
 	 *            MediaStore.Images.Thumbnails.MICRO_KIND
 	 * @return
 	 */
@@ -324,8 +320,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��ȡSD��������ͼƬ·��
-	 * 
+	 * 获取SD卡中最新图片路径
+	 *
 	 * @return
 	 */
 	@SuppressWarnings("unused")
@@ -350,8 +346,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��������ͼƬ�Ŀ��
-	 * 
+	 * 计算缩放图片的宽高
+	 *
 	 * @param img_size
 	 * @param square_size
 	 * @return
@@ -366,45 +362,45 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��������ͼ
-	 * 
+	 * 创建缩略图
+	 *
 	 * @param context
 	 * @param largeImagePath
-	 *            ԭʼ��ͼ·��
+	 *            原始大图路径
 	 * @param thumbfilePath
-	 *            �������ͼ·��
+	 *            输出缩略图路径
 	 * @param square_size
-	 *            ���ͼƬ���
+	 *            输出图片宽度
 	 * @param quality
-	 *            ���ͼƬ����
+	 *            输出图片质量
 	 * @throws IOException
 	 */
 	public static void createImageThumbnail(Context context,
-			String largeImagePath, String thumbfilePath, int square_size,
-			int quality) throws IOException {
+											String largeImagePath, String thumbfilePath, int square_size,
+											int quality) throws IOException {
 		BitmapFactory.Options opts = new BitmapFactory.Options();
 		opts.inSampleSize = 1;
-		// ԭʼͼƬbitmap
+		// 原始图片bitmap
 		Bitmap cur_bitmap = getBitmapByPath(largeImagePath, opts);
 
 		if (cur_bitmap == null)
 			return;
 
-		// ԭʼͼƬ�ĸ߿�
+		// 原始图片的高宽
 		int[] cur_img_size = new int[] { cur_bitmap.getWidth(),
 				cur_bitmap.getHeight() };
-		// ����ԭʼͼƬ���ź�Ŀ��
+		// 计算原始图片缩放后的宽高
 		int[] new_img_size = scaleImageSize(cur_img_size, square_size);
-		// �������ź��bitmap
+		// 生成缩放后的bitmap
 		Bitmap thb_bitmap = zoomBitmap(cur_bitmap, new_img_size[0],
 				new_img_size[1]);
-		// �������ź��ͼƬ�ļ�
+		// 生成缩放后的图片文件
 		saveImageToSD(null,thumbfilePath, thb_bitmap, quality);
 	}
 
 	/**
-	 * �Ŵ���СͼƬ
-	 * 
+	 * 放大缩小图片
+	 *
 	 * @param bitmap
 	 * @param w
 	 * @param h
@@ -424,196 +420,193 @@ public class ImageUtils {
 		}
 		return newbmp;
 	}
-	
+
 	public static Bitmap scaleBitmap(Bitmap bitmap) {
-		// ��ȡ���ͼƬ�Ŀ�͸�
+		// 获取这个图片的宽和高
 		int width = bitmap.getWidth();
 		int height = bitmap.getHeight();
-		// ����Ԥת���ɵ�ͼƬ�Ŀ�Ⱥ͸߶�
+		// 定义预转换成的图片的宽度和高度
 		int newWidth = 200;
 		int newHeight = 200;
-		// ���������ʣ��³ߴ��ԭʼ�ߴ�
+		// 计算缩放率，新尺寸除原始尺寸
 		float scaleWidth = ((float) newWidth) / width;
 		float scaleHeight = ((float) newHeight) / height;
-		// ��������ͼƬ�õ�matrix����
+		// 创建操作图片用的matrix对象
 		Matrix matrix = new Matrix();
-		// ����ͼƬ����
+		// 缩放图片动作
 		matrix.postScale(scaleWidth, scaleHeight);
-		// ��תͼƬ ����
+		// 旋转图片 动作
 		// matrix.postRotate(45);
-		// �����µ�ͼƬ
+		// 创建新的图片
 		Bitmap resizedBitmap = Bitmap.createBitmap(bitmap, 0, 0, width, height,
 				matrix, true);
 		return resizedBitmap;
 	}
-	
+
 	/**
-	 * ������͸���СͼƬ
-	 * 
-	 * @param bitmap
-	 * @param w
-	 * 
+	 * 定死宽和高缩小图片
+	 *
+	 *
 	 * @return
 	 */
 	@SuppressLint("NewApi")
 	public static Bitmap CompressionPicture(String srcPath,int reqWidth, int reqHeight){
-		
-    	Bitmap bitmap = null;
-    	Matrix matrix = new Matrix();
-    	int i= readPictureDegree(srcPath);
-    	bitmap = FileCalculate(srcPath,100, 100);
-    	bitmap = ThumbnailUtils.extractThumbnail(bitmap, reqWidth, reqHeight); 
-        if(i!=0){
+
+		Bitmap bitmap = null;
+		Matrix matrix = new Matrix();
+		int i= readPictureDegree(srcPath);
+		bitmap = FileCalculate(srcPath,100, 100);
+		bitmap = ThumbnailUtils.extractThumbnail(bitmap, reqWidth, reqHeight);
+		if(i!=0){
 			matrix.postRotate(i);
-	    } 
-        bitmap = Bitmap.createBitmap(bitmap, 0, 0, reqWidth, reqHeight,matrix, true);
-        return bitmap;
-    }
-	
-	
+		}
+		bitmap = Bitmap.createBitmap(bitmap, 0, 0, reqWidth, reqHeight,matrix, true);
+		return bitmap;
+	}
+
+
 	/**
-	 * �ȱ�����СͼƬ
-	 * 
+	 * 等比例缩小图片
+	 *
 	 * @param bitmap
-	 * @param w
-	 * 
+	 *
 	 * @return
 	 */
-	
-	public static Bitmap NarrowBit(Bitmap bitmap) {  
-		
-	    ByteArrayOutputStream baos = new ByteArrayOutputStream();   
-	    bitmap.compress(CompressFormat.JPEG, 100, baos);
-	    ByteArrayInputStream isBm = null;
-	    
-	    isBm = new ByteArrayInputStream(baos.toByteArray());
-	    BitmapFactory.Options newOpts  = Inputcalculate(isBm,100,100);
-        isBm = new ByteArrayInputStream(baos.toByteArray());
-        
-        bitmap = BitmapFactory.decodeStream(isBm,null, newOpts);
-	    return bitmap;
-	} 
-	
-    public static Bitmap degreePicture(String srcPath,int reqWidth, int reqHeight){
-    			
-    	Bitmap bitmap = null;
-    	int i= readPictureDegree(srcPath);
-    	
+
+	public static Bitmap NarrowBit(Bitmap bitmap) {
+
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+		ByteArrayInputStream isBm = null;
+
+		isBm = new ByteArrayInputStream(baos.toByteArray());
+		BitmapFactory.Options newOpts  = Inputcalculate(isBm,100,100);
+		isBm = new ByteArrayInputStream(baos.toByteArray());
+
+		bitmap = BitmapFactory.decodeStream(isBm,null, newOpts);
+		return bitmap;
+	}
+
+	public static Bitmap degreePicture(String srcPath,int reqWidth, int reqHeight){
+
+		Bitmap bitmap = null;
+		int i= readPictureDegree(srcPath);
+
 		bitmap = FileCalculate(srcPath,reqWidth, reqHeight);
-		
-        if(i!=0){
-        	Matrix matrix = new Matrix();
-	    	int width = bitmap.getWidth();
+
+		if(i!=0){
+			Matrix matrix = new Matrix();
+			int width = bitmap.getWidth();
 			int height = bitmap.getHeight();
 			matrix.postRotate(i);
-	    	bitmap = Bitmap.createBitmap(bitmap, 0, 0, width, height,matrix, true);
-	    } 
-        return bitmap;
-    }
-    
-  //��������ֵ���Options
-    public static BitmapFactory.Options Inputcalculate(InputStream in,int reqWidth, int reqHeight){
-    	BitmapFactory.Options newOpts = new BitmapFactory.Options();  
+			bitmap = Bitmap.createBitmap(bitmap, 0, 0, width, height,matrix, true);
+		}
+		return bitmap;
+	}
+
+	//计算缩放值后的Options
+	public static BitmapFactory.Options Inputcalculate(InputStream in,int reqWidth, int reqHeight){
+		BitmapFactory.Options newOpts = new BitmapFactory.Options();
 		newOpts.inJustDecodeBounds = true;
-        BitmapFactory.decodeStream(in,null,newOpts);
-        newOpts.inSampleSize = calculateInSampleSize(newOpts,reqWidth, reqHeight,0);
-        newOpts.inJustDecodeBounds = false;
-        return newOpts;
-    }
-    
-  //��SD�л�ȡBITMAP ��������
-    public static Bitmap FileCalculate(String srcPath,int reqWidth, int reqHeight){
-    	int degree = readPictureDegree(srcPath);
-    	BitmapFactory.Options newOpts = new BitmapFactory.Options();  
+		BitmapFactory.decodeStream(in,null,newOpts);
+		newOpts.inSampleSize = calculateInSampleSize(newOpts,reqWidth, reqHeight,0);
+		newOpts.inJustDecodeBounds = false;
+		return newOpts;
+	}
+
+	//从SD中获取BITMAP 并且缩放
+	public static Bitmap FileCalculate(String srcPath,int reqWidth, int reqHeight){
+		int degree = readPictureDegree(srcPath);
+		BitmapFactory.Options newOpts = new BitmapFactory.Options();
 		newOpts.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(srcPath, newOpts);
-        newOpts.inSampleSize = calculateInSampleSize(newOpts,reqWidth, reqHeight,degree);
-        newOpts.inJustDecodeBounds = false;
-        return BitmapFactory.decodeFile(srcPath, newOpts);
-    }
-    
-	//����ͼƬ������ֵ
+		BitmapFactory.decodeFile(srcPath, newOpts);
+		newOpts.inSampleSize = calculateInSampleSize(newOpts,reqWidth, reqHeight,degree);
+		newOpts.inJustDecodeBounds = false;
+		return BitmapFactory.decodeFile(srcPath, newOpts);
+	}
+
+	//计算图片的缩放值
 	public static int calculateInSampleSize(BitmapFactory.Options options,int reqWidth, int reqHeight,int degree) {
 		int height = 0;
 		int width = 0;
 		if(degree ==270 ||degree == 90){
 			height = options.outWidth;
-		    width = options.outHeight;
+			width = options.outHeight;
 		} else {
 			height = options.outHeight;
-		    width = options.outWidth;
+			width = options.outWidth;
 		}
-	    int inSampleSize = 1;
-	    
-	    if (height > reqHeight || width > reqWidth) {
-	             final int heightRatio = Math.round((float) height/ (float) reqHeight);
-	             final int widthRatio = Math.round((float) width / (float) reqWidth);
-	             inSampleSize = heightRatio < widthRatio ? widthRatio : heightRatio;
-	    }
+		int inSampleSize = 1;
 
-	   return inSampleSize;
+		if (height > reqHeight || width > reqWidth) {
+			final int heightRatio = Math.round((float) height/ (float) reqHeight);
+			final int widthRatio = Math.round((float) width / (float) reqWidth);
+			inSampleSize = heightRatio < widthRatio ? widthRatio : heightRatio;
+		}
+
+		return inSampleSize;
 	}
-		
-	/** 
-     * ��ȡ��Ƭexif��Ϣ�е���ת�Ƕ� 
-     * @param path ��Ƭ·�� 
-     * @return�Ƕ� 
-     */  
-    public static int readPictureDegree(String path) {  
-            int degree  = 0;  
-            try {  
-                    ExifInterface exifInterface = new ExifInterface(path);  
-                    int orientation = exifInterface.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);  
-                    switch (orientation) {  
-                    case ExifInterface.ORIENTATION_ROTATE_90:  
-                            degree = 90;  
-                            break;  
-                    case ExifInterface.ORIENTATION_ROTATE_180:  
-                            degree = 180;  
-                            break;  
-                    case ExifInterface.ORIENTATION_ROTATE_270:  
-                            degree = 270;  
-                            break;  
-                    }  
-            } catch (IOException e) {  
-                    e.printStackTrace();  
-            }  
-            return degree;  
-    } 
-    
-    /** 
-     * ��ͼƬ·����ַ����
-     * 
-     */  
-	@SuppressLint("NewApi")
-	public static String encodeFile(String path)  {
-        File  file = new File(path);
-        FileInputStream inputFile;
-        byte[] buffer = null;
-        String string = null;
-        ByteArrayOutputStream arrayOutputStream = null;
-                try {
-                        inputFile = new FileInputStream(file);
-                        arrayOutputStream = new ByteArrayOutputStream();
-                        buffer = new byte[1024];
-                        int ch = -1 ;
-                        while ((ch=inputFile.read(buffer))!= -1) {
-                                arrayOutputStream.write(buffer,0,ch);
-                        }
-                        inputFile.close();
-                } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                } catch (IOException e) {
-                        e.printStackTrace();
-                }
-        byte[] data = arrayOutputStream.toByteArray();
-        string = Base64.encodeToString(data, Base64.DEFAULT); 
-        return string;
-    }
 
 	/**
-	 * (����)�ػ�ͼƬ
-	 * 
+	 * 读取照片exif信息中的旋转角度
+	 * @param path 照片路径
+	 * @return角度
+	 */
+	public static int readPictureDegree(String path) {
+		int degree  = 0;
+		try {
+			ExifInterface exifInterface = new ExifInterface(path);
+			int orientation = exifInterface.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
+			switch (orientation) {
+				case ExifInterface.ORIENTATION_ROTATE_90:
+					degree = 90;
+					break;
+				case ExifInterface.ORIENTATION_ROTATE_180:
+					degree = 180;
+					break;
+				case ExifInterface.ORIENTATION_ROTATE_270:
+					degree = 270;
+					break;
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return degree;
+	}
+
+	/**
+	 * 将图片路径地址解码
+	 *
+	 */
+	@SuppressLint("NewApi")
+	public static String encodeFile(String path)  {
+		File  file = new File(path);
+		FileInputStream inputFile;
+		byte[] buffer = null;
+		String string = null;
+		ByteArrayOutputStream arrayOutputStream = null;
+		try {
+			inputFile = new FileInputStream(file);
+			arrayOutputStream = new ByteArrayOutputStream();
+			buffer = new byte[1024];
+			int ch = -1 ;
+			while ((ch=inputFile.read(buffer))!= -1) {
+				arrayOutputStream.write(buffer,0,ch);
+			}
+			inputFile.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		byte[] data = arrayOutputStream.toByteArray();
+		string = Base64.encodeToString(data, Base64.DEFAULT);
+		return string;
+	}
+
+	/**
+	 * (缩放)重绘图片
+	 *
 	 * @param context
 	 *            Activity
 	 * @param bitmap
@@ -631,43 +624,43 @@ public class ImageUtils {
 		int height = bitmap.getHeight();
 		int width = bitmap.getWidth();
 		float zoomScale;
-		/** ��ʽ1 **/
-		// if(rWidth/rHeight>width/height){//�Ը�Ϊ׼
+		/** 方式1 **/
+		// if(rWidth/rHeight>width/height){//以高为准
 		// zoomScale=((float) rHeight) / height;
 		// }else{
-		// //if(rWidth/rHeight<width/height)//�Կ�Ϊ׼
+		// //if(rWidth/rHeight<width/height)//以宽为准
 		// zoomScale=((float) rWidth) / width;
 		// }
-		/** ��ʽ2 **/
-		// if(width*1.5 >= height) {//�Կ�Ϊ׼
+		/** 方式2 **/
+		// if(width*1.5 >= height) {//以宽为准
 		// if(width >= rWidth)
 		// zoomScale = ((float) rWidth) / width;
 		// else
 		// zoomScale = 1.0f;
-		// }else {//�Ը�Ϊ׼
+		// }else {//以高为准
 		// if(height >= rHeight)
 		// zoomScale = ((float) rHeight) / height;
 		// else
 		// zoomScale = 1.0f;
 		// }
-		/** ��ʽ3 **/
+		/** 方式3 **/
 		if (width >= rWidth)
 			zoomScale = ((float) rWidth) / width;
 		else
 			zoomScale = 1.0f;
-		// ��������ͼƬ�õ�matrix����
+		// 创建操作图片用的matrix对象
 		Matrix matrix = new Matrix();
-		// ����ͼƬ����
+		// 缩放图片动作
 		matrix.postScale(zoomScale, zoomScale);
 		Bitmap resizedBitmap = Bitmap.createBitmap(bitmap, 0, 0,
 				bitmap.getWidth(), bitmap.getHeight(), matrix, true);
 		return resizedBitmap;
 	}
-	
-	
+
+
 	/**
-	 * ��Drawableת��ΪBitmap
-	 * 
+	 * 将Drawable转化为Bitmap
+	 *
 	 * @param drawable
 	 * @return
 	 */
@@ -675,8 +668,8 @@ public class ImageUtils {
 		int width = drawable.getIntrinsicWidth();
 		int height = drawable.getIntrinsicHeight();
 		Bitmap bitmap = Bitmap.createBitmap(width, height, drawable
-				.getOpacity() != PixelFormat.OPAQUE ? Config.ARGB_8888
-				: Config.RGB_565);
+				.getOpacity() != PixelFormat.OPAQUE ? Bitmap.Config.ARGB_8888
+				: Bitmap.Config.RGB_565);
 		Canvas canvas = new Canvas(bitmap);
 		drawable.setBounds(0, 0, width, height);
 		drawable.draw(canvas);
@@ -685,11 +678,11 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ���Բ��ͼƬ�ķ���
-	 * 
+	 * 获得圆角图片的方法
+	 *
 	 * @param bitmap
 	 * @param roundPx
-	 *            һ�����14
+	 *            一般设成14
 	 * @return
 	 */
 	public static Bitmap getRoundedCornerBitmap(Bitmap bitmap, float roundPx) {
@@ -715,8 +708,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��ô���Ӱ��ͼƬ����
-	 * 
+	 * 获得带倒影的图片方法
+	 *
 	 * @param bitmap
 	 * @return
 	 */
@@ -756,8 +749,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��bitmapת��Ϊdrawable
-	 * 
+	 * 将bitmap转化为drawable
+	 *
 	 * @param bitmap
 	 * @return
 	 */
@@ -767,8 +760,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��ȡͼƬ����
-	 * 
+	 * 获取图片类型
+	 *
 	 * @param file
 	 * @return
 	 */
@@ -794,8 +787,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��ȡͼƬ��������Ϣ
-	 * 
+	 * 获取图片的类型信息
+	 *
 	 * @param in
 	 * @return
 	 * @see #getImageType(byte[])
@@ -814,8 +807,8 @@ public class ImageUtils {
 	}
 
 	/**
-	 * ��ȡͼƬ��������Ϣ
-	 * 
+	 * 获取图片的类型信息
+	 *
 	 * @param bytes
 	 *            2~8 byte at beginning of the image file
 	 * @return image mimetype or null if the file is not image

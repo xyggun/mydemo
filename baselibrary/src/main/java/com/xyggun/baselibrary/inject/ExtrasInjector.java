@@ -1,9 +1,9 @@
 package com.xyggun.baselibrary.inject;
 
-import java.lang.reflect.Field;
-
 import android.app.Activity;
 import android.os.Bundle;
+
+import java.lang.reflect.Field;
 
 public class ExtrasInjector {
 

@@ -5,9 +5,9 @@ import java.lang.reflect.Method;
 import java.util.List;
 
 public class ReflectObj {
-	private List<Field> fields;// �����ֶ�
-	private List<Method> methods;// ���з���
-	private List<Method> methodsWithParent;// ���з���(��������)
+	private List<Field> fields; // 所有字段
+	private List<Method> methods; // 所有方法
+	private List<Method> methodsWithParent; // 所有方法(包括父类)
 
 	public List<Field> getFields() {
 		return fields;

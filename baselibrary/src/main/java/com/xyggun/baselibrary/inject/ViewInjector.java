@@ -1,18 +1,16 @@
 package com.xyggun.baselibrary.inject;
 
-import java.lang.reflect.Field;
-
-import com.tecoming.t_base.app.BaseFragment;
-
 import android.app.Activity;
 import android.view.View;
+
+import com.xyggun.baselibrary.inject.base.BaseFragment;
+
+import java.lang.reflect.Field;
 
 public class ViewInjector {
 
 	/**
 	 * 
-	 * @param decoView
-	 * @param annotation
 	 * @param instance
 	 * @param field
 	 */
@@ -46,8 +44,6 @@ public class ViewInjector {
 	/**
 	 * 从指定的Activity中依据对应的字段和注解寻找到指定的View。若寻找结果为null,则会产生异常。如果想允许查找失败,请添加@NullAble注解 �?
 	 * 
-	 * @param decoView
-	 * @param annotation
 	 * @param instance
 	 * @param field
 	 */

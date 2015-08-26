@@ -1,9 +1,5 @@
 package com.xyggun.baselibrary.inject;
 
-import java.lang.reflect.Field;
-
-import com.tecoming.t_base.app.BaseFragment;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -12,6 +8,10 @@ import android.graphics.Movie;
 import android.graphics.drawable.Drawable;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+
+import com.xyggun.baselibrary.inject.base.BaseFragment;
+
+import java.lang.reflect.Field;
 
 public class ResourceInjector {
 

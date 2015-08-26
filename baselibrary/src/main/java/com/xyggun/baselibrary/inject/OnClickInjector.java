@@ -1,13 +1,13 @@
 package com.xyggun.baselibrary.inject;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-
-import com.tecoming.t_base.app.BaseFragment;
-
 import android.app.Activity;
 import android.view.View;
 import android.view.View.OnClickListener;
+
+import com.xyggun.baselibrary.inject.base.BaseFragment;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class OnClickInjector {
 

@@ -1,19 +1,19 @@
 package com.xyggun.baselibrary.inject;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.List;
-
-import com.tecoming.t_base.app.BaseFragment;
-
 import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
+import com.xyggun.baselibrary.inject.base.BaseFragment;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.List;
+
 public class InjectorFactory {
-	private static HashMap<String, ReflectObj> clazzInfo = new HashMap<String, ReflectObj>();// ��ǰ����Ϣ
+	private static HashMap<String, ReflectObj> clazzInfo = new HashMap<String, ReflectObj>();// 当前类信息
 
 	private static void checkClazzInfo(String clazzname) {
 		if (clazzInfo.get(clazzname) == null) {
@@ -22,7 +22,7 @@ public class InjectorFactory {
 		}
 	}
 
-	private static List<Field> getFields(Class clazz) {// ��ȡ�ֶ�
+	private static List<Field> getFields(Class clazz) {// 获取字段
 		String name = clazz.getSimpleName();
 		checkClazzInfo(name);
 		ReflectObj obj = clazzInfo.get(name);
@@ -36,9 +36,9 @@ public class InjectorFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @Title: getMethods
-	 * @Description:��ȡ����
+	 * @Description:获取方法
 	 * @param @param clazz
 	 * @param @return
 	 * @return List<Method>
@@ -58,9 +58,9 @@ public class InjectorFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @Title: getMethodsWithParent
-	 * @Description: ��ȡ�������������ࣩ
+	 * @Description: 获取方法（包括父类）
 	 * @param @param clazz
 	 * @param @return
 	 * @return List<Method>
@@ -80,22 +80,22 @@ public class InjectorFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @Title: injectBeforeSetContentView
-	 * @Description: SetContentView ��ʼǰע��
+	 * @Description: SetContentView 开始前注入
 	 * @param @param instance
 	 * @return void
 	 * @throws
 	 */
 	public static void injectBeforeSetContentView(Activity instance) {
 		/**
-		 * ��ע��
+		 * 类注入
 		 */
 		FullscreenInject.inject(instance);
 		NoTitleInject.inject(instance);
 
 		/**
-		 * �ֶ�ע��
+		 * 字段注入
 		 */
 		for (Field annotatedField : getFields(instance.getClass())) {
 			SystemServiceInjector.inject(instance, annotatedField);
@@ -105,7 +105,7 @@ public class InjectorFactory {
 			DaoInjector.inject(instance, annotatedField);
 		}
 		/**
-		 * ��ͼע�� �����
+		 * 试图注入 放最后
 		 */
 
 		SetContentViewInject.inject(instance);
@@ -113,9 +113,9 @@ public class InjectorFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @Title: injectAfterSetContentView
-	 * @Description: SetContentView ֮��ע��
+	 * @Description: SetContentView 之后注入
 	 * @param @param instance
 	 * @return void
 	 * @throws
@@ -125,7 +125,7 @@ public class InjectorFactory {
 			ViewInjector.inject(instance, annotatedField);
 		}
 		/**
-		 * ����ע��
+		 * 方法注入
 		 */
 		for (Method annotatedMethod : getMethods(instance.getClass())) {
 			OnClickInjector.injectViewOnclick(instance, annotatedMethod);
@@ -134,9 +134,9 @@ public class InjectorFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @Title: injectViewGroup
-	 * @Description: ViewGroup ������ֶ�ע��
+	 * @Description: ViewGroup 里面的字段注入
 	 * @param @param instance
 	 * @return void
 	 * @throws
@@ -144,7 +144,7 @@ public class InjectorFactory {
 	public static void injectViewGroup(ViewGroup instance) {
 		AddViewInjector.inject(instance);
 		/**
-		 * �ֶ�ע��
+		 * 字段注入
 		 */
 		for (Field annotatedField : getFields(instance.getClass())) {
 			ViewGroupInjector.inject(instance, annotatedField);
@@ -153,9 +153,9 @@ public class InjectorFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @Title: injectOnStart
-	 * @Description: OnStartʱע��
+	 * @Description: OnStart时注入
 	 * @param @param instance
 	 * @return void
 	 * @throws
@@ -164,9 +164,9 @@ public class InjectorFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @Title: injectOnNewIntent
-	 * @Description: NewIntentʱע��
+	 * @Description: NewIntent时注入
 	 * @param @param instance
 	 * @return void
 	 * @throws
@@ -179,9 +179,9 @@ public class InjectorFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @Title: Destory
-	 * @Description: Destoryʱע��
+	 * @Description: Destory时注入
 	 * @param @param instance
 	 * @return void
 	 * @throws
@@ -193,9 +193,9 @@ public class InjectorFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @Title: Destory
-	 * @Description: Destoryʱע��
+	 * @Description: Destory时注入
 	 * @param @param instance
 	 * @return void
 	 * @throws
@@ -207,9 +207,9 @@ public class InjectorFactory {
 	}
 
 	/**
-	 * 
+	 *
 	 * @Title: onFragmentCreate
-	 * @Description: onFragmentCreate ʱע��
+	 * @Description: onFragmentCreate 时注入
 	 * @param @param instance
 	 * @param @param inflater
 	 * @param @param container
@@ -219,14 +219,14 @@ public class InjectorFactory {
 	public static void onFragmentCreate(BaseFragment instance, LayoutInflater inflater, ViewGroup container) {
 		SetContentViewInject.inject(instance, inflater, container);
 		/**
-		 * �ֶ�ע��
+		 * 字段注入
 		 */
 		for (Field annotatedField : getFields(instance.getClass())) {
 			ViewInjector.inject(instance, annotatedField);
 			ResourceInjector.inject(instance, annotatedField);
 		}
 		/**
-		 * ����ע��
+		 * 方法注入
 		 */
 		for (Method annotatedMethod : getMethods(instance.getClass())) {
 			OnClickInjector.injectViewOnclick(instance, annotatedMethod);
