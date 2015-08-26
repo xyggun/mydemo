@@ -11,6 +11,7 @@ import com.xyg.mydemo.common.GetImageTask;
  * 2014-9-29 17：52 xiangyg
  **/
 public class Demo1 extends BaseActivity {
+
 	ImageView imgViewTest;
 	
 	@Override

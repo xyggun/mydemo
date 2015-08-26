@@ -13,8 +13,8 @@
         android:id="@+id/imgView_test"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:padding="10dp"
+        android:layout_marginTop="@dimen/demo_img_margin_top"
+        android:padding="@dimen/demo_img_padding"
         android:src="@drawable/loading"
         android:contentDescription="@string/demo_text_contentdescription"
         />
