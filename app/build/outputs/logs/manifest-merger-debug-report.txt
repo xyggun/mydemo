@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:2:1-174:12
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:2:1-168:12
 	package
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml
@@ -103,10 +103,10 @@ ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManife
 	android:name
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:35:22-76
 application
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:38:5-172:19
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:38:5-166:19
 MERGED from [mydemo:baselibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/AndroidManifest.xml:11:5-14:19
 MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
-MERGED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:11:5-14:19
+MERGED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:11:5-24:19
 	android:label
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:41:9-41
 	android:allowBackup
@@ -342,16 +342,16 @@ ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManife
 	android:name
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:164:20-47
 service#com.baidu.location.f
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:167:9-168:19
+ADDED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:14:9-18:19
 	android:enabled
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:167:54-76
+		ADDED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:16:13-35
 	android:process
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:167:77-102
+		ADDED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:17:13-38
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:167:18-53
+		ADDED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:15:13-48
 meta-data#com.baidu.lbsapi.API_KEY
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:171:9-103
+ADDED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:21:9-23:56
 	android:value
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:171:60-100
+		ADDED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:23:13-53
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:171:20-59
+		ADDED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:22:13-52

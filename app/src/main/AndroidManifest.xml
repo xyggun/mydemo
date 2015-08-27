@@ -163,12 +163,6 @@
         <!-- 值来自极光开发者平台取得的AppKey-->
         <meta-data android:name="JPUSH_APPKEY" android:value="5c1eaa2d995bfa35ebb45cf3" />
 
-
-        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
-        </service>
-
-        <!--百度地图-->
-        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="Fto4KzLWejetrFHcGGImKS5V" />
     </application>
 
 </manifest>

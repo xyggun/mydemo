@@ -3,16 +3,15 @@ package com.xyggun.mydemo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.WindowManager;
 
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
-import com.xyggun.baselibrary.inject.SetContentView;
 import com.xyggun.baselibrary.inject.base.BaseActivity;
-import com.xyggun.mydemo.baidumap.MyLocationListener;
+import com.xyggun.baidumaplibrary.MyLocationListener;
 import com.xyggun.mydemo.ui.MainActivity;
 
-@SetContentView(R.layout.activity_start)
 public class StartActivity extends BaseActivity {
 
     public LocationClient mLocationClient = null;
@@ -25,6 +24,8 @@ public class StartActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_start);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         // 初始化LocationClient类
         mLocationClient = new LocationClient(getApplicationContext());     //声明LocationClient类
