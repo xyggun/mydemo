@@ -28,9 +28,10 @@
     <string name="title_activity_baidu_map_demo">BaiduMapDemoActivity</string>
 
     <!--baidu地图-->
-    <string name="action__map_normal">普通地图</string>
+    <string name="action_map_normal">普通地图</string>
     <string name="action_map_satelltle">卫星地图</string>
     <string name="action_map_traffic_enabled">交通图</string>
     <string name="action_heat_map_enabled">热力图</string>
+    <string name="action_map_location">定位到当前地址</string>
     <string name="app_back_text">返回</string>
 </resources>

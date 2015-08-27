@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.xyggun.mydemo.baidumap.BaiduMapDemoActivity">
-    <item android:id="@+id/action_normal" android:title="@string/action__map_normal"
+    <item android:id="@+id/action_normal" android:title="@string/action_map_normal"
         android:orderInCategory="100" android:showAsAction="never" />
     <item android:id="@+id/action_satelltle" android:title="@string/action_map_satelltle"
         android:orderInCategory="100" android:showAsAction="never" />

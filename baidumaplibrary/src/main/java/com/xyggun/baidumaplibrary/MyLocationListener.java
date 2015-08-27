@@ -16,6 +16,15 @@ import java.util.List;
 public class MyLocationListener implements BDLocationListener {
     @Override
     public void onReceiveLocation(BDLocation location) {
+        Log.i("BaiduLocationApiDem", getBDString(location).toString());
+    }
+
+    /**
+     * 获取提示信息
+     * @param location
+     * @return
+     */
+    public static StringBuffer getBDString(BDLocation location){
         //Receive Location
         StringBuffer sb = new StringBuffer(256);
         sb.append("time : ");
@@ -75,8 +84,7 @@ public class MyLocationListener implements BDLocationListener {
                 sb.append(p.getId() + " " + p.getName() + " " + p.getRank());
             }
         }
-        Log.i("BaiduLocationApiDem", sb.toString());
-
+        return sb;
     }
 
 }
