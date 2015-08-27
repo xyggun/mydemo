@@ -1,4 +1,4 @@
-package com.xyg.mydemo.weight;
+package com.xyggun.mydemo.weight;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -7,9 +7,9 @@ import android.graphics.Movie;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.xyg.mydemo.R;
+import com.xyggun.mydemo.R;
 
-//Õâ¸öÀàÊÇÓÃÀ´ÏÔÊ¾GifÍ¼Æ¬µÄ
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾GifÍ¼Æ¬ï¿½ï¿½
 public class GifView extends View {
 
 	public Movie gifMovie;
@@ -17,45 +17,45 @@ public class GifView extends View {
 	public GifView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		TypedArray ta = context.obtainStyledAttributes(attrs,
-				R.styleable.GifView); // ÕâÀïÓÃµ½ÁËattrs.xmlÀïÃæ¶¨ÒåµÄGifView
-		int taCount = ta.length(); // »ñµÃÊôĞÔµÄ¸öÊı
+				R.styleable.GifView); // ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½attrs.xmlï¿½ï¿½ï¿½æ¶¨ï¿½ï¿½ï¿½GifView
+		int taCount = ta.length(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÔµÄ¸ï¿½ï¿½ï¿½
 
-		for (int i = 0; i < taCount; i++) { // ´¦ÀíËùÓĞÊôĞÔ£¬ÓÉÓÚÎÒÖ»¶¨ÒåÁËÒ»¸ösrcÊôĞÔ£¬ËùÒÔ¾ÍÖ»´¦ÀísrcÊôĞÔ
+		for (int i = 0; i < taCount; i++) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½srcï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½Ô¾ï¿½Ö»ï¿½ï¿½ï¿½ï¿½srcï¿½ï¿½ï¿½ï¿½
 			if (R.styleable.GifView_src == ta.getIndex(i)) {
-				int id = ta.getResourceId(R.styleable.GifView_src, 0); // ÕâÀïµÄ²ÎÊıÊÇÇ°ÃæµÄGifView
+				int id = ta.getResourceId(R.styleable.GifView_src, 0); // ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½GifView
 																		// + _ +
-																		// srcÁ´½ÓÆğÀ´
+																		// srcï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				if (0 != id) {
-					setSrc(id); // ¶ÔÓ¦µÄº¯Êı£¬¼´ÔÚxmlÀïÃæÉèÖÃÁËsrc£¬ÏàÓ¦µÄ´¦Àí¾Í»áÔÚsetSrcº¯ÊıÀïÃæ½øĞĞ
+					setSrc(id); // ï¿½ï¿½Ó¦ï¿½Äºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xmlï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½srcï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ä´ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½setSrcï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				}
 			}
 		}
 		ta.recycle();
 	}
 
-	// ÏÂÃæÊÇsetSrcº¯Êı£º
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½setSrcï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public void setSrc(int id) {
 
-		gifMovie = Movie.decodeStream(getResources().openRawResource(id)); // gifMovieÎªMovieÀàĞÍ
+		gifMovie = Movie.decodeStream(getResources().openRawResource(id)); // gifMovieÎªMovieï¿½ï¿½ï¿½ï¿½
 	}
 
 	long lStartTime;
 
-	// ½ÓÏÂÀ´ÊÇviewµÄonDrawº¯Êı£¬ÕâÒ²ÊÇ»æ»­¶¯»­µÄ¹Ø¼ü
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½viewï¿½ï¿½onDrawï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½Ç»æ»­ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹Ø¼ï¿½
 	public void onDraw(Canvas canvas) {
-		long now = android.os.SystemClock.uptimeMillis(); // »ñµÃµ±Ç°Ê±¼ä
+		long now = android.os.SystemClock.uptimeMillis(); // ï¿½ï¿½Ãµï¿½Ç°Ê±ï¿½ï¿½
 
 		if (lStartTime == 0) { // first time
 			lStartTime = now;
 		}
 		if (gifMovie != null) {
-			int dur = gifMovie.duration(); // »ñµÃgifÎÄ¼şµÄ¶¯»­ÖÜÆÚ
+			int dur = gifMovie.duration(); // ï¿½ï¿½ï¿½gifï¿½Ä¼ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			if (dur == 0) {
 				dur = 1000;
 			}
 			int relTime = (int) ((now - lStartTime) % dur);
-			gifMovie.setTime(relTime); // ÉèÖÃ²¥·ÅÊ±¼äµã
-			gifMovie.draw(canvas, getWidth() - gifMovie.width(), // ²¥·Å£¨¼´»æ»­£©
+			gifMovie.setTime(relTime); // ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½
+			gifMovie.draw(canvas, getWidth() - gifMovie.width(), // ï¿½ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½æ»­ï¿½ï¿½
 					getHeight() - gifMovie.height());
 			invalidate();
 		}

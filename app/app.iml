@@ -89,7 +89,9 @@
     <orderEntry type="jdk" jdkName="Android API 20 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="GifView" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-20.0.0" level="project" />
+    <orderEntry type="library" exported="" name="jpush-sdk-release1.8.0" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-23.0.0" level="project" />
+    <orderEntry type="module" module-name="baidumaplibrary" exported="" />
     <orderEntry type="module" module-name="baselibrary" exported="" />
   </component>
 </module>

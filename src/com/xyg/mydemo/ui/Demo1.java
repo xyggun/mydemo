@@ -1,14 +1,14 @@
-package com.xyg.mydemo.ui;
+package com.xyggun.mydemo.ui;
 
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.widget.ImageView;
 
-import com.xyg.mydemo.R;
-import com.xyg.mydemo.common.GetImageTask;
+import com.xyggun.mydemo.R;
+import com.xyggun.mydemo.common.GetImageTask;
 /**
- * Òì²½¼ÓÔØÍøÂçÍ¼Æ¬
- * 2014-9-29 17£º52 xiangyg
+ * ï¿½ì²½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
+ * 2014-9-29 17ï¿½ï¿½52 xiangyg
  **/
 public class Demo1 extends BaseActivity {
 	ImageView imgViewTest;
@@ -30,8 +30,8 @@ public class Demo1 extends BaseActivity {
 		int scWidth=0;
 		int scHeight=0;
 		DisplayMetrics dm = new DisplayMetrics();getWindowManager().getDefaultDisplay().getMetrics(dm);
-		scWidth = dm.widthPixels;//¿í¶È
-		scHeight = dm.heightPixels ;//¸ß¶È
+		scWidth = dm.widthPixels;//ï¿½ï¿½ï¿½
+		scHeight = dm.heightPixels ;//ï¿½ß¶ï¿½
 		new GetImageTask(this, imgViewTest, "http://su.bdimg.com/static/superplus/img/logo_white_ee663702.png",scWidth,scHeight).execute("");
 		//new GetImageTask(this, imgViewTest, "http://testclientservice.laoshi321.com/clientservice/GetTwodimensionalcode?content=http://test.laoshi321.com/teacherinfo/10456.html",scWidth,scHeight).execute("");
 	}

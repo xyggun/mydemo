@@ -1,4 +1,4 @@
-package com.xyg.mydemo.ui;
+package com.xyggun.mydemo.ui;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.view.View.OnClickListener;
 
 import com.ant.liao.GifView;
 import com.ant.liao.GifView.GifImageType;
-import com.xyg.mydemo.R;
+import com.xyggun.mydemo.R;
 
 public class Demo3 extends BaseActivity implements OnClickListener{
 	GifView gifTest0,gifTest1,gifTest2,gifTest3,gifTest4,gifTest5,gifTest6,gifTest7,gifTest8,gifTest9,gifTest10
@@ -22,7 +22,7 @@ public class Demo3 extends BaseActivity implements OnClickListener{
 	}
 	
 	private void getControls() {
-		// ´ÓxmlÖĞµÃµ½GifViewµÄ¾ä±ú
+		// ï¿½ï¿½xmlï¿½ĞµÃµï¿½GifViewï¿½Ä¾ï¿½ï¿½
 		gifTest0=(GifView)findViewById(R.id.gif_test0);
 		gifTest1=(GifView)findViewById(R.id.gif_test1);
 		gifTest2=(GifView)findViewById(R.id.gif_test2);
@@ -92,13 +92,13 @@ public class Demo3 extends BaseActivity implements OnClickListener{
 
 	
 	private void SetGif(GifView gif, int gifImage) {
-		// ÉèÖÃGifÍ¼Æ¬Ô´
+		// ï¿½ï¿½ï¿½ï¿½GifÍ¼Æ¬Ô´
 		gif.setGifImage(gifImage);
-		// Ìí¼Ó¼àÌıÆ÷
+		// ï¿½ï¿½Ó¼ï¿½ï¿½ï¿½ï¿½ï¿½
 		gif.setOnClickListener(this);
-//		// ÉèÖÃÏÔÊ¾µÄ´óĞ¡£¬À­Éì»òÕßÑ¹Ëõ
+//		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ä´ï¿½Ğ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½
 //		gif.setShowDimension(300, 300);
-		// ÉèÖÃ¼ÓÔØ·½Ê½£ºÏÈ¼ÓÔØºóÏÔÊ¾¡¢±ß¼ÓÔØ±ßÏÔÊ¾¡¢Ö»ÏÔÊ¾µÚÒ»Ö¡ÔÙÏÔÊ¾
+		// ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½Ø·ï¿½Ê½ï¿½ï¿½ï¿½È¼ï¿½ï¿½Øºï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ß¼ï¿½ï¿½Ø±ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ö»ï¿½ï¿½Ê¾ï¿½ï¿½Ò»Ö¡ï¿½ï¿½ï¿½ï¿½Ê¾
 		gif.setGifImageType(GifImageType.COVER);
 	}
 

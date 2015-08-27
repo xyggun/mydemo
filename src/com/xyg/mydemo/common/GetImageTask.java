@@ -1,4 +1,4 @@
-package com.xyg.mydemo.common;
+package com.xyggun.mydemo.common;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,7 +6,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import com.xyg.mydemo.R;
+import com.xyggun.mydemo.R;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -23,8 +23,8 @@ public class GetImageTask extends AsyncTask<String, Void, Bitmap> {
 	InputStream is = null;
 	ImageView mImageAndTextView = null;
 	Context Context = null;
-	int mScreenWidth, mImageHeight;// ÆÁÄ»¿í¶È£¬Í¼Æ¬¸ß¶È
-	String ImgUrl;// Í¼Æ¬µØÖ·
+	int mScreenWidth, mImageHeight;// ï¿½ï¿½Ä»ï¿½ï¿½È£ï¿½Í¼Æ¬ï¿½ß¶ï¿½
+	String ImgUrl;// Í¼Æ¬ï¿½ï¿½Ö·
 	private View loadingview;
 	private Dialog dialog;
 
@@ -98,7 +98,7 @@ public class GetImageTask extends AsyncTask<String, Void, Bitmap> {
 			dialog.dismiss();
 		}
 		mImageAndTextView.setImageBitmap(result);
-		mImageAndTextView.postInvalidate(0, 0, mScreenWidth, mImageHeight + 30); // Ö»¸üÐÂÉÔ±ÈÍ¼Æ¬´óÒ»Ð©µÄÇøÓò
+		mImageAndTextView.postInvalidate(0, 0, mScreenWidth, mImageHeight + 30); // Ö»ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½Í¼Æ¬ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		super.onPostExecute(result);
 	}
 }

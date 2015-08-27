@@ -1,4 +1,4 @@
-package com.xyg.mydemo.weight;
+package com.xyggun.mydemo.weight;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -20,86 +20,86 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
-import com.xyg.mydemo.R;
-import com.xyg.mydemo.common.ImageLoader;
-import com.xyg.mydemo.common.LoadImageTask;
-import com.xyg.mydemo.util.Images;
+import com.xyggun.mydemo.R;
+import com.xyggun.mydemo.common.ImageLoader;
+import com.xyggun.mydemo.common.LoadImageTask;
+import com.xyggun.mydemo.util.Images;
 
 @SuppressLint("ClickableViewAccessibility")
 public class MyScrollView extends ScrollView implements OnTouchListener {
 
     /**
-     * Ã¿Ò³Òª¼ÓÔØµÄÍ¼Æ¬ÊýÁ¿
+     * Ã¿Ò³Òªï¿½ï¿½ï¿½Øµï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
      */
     public static final int PAGE_SIZE = 15;
 
     /**
-     * ¼ÇÂ¼µ±Ç°ÒÑ¼ÓÔØµ½µÚ¼¸Ò³
+     * ï¿½ï¿½Â¼ï¿½ï¿½Ç°ï¿½Ñ¼ï¿½ï¿½Øµï¿½ï¿½Ú¼ï¿½Ò³
      */
     private int page;
     
     /**
-     * µÚÒ»ÁÐµÄ²¼¾Ö
+     * ï¿½ï¿½Ò»ï¿½ÐµÄ²ï¿½ï¿½ï¿½
      */
     private LinearLayout firstColumn;
 
     /**
-     * µÚ¶þÁÐµÄ²¼¾Ö
+     * ï¿½Ú¶ï¿½ï¿½ÐµÄ²ï¿½ï¿½ï¿½
      */
     private LinearLayout secondColumn;
 
     /**
-     * µÚÈýÁÐµÄ²¼¾Ö
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ²ï¿½ï¿½ï¿½
      */
     private LinearLayout thirdColumn;
 
     /**
-     * ÊÇ·ñÒÑ¼ÓÔØ¹ýÒ»´Îlayout£¬ÕâÀïonLayoutÖÐµÄ³õÊ¼»¯Ö»Ðè¼ÓÔØÒ»´Î
+     * ï¿½Ç·ï¿½ï¿½Ñ¼ï¿½ï¿½Ø¹ï¿½Ò»ï¿½ï¿½layoutï¿½ï¿½ï¿½ï¿½ï¿½ï¿½onLayoutï¿½ÐµÄ³ï¿½Ê¼ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
      */
     private boolean loadOnce;
 
     /**
-     * ¶ÔÍ¼Æ¬½øÐÐ¹ÜÀíµÄ¹¤¾ßÀà
+     * ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private ImageLoader imageLoader;
 
 
     /**
-     * ¼ÇÂ¼ËùÓÐÕýÔÚÏÂÔØ»òµÈ´ýÏÂÔØµÄÈÎÎñ¡£
+     * ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø»ï¿½È´ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private static Set<LoadImageTask> taskCollection;
 
     /**
-     * MyScrollViewÏÂµÄÖ±½Ó×Ó²¼¾Ö¡£
+     * MyScrollViewï¿½Âµï¿½Ö±ï¿½ï¿½ï¿½Ó²ï¿½ï¿½Ö¡ï¿½
      */
     private static View scrollLayout;
 
     /**
-     * MyScrollView²¼¾ÖµÄ¸ß¶È¡£
+     * MyScrollViewï¿½ï¿½ï¿½ÖµÄ¸ß¶È¡ï¿½
      */
     private static int scrollViewHeight;
 
     /**
-     * ¼ÇÂ¼ÉÏ´¹Ö±·½ÏòµÄ¹ö¶¯¾àÀë¡£
+     * ï¿½ï¿½Â¼ï¿½Ï´ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¡£
      */
     private static int lastScrollY = -1;
 
     /**
-     * ¼ÇÂ¼ËùÓÐ½çÃæÉÏµÄÍ¼Æ¬£¬ÓÃÒÔ¿ÉÒÔËæÊ±¿ØÖÆ¶ÔÍ¼Æ¬µÄÊÍ·Å¡£
+     * ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ð½ï¿½ï¿½ï¿½ï¿½Ïµï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Æ¶ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Í·Å¡ï¿½
      */
     private List<ImageView> imageViewList = new ArrayList<ImageView>();
 
     /**
-     * ÔÚHandlerÖÐ½øÐÐÍ¼Æ¬¿É¼ûÐÔ¼ì²éµÄÅÐ¶Ï£¬ÒÔ¼°¼ÓÔØ¸ü¶àÍ¼Æ¬µÄ²Ù×÷¡£
+     * ï¿½ï¿½Handlerï¿½Ð½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½É¼ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Ð¶Ï£ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     private static Handler handler = new Handler() {
 
             public void handleMessage(android.os.Message msg) {
                     MyScrollView myScrollView = (MyScrollView) msg.obj;
                     int scrollY = myScrollView.getScrollY();
-                    // Èç¹ûµ±Ç°µÄ¹ö¶¯Î»ÖÃºÍÉÏ´ÎÏàÍ¬£¬±íÊ¾ÒÑÍ£Ö¹¹ö¶¯
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ä¹ï¿½ï¿½ï¿½Î»ï¿½Ãºï¿½ï¿½Ï´ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Í£Ö¹ï¿½ï¿½ï¿½ï¿½
                     if (scrollY == lastScrollY) {
-                            // µ±¹ö¶¯µÄ×îµ×²¿£¬²¢ÇÒµ±Ç°Ã»ÓÐÕýÔÚÏÂÔØµÄÈÎÎñÊ±£¬¿ªÊ¼¼ÓÔØÏÂÒ»Ò³µÄÍ¼Æ¬
+                            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½Ç°Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³ï¿½ï¿½Í¼Æ¬
                             if (scrollViewHeight + scrollY >= scrollLayout.getHeight()
                                             && taskCollection.isEmpty()) {
                                     myScrollView.loadMoreImages();
@@ -109,7 +109,7 @@ public class MyScrollView extends ScrollView implements OnTouchListener {
                             lastScrollY = scrollY;
                             Message message = new Message();
                             message.obj = myScrollView;
-                            // 5ºÁÃëºóÔÙ´Î¶Ô¹ö¶¯Î»ÖÃ½øÐÐÅÐ¶Ï
+                            // 5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù´Î¶Ô¹ï¿½ï¿½ï¿½Î»ï¿½Ã½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
                             handler.sendMessageDelayed(message, 5);
                     }
             };
@@ -117,7 +117,7 @@ public class MyScrollView extends ScrollView implements OnTouchListener {
     };
 
     /**
-     * MyScrollViewµÄ¹¹Ôìº¯Êý¡£
+     * MyScrollViewï¿½Ä¹ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½
      * 
      * @param context
      * @param attrs
@@ -130,7 +130,7 @@ public class MyScrollView extends ScrollView implements OnTouchListener {
     }
 
     /**
-     * ½øÐÐÒ»Ð©¹Ø¼üÐÔµÄ³õÊ¼»¯²Ù×÷£¬»ñÈ¡MyScrollViewµÄ¸ß¶È£¬ÒÔ¼°µÃµ½µÚÒ»ÁÐµÄ¿í¶ÈÖµ¡£²¢ÔÚÕâÀï¿ªÊ¼¼ÓÔØµÚÒ»Ò³µÄÍ¼Æ¬¡£
+     * ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½Ø¼ï¿½ï¿½ÔµÄ³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡MyScrollViewï¿½Ä¸ß¶È£ï¿½ï¿½Ô¼ï¿½ï¿½Ãµï¿½ï¿½ï¿½Ò»ï¿½ÐµÄ¿ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿ªÊ¼ï¿½ï¿½ï¿½Øµï¿½Ò»Ò³ï¿½ï¿½Í¼Æ¬ï¿½ï¿½
      */
     @SuppressLint("ClickableViewAccessibility")
 	@Override
@@ -148,7 +148,7 @@ public class MyScrollView extends ScrollView implements OnTouchListener {
     }
 
     /**
-     * ¼àÌýÓÃ»§µÄ´¥ÆÁÊÂ¼þ£¬Èç¹ûÓÃ»§ÊÖÖ¸Àë¿ªÆÁÄ»Ôò¿ªÊ¼½øÐÐ¹ö¶¯¼ì²â¡£
+     * ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Ö¸ï¿½ë¿ªï¿½ï¿½Ä»ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½â¡£
      */
     @SuppressLint("ClickableViewAccessibility")
 	@Override
@@ -162,14 +162,14 @@ public class MyScrollView extends ScrollView implements OnTouchListener {
     }
 
     /**
-     * ¿ªÊ¼¼ÓÔØÏÂÒ»Ò³µÄÍ¼Æ¬£¬Ã¿ÕÅÍ¼Æ¬¶¼»á¿ªÆôÒ»¸öÒì²½Ïß³ÌÈ¥ÏÂÔØ¡£
+     * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ã¿ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½á¿ªï¿½ï¿½Ò»ï¿½ï¿½ï¿½ì²½ï¿½ß³ï¿½È¥ï¿½ï¿½ï¿½Ø¡ï¿½
      */
     public void loadMoreImages() {
             if (hasSDCard()) {
                     int startIndex = page * PAGE_SIZE;
                     int endIndex = page * PAGE_SIZE + PAGE_SIZE;
                     if (startIndex < Images.imageUrls.length) {
-                            Toast.makeText(getContext(), "ÕýÔÚ¼ÓÔØ...", Toast.LENGTH_SHORT)
+                            Toast.makeText(getContext(), "ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½ï¿½...", Toast.LENGTH_SHORT)
                                             .show();
                             if (endIndex > Images.imageUrls.length) {
                                     endIndex = Images.imageUrls.length;
@@ -181,16 +181,16 @@ public class MyScrollView extends ScrollView implements OnTouchListener {
                             }
                             page++;
                     } else {
-                            Toast.makeText(getContext(), "ÒÑÃ»ÓÐ¸ü¶àÍ¼Æ¬", Toast.LENGTH_SHORT)
+                            Toast.makeText(getContext(), "ï¿½ï¿½Ã»ï¿½Ð¸ï¿½ï¿½ï¿½Í¼Æ¬", Toast.LENGTH_SHORT)
                                             .show();
                     }
             } else {
-                    Toast.makeText(getContext(), "Î´·¢ÏÖSD¿¨", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Î´ï¿½ï¿½ï¿½ï¿½SDï¿½ï¿½", Toast.LENGTH_SHORT).show();
             }
     }
 
     /**
-     * ±éÀúimageViewListÖÐµÄÃ¿ÕÅÍ¼Æ¬£¬¶ÔÍ¼Æ¬µÄ¿É¼ûÐÔ½øÐÐ¼ì²é£¬Èç¹ûÍ¼Æ¬ÒÑ¾­Àë¿ªÆÁÄ»¿É¼û·¶Î§£¬Ôò½«Í¼Æ¬Ìæ»»³ÉÒ»ÕÅ¿ÕÍ¼¡£
+     * ï¿½ï¿½ï¿½ï¿½imageViewListï¿½Ðµï¿½Ã¿ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Ä¿É¼ï¿½ï¿½Ô½ï¿½ï¿½Ð¼ï¿½é£¬ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Ñ¾ï¿½ï¿½ë¿ªï¿½ï¿½Ä»ï¿½É¼ï¿½ï¿½ï¿½Î§ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½æ»»ï¿½ï¿½Ò»ï¿½Å¿ï¿½Í¼ï¿½ï¿½
      */
     public void checkVisibility() {
             for (int i = 0; i < imageViewList.size(); i++) {
@@ -215,9 +215,9 @@ public class MyScrollView extends ScrollView implements OnTouchListener {
     }
 
     /**
-     * ÅÐ¶ÏÊÖ»úÊÇ·ñÓÐSD¿¨¡£
+     * ï¿½Ð¶ï¿½ï¿½Ö»ï¿½ï¿½Ç·ï¿½ï¿½ï¿½SDï¿½ï¿½ï¿½ï¿½
      * 
-     * @return ÓÐSD¿¨·µ»Øtrue£¬Ã»ÓÐ·µ»Øfalse¡£
+     * @return ï¿½ï¿½SDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½trueï¿½ï¿½Ã»ï¿½Ð·ï¿½ï¿½ï¿½falseï¿½ï¿½
      */
     private boolean hasSDCard() {
             return Environment.MEDIA_MOUNTED.equals(Environment

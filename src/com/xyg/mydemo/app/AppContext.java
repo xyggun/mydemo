@@ -1,4 +1,4 @@
-package com.xyg.mydemo.app;
+package com.xyggun.mydemo.app;
 
 import android.app.Application;
 

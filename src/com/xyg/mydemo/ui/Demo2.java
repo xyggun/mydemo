@@ -1,11 +1,11 @@
-package com.xyg.mydemo.ui;
+package com.xyggun.mydemo.ui;
 
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.widget.ImageView;
 
-import com.xyg.mydemo.R;
-import com.xyg.mydemo.common.GetImageTaskOnImageView;
+import com.xyggun.mydemo.R;
+import com.xyggun.mydemo.common.GetImageTaskOnImageView;
 
 public class Demo2 extends BaseActivity {
 	ImageView imgViewTest;
@@ -26,8 +26,8 @@ public class Demo2 extends BaseActivity {
 		int scWidth=0;
 		int scHeight=0;
 		DisplayMetrics dm = new DisplayMetrics();getWindowManager().getDefaultDisplay().getMetrics(dm);
-		scWidth = dm.widthPixels;//¿í¶È
-		scHeight = dm.heightPixels ;//¸ß¶È
+		scWidth = dm.widthPixels;//ï¿½ï¿½ï¿½
+		scHeight = dm.heightPixels ;//ï¿½ß¶ï¿½
 		new GetImageTaskOnImageView(this,imgViewTest, "http://img.daimg.com/uploads/allimg/140923/3-140923001916.jpg",scWidth,scHeight).execute("");
 	}
 }

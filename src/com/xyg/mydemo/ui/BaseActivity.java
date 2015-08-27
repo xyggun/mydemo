@@ -1,11 +1,11 @@
-package com.xyg.mydemo.ui;
+package com.xyggun.mydemo.ui;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.xyg.mydemo.R;
-import com.xyg.mydemo.app.AppContext;
+import com.xyggun.mydemo.R;
+import com.xyggun.mydemo.app.AppContext;
 
 public class BaseActivity extends Activity {
 	

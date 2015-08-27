@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.xyg.mydemo.StartActivity"
+            android:name="com.xyggun.mydemo.StartActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,11 +27,11 @@
             </intent-filter>
         </activity>
         
-       	<activity android:name="com.xyg.mydemo.ui.Main"></activity>
-        <activity android:name="com.xyg.mydemo.ui.Demo1"></activity>
-       	<activity android:name="com.xyg.mydemo.ui.Demo2"></activity>
-       	<activity android:name="com.xyg.mydemo.ui.Demo3"></activity>
-       	<activity android:name="com.xyg.mydemo.ui.Demo4"></activity>
+       	<activity android:name="com.xyggun.mydemo.ui.Main"></activity>
+        <activity android:name="com.xyggun.mydemo.ui.Demo1"></activity>
+       	<activity android:name="com.xyggun.mydemo.ui.Demo2"></activity>
+       	<activity android:name="com.xyggun.mydemo.ui.Demo3"></activity>
+       	<activity android:name="com.xyggun.mydemo.ui.Demo4"></activity>
     </application>
 
 </manifest>

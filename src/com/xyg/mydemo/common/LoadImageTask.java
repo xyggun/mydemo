@@ -1,4 +1,4 @@
-package com.xyg.mydemo.common;
+package com.xyggun.mydemo.common;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -19,10 +19,10 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 
-import com.xyg.mydemo.R;
+import com.xyggun.mydemo.R;
 
 /**
- * Òì²½ÏÂÔØÍ¼Æ¬µÄÈÎÎñ¡£
+ * ï¿½ì²½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 
  * @author guolin
  */
@@ -31,62 +31,62 @@ public class LoadImageTask extends AsyncTask<String, Void, Bitmap> {
 		private static Context context;
 		
 		/**
-	     * ¼ÇÂ¼ËùÓÐÕýÔÚÏÂÔØ»òµÈ´ýÏÂÔØµÄÈÎÎñ¡£
+	     * ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø»ï¿½È´ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½
 	     */
 	    private static Set<LoadImageTask> taskCollection;
 	    
 		/**
-	     * ¶ÔÍ¼Æ¬½øÐÐ¹ÜÀíµÄ¹¤¾ßÀà
+	     * ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½
 	     */
 	    private ImageLoader imageLoader;
 	    
 	    /**
-	     * Ã¿Ò»ÁÐµÄ¿í¶È
+	     * Ã¿Ò»ï¿½ÐµÄ¿ï¿½ï¿½
 	     */
 	    private int columnWidth;
 
 	    /**
-	     * µ±Ç°µÚÒ»ÁÐµÄ¸ß¶È
+	     * ï¿½ï¿½Ç°ï¿½ï¿½Ò»ï¿½ÐµÄ¸ß¶ï¿½
 	     */
 	    private int firstColumnHeight;
 
 	    /**
-	     * µ±Ç°µÚ¶þÁÐµÄ¸ß¶È
+	     * ï¿½ï¿½Ç°ï¿½Ú¶ï¿½ï¿½ÐµÄ¸ß¶ï¿½
 	     */
 	    private int secondColumnHeight;
 
 	    /**
-	     * µ±Ç°µÚÈýÁÐµÄ¸ß¶È
+	     * ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ¸ß¶ï¿½
 	     */
 	    private int thirdColumnHeight;
 	
 	    /**
-	     * µÚÒ»ÁÐµÄ²¼¾Ö
+	     * ï¿½ï¿½Ò»ï¿½ÐµÄ²ï¿½ï¿½ï¿½
 	     */
 	    private LinearLayout firstColumn;
 
 	    /**
-	     * µÚ¶þÁÐµÄ²¼¾Ö
+	     * ï¿½Ú¶ï¿½ï¿½ÐµÄ²ï¿½ï¿½ï¿½
 	     */
 	    private LinearLayout secondColumn;
 
 	    /**
-	     * µÚÈýÁÐµÄ²¼¾Ö
+	     * ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ²ï¿½ï¿½ï¿½
 	     */
 	    private LinearLayout thirdColumn;
 	    
         /**
-         * Í¼Æ¬µÄURLµØÖ·
+         * Í¼Æ¬ï¿½ï¿½URLï¿½ï¿½Ö·
          */
         private String mImageUrl;
 
         /**
-         * ¿ÉÖØ¸´Ê¹ÓÃµÄImageView
+         * ï¿½ï¿½ï¿½Ø¸ï¿½Ê¹ï¿½Ãµï¿½ImageView
          */
         private ImageView mImageView;
         
         /**
-         * ¼ÇÂ¼ËùÓÐ½çÃæÉÏµÄÍ¼Æ¬£¬ÓÃÒÔ¿ÉÒÔËæÊ±¿ØÖÆ¶ÔÍ¼Æ¬µÄÊÍ·Å¡£
+         * ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ð½ï¿½ï¿½ï¿½ï¿½Ïµï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Æ¶ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Í·Å¡ï¿½
          */
         private List<ImageView> imageViewList = new ArrayList<ImageView>();        
 
@@ -100,7 +100,7 @@ public class LoadImageTask extends AsyncTask<String, Void, Bitmap> {
         }
 
         /**
-         * ½«¿ÉÖØ¸´Ê¹ÓÃµÄImageView´«Èë
+         * ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½Ê¹ï¿½Ãµï¿½ImageViewï¿½ï¿½ï¿½ï¿½
          * 
          * @param imageView
          */
@@ -138,11 +138,11 @@ public class LoadImageTask extends AsyncTask<String, Void, Bitmap> {
         }
 
         /**
-         * ¸ù¾Ý´«ÈëµÄURL£¬¶ÔÍ¼Æ¬½øÐÐ¼ÓÔØ¡£Èç¹ûÕâÕÅÍ¼Æ¬ÒÑ¾­´æÔÚÓÚSD¿¨ÖÐ£¬ÔòÖ±½Ó´ÓSD¿¨Àï¶ÁÈ¡£¬·ñÔò¾Í´ÓÍøÂçÉÏÏÂÔØ¡£
+         * ï¿½ï¿½ï¿½Ý´ï¿½ï¿½ï¿½ï¿½URLï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½Ø¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½SDï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½Ö±ï¿½Ó´ï¿½SDï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¡ï¿½
          * 
          * @param imageUrl
-         *            Í¼Æ¬µÄURLµØÖ·
-         * @return ¼ÓÔØµ½ÄÚ´æµÄÍ¼Æ¬¡£
+         *            Í¼Æ¬ï¿½ï¿½URLï¿½ï¿½Ö·
+         * @return ï¿½ï¿½ï¿½Øµï¿½ï¿½Ú´ï¿½ï¿½Í¼Æ¬ï¿½ï¿½
          */
         private Bitmap loadImage(String imageUrl) {
                 File imageFile = new File(getImagePath(imageUrl));
@@ -161,14 +161,14 @@ public class LoadImageTask extends AsyncTask<String, Void, Bitmap> {
         }
 
         /**
-         * ÏòImageViewÖÐÌí¼ÓÒ»ÕÅÍ¼Æ¬
+         * ï¿½ï¿½ImageViewï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Í¼Æ¬
          * 
          * @param bitmap
-         *            ´ýÌí¼ÓµÄÍ¼Æ¬
+         *            ï¿½ï¿½ï¿½ï¿½Óµï¿½Í¼Æ¬
          * @param imageWidth
-         *            Í¼Æ¬µÄ¿í¶È
+         *            Í¼Æ¬ï¿½Ä¿ï¿½ï¿½
          * @param imageHeight
-         *            Í¼Æ¬µÄ¸ß¶È
+         *            Í¼Æ¬ï¿½Ä¸ß¶ï¿½
          */
         private void addImage(Bitmap bitmap, int imageWidth, int imageHeight) {
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
@@ -188,11 +188,11 @@ public class LoadImageTask extends AsyncTask<String, Void, Bitmap> {
         }
 
         /**
-         * ÕÒµ½´ËÊ±Ó¦¸ÃÌí¼ÓÍ¼Æ¬µÄÒ»ÁÐ¡£Ô­Ôò¾ÍÊÇ¶ÔÈýÁÐµÄ¸ß¶È½øÐÐÅÐ¶Ï£¬µ±Ç°¸ß¶È×îÐ¡µÄÒ»ÁÐ¾ÍÊÇÓ¦¸ÃÌí¼ÓµÄÒ»ÁÐ¡£
+         * ï¿½Òµï¿½ï¿½ï¿½Ê±Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ò»ï¿½Ð¡ï¿½Ô­ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ÐµÄ¸ß¶È½ï¿½ï¿½ï¿½ï¿½Ð¶Ï£ï¿½ï¿½ï¿½Ç°ï¿½ß¶ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½Ò»ï¿½Ð¾ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Óµï¿½Ò»ï¿½Ð¡ï¿½
          * 
          * @param imageView
          * @param imageHeight
-         * @return Ó¦¸ÃÌí¼ÓÍ¼Æ¬µÄÒ»ÁÐ
+         * @return Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ò»ï¿½ï¿½
          */
         private LinearLayout findColumnToAdd(ImageView imageView,
                         int imageHeight) {
@@ -226,10 +226,10 @@ public class LoadImageTask extends AsyncTask<String, Void, Bitmap> {
         }
 
         /**
-         * ½«Í¼Æ¬ÏÂÔØµ½SD¿¨»º´æÆðÀ´¡£
+         * ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Øµï¿½SDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
          * 
          * @param imageUrl
-         *            Í¼Æ¬µÄURLµØÖ·¡£
+         *            Í¼Æ¬ï¿½ï¿½URLï¿½ï¿½Ö·ï¿½ï¿½
          */
         private void downloadImage(String imageUrl) {
                 HttpURLConnection con = null;
@@ -281,11 +281,11 @@ public class LoadImageTask extends AsyncTask<String, Void, Bitmap> {
         }
 
         /**
-         * »ñÈ¡Í¼Æ¬µÄ±¾µØ´æ´¢Â·¾¶¡£
+         * ï¿½ï¿½È¡Í¼Æ¬ï¿½Ä±ï¿½ï¿½Ø´æ´¢Â·ï¿½ï¿½ï¿½ï¿½
          * 
          * @param imageUrl
-         *            Í¼Æ¬µÄURLµØÖ·¡£
-         * @return Í¼Æ¬µÄ±¾µØ´æ´¢Â·¾¶¡£
+         *            Í¼Æ¬ï¿½ï¿½URLï¿½ï¿½Ö·ï¿½ï¿½
+         * @return Í¼Æ¬ï¿½Ä±ï¿½ï¿½Ø´æ´¢Â·ï¿½ï¿½ï¿½ï¿½
          */
         private String getImagePath(String imageUrl) {
                 int lastSlashIndex = imageUrl.lastIndexOf("/");

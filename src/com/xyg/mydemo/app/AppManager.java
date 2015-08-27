@@ -1,4 +1,4 @@
-package com.xyg.mydemo.app;
+package com.xyggun.mydemo.app;
 
 import java.util.Stack;
 
@@ -7,7 +7,7 @@ import android.app.ActivityManager;
 import android.content.Context;
 
 /**
- * Ó¦ÓÃ³ÌÐòActivity¹ÜÀíÀà£ºÓÃÓÚActivity¹ÜÀíºÍÓ¦ÓÃ³ÌÐòÍË³ö
+ * Ó¦ï¿½Ã³ï¿½ï¿½ï¿½Activityï¿½ï¿½ï¿½ï¿½ï¿½à£ºï¿½ï¿½ï¿½ï¿½Activityï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ã³ï¿½ï¿½ï¿½ï¿½Ë³ï¿½
  * @author liux (http://my.oschina.net/liux)
  * @version 1.0
  * @created 2012-3-21
@@ -19,7 +19,7 @@ public class AppManager {
 	
 	private AppManager(){}
 	/**
-	 * µ¥Ò»ÊµÀý
+	 * ï¿½ï¿½Ò»Êµï¿½ï¿½
 	 */
 	public static AppManager getAppManager(){
 		if(instance==null){
@@ -28,7 +28,7 @@ public class AppManager {
 		return instance;
 	}
 	/**
-	 * Ìí¼ÓActivityµ½¶ÑÕ»
+	 * ï¿½ï¿½ï¿½Activityï¿½ï¿½ï¿½ï¿½Õ»
 	 */
 	public void addActivity(Activity activity){
 		if(activityStack==null){
@@ -37,21 +37,21 @@ public class AppManager {
 		activityStack.add(activity);
 	}
 	/**
-	 * »ñÈ¡µ±Ç°Activity£¨¶ÑÕ»ÖÐ×îºóÒ»¸öÑ¹ÈëµÄ£©
+	 * ï¿½ï¿½È¡ï¿½ï¿½Ç°Activityï¿½ï¿½ï¿½ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ñ¹ï¿½ï¿½Ä£ï¿½
 	 */
 	public Activity currentActivity(){
 		Activity activity=activityStack.lastElement();
 		return activity;
 	}
 	/**
-	 * ½áÊøµ±Ç°Activity£¨¶ÑÕ»ÖÐ×îºóÒ»¸öÑ¹ÈëµÄ£©
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Activityï¿½ï¿½ï¿½ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ñ¹ï¿½ï¿½Ä£ï¿½
 	 */
 	public void finishActivity(){
 		Activity activity=activityStack.lastElement();
 		finishActivity(activity);
 	}
 	/**
-	 * ½áÊøÖ¸¶¨µÄActivity
+	 * ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Activity
 	 */
 	public void finishActivity(Activity activity){
 		if(activity!=null){
@@ -61,7 +61,7 @@ public class AppManager {
 		}
 	}
 	/**
-	 * ½áÊøÖ¸¶¨ÀàÃûµÄActivity
+	 * ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Activity
 	 */
 	public void finishActivity(Class<?> cls){
 		for (Activity activity : activityStack) {
@@ -71,7 +71,7 @@ public class AppManager {
 		}
 	}
 	/**
-	 * ½áÊøËùÓÐActivity
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Activity
 	 */
 	public void finishAllActivity(){
 		for (int i = 0, size = activityStack.size(); i < size; i++){
@@ -82,7 +82,7 @@ public class AppManager {
 		activityStack.clear();
 	}
 	/**
-	 * ÍË³öÓ¦ÓÃ³ÌÐò
+	 * ï¿½Ë³ï¿½Ó¦ï¿½Ã³ï¿½ï¿½ï¿½
 	 */
 	@SuppressWarnings("deprecation")
 	public void AppExit(Context context) {

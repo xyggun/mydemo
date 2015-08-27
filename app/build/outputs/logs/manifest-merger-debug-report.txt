@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:2:1-37:12
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:2:1-174:12
 	package
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:3:5-29
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -18,7 +18,8 @@ ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManife
 uses-sdk
 ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:7:5-9:41
 MERGED from [mydemo:baselibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:20.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml:16:5-42
+MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
+MERGED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml
@@ -27,59 +28,330 @@ MERGED from [com.android.support:support-v4:20.0.0] /Users/xyggun/AndroidStudioP
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:8:9-35
 		INJECTED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:11:5-81
+permission#com.xyggun.mydemo.permission.JPUSH_MESSAGE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:12:5-14:47
+	android:protectionLevel
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:14:9-44
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:11:22-78
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:13:9-66
+uses-permission#com.xyggun.mydemo.permission.JPUSH_MESSAGE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:17:5-82
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:17:22-79
+uses-permission#android.permission.RECEIVE_USER_PRESENT
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:18:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:12:5-67
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:19:5-67
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:12:22-64
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:19:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:20:5-68
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:20:22-65
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:21:5-75
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:21:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:22:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:23:5-80
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:23:22-77
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:24:5-66
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:24:22-63
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:25:5-84
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:25:22-81
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:26:22-76
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:27:5-73
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:27:22-70
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:30:5-81
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:30:22-78
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:31:5-76
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:31:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:32:5-76
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:32:22-73
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:33:5-79
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:33:22-76
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:34:5-89
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:34:22-86
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:35:5-79
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:35:22-76
 application
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:15:5-35:19
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:38:5-172:19
 MERGED from [mydemo:baselibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/AndroidManifest.xml:11:5-14:19
-MERGED from [com.android.support:support-v4:20.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml:17:5-19
+MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
+MERGED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:11:5-14:19
 	android:label
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:18:9-41
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:41:9-41
 	android:allowBackup
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:39:9-35
 	android:icon
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:17:9-45
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:40:9-45
 	android:theme
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:19:9-40
-activity#com.xyg.mydemo.StartActivity
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:20:9-28:20
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:42:9-40
+activity#com.xyggun.mydemo.StartActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:43:9-51:20
 	android:label
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:22:13-45
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:45:13-45
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:21:13-56
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:44:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:23:13-27:29
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:46:13-50:29
 action#android.intent.action.MAIN
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:24:17-69
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:47:17-69
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:47:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:26:17-77
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:49:17-77
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:26:27-74
-activity#com.xyg.mydemo.ui.MainActivity
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:30:9-62
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:49:27-74
+activity#com.xyggun.mydemo.ui.MainActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:53:9-62
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:30:19-50
-activity#com.xyg.mydemo.ui.Demo1Activity
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:31:9-63
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:53:19-50
+activity#com.xyggun.mydemo.ui.Demo1Activity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:54:9-63
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:31:19-51
-activity#com.xyg.mydemo.ui.Demo2Activity
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:32:9-63
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:54:19-51
+activity#com.xyggun.mydemo.ui.Demo2Activity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:55:9-63
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:32:19-51
-activity#com.xyg.mydemo.ui.Demo3Activity
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:33:9-63
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:55:19-51
+activity#com.xyggun.mydemo.ui.Demo3Activity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:56:9-63
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:33:19-51
-activity#com.xyg.mydemo.ui.Demo4Activity
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:34:9-63
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:56:19-51
+activity#com.xyggun.mydemo.ui.Demo4Activity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:57:9-63
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:34:19-51
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:57:19-51
+activity#com.xyggun.mydemo.jpush.JPushMainActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:58:9-70
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:58:19-58
+activity#com.xyggun.mydemo.jpush.PushSetActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:61:9-101
+	android:label
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:61:57-89
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:61:19-56
+activity#com.xyggun.mydemo.jpush.SettingActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:63:9-101
+	android:label
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:63:57-89
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:63:19-56
+activity#com.xyggun.mydemo.jpush.TestActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:65:9-70:20
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:65:19-53
+intent-filter#jpush.testAction+jpush.testCategory
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:66:13-69:29
+action#jpush.testAction
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:67:17-59
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:67:25-56
+category#jpush.testCategory
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:68:17-63
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:68:27-60
+activity#cn.jpush.android.ui.PushActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:74:9-83:20
+	android:exported
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:77:13-37
+	android:configChanges
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:76:13-63
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:75:13-60
+intent-filter#android.intent.category.DEFAULT+cn.jpush.android.ui.PushActivity+com.xyggun.mydemo
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:78:13-82:29
+action#cn.jpush.android.ui.PushActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:79:17-75
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:79:25-72
+category#android.intent.category.DEFAULT
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:80:17-76
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:80:27-73
+category#com.xyggun.mydemo
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:81:17-62
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:81:27-59
+service#cn.jpush.android.service.DownloadService
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:85:9-89:19
+	android:enabled
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:87:13-35
+	android:exported
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:88:13-37
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:86:13-68
+service#cn.jpush.android.service.PushService
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:93:9-104:19
+	android:enabled
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:95:13-35
+	android:exported
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:96:13-37
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:94:13-64
+intent-filter#cn.jpush.android.intent.PUSH_TIME+cn.jpush.android.intent.PushService+cn.jpush.android.intent.REGISTER+cn.jpush.android.intent.REPORT
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:97:13-103:29
+action#cn.jpush.android.intent.REGISTER
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:98:17-75
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:98:25-72
+action#cn.jpush.android.intent.REPORT
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:99:17-73
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:99:25-70
+action#cn.jpush.android.intent.PushService
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:100:17-78
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:100:25-75
+action#cn.jpush.android.intent.PUSH_TIME
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:101:17-76
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:101:25-73
+service#cn.jpush.android.service.DaemonService
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:108:9-116:19
+	android:enabled
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:110:13-35
+	android:exported
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:111:13-36
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:109:13-66
+intent-filter#cn.jpush.android.intent.DaemonService+com.xyggun.mydemo
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:112:13-115:29
+action#cn.jpush.android.intent.DaemonService
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:113:17-80
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:113:25-77
+receiver#cn.jpush.android.service.PushReceiver
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:120:9-139:20
+	android:enabled
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:122:13-35
+	android:exported
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:123:13-37
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:121:13-65
+intent-filter#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+com.xyggun.mydemo
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:124:13-127:29
+	android:priority
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:124:28-51
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:125:17-94
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:125:25-91
+intent-filter#android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:128:13-131:29
+action#android.intent.action.USER_PRESENT
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:129:17-77
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:129:25-74
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:130:17-79
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:130:25-76
+intent-filter#android.intent.action.PACKAGE_ADDED+android.intent.action.PACKAGE_REMOVED
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:133:13-137:29
+action#android.intent.action.PACKAGE_ADDED
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:134:17-78
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:134:25-75
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:135:17-80
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:135:25-77
+data
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:136:17-50
+	android:scheme
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:136:23-47
+receiver#cn.jpush.android.service.AlarmReceiver
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:143:9-75
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:143:19-72
+receiver#com.xyggun.mydemo.jpush.JPushReceiver
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:146:9-158:20
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:147:13-48
+intent-filter#cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK+cn.jpush.android.intent.CONNECTION+cn.jpush.android.intent.MESSAGE_RECEIVED+cn.jpush.android.intent.NOTIFICATION_OPENED+cn.jpush.android.intent.NOTIFICATION_RECEIVED+cn.jpush.android.intent.REGISTRATION+cn.jpush.android.intent.UNREGISTRATION+com.xyggun.mydemo
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:148:13-157:29
+action#cn.jpush.android.intent.REGISTRATION
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:149:17-79
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:149:25-76
+action#cn.jpush.android.intent.UNREGISTRATION
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:150:17-81
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:150:25-78
+action#cn.jpush.android.intent.MESSAGE_RECEIVED
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:151:17-83
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:151:25-80
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:152:17-88
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:152:25-85
+action#cn.jpush.android.intent.NOTIFICATION_OPENED
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:153:17-86
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:153:25-83
+action#cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:154:17-91
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:154:25-88
+action#cn.jpush.android.intent.CONNECTION
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:155:17-77
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:155:25-74
+meta-data#JPUSH_CHANNEL
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:162:9-84
+	android:value
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:162:49-82
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:162:20-48
+meta-data#JPUSH_APPKEY
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:164:9-91
+	android:value
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:164:48-88
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:164:20-47
+service#com.baidu.location.f
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:167:9-168:19
+	android:enabled
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:167:54-76
+	android:process
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:167:77-102
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:167:18-53
+meta-data#com.baidu.lbsapi.API_KEY
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:171:9-103
+	android:value
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:171:60-100
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:171:20-59

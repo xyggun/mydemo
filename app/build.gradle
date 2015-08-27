@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.0"
 
     defaultConfig {
-        applicationId "com.xyg.mydemo"
+        applicationId "com.xyggun.mydemo"
         minSdkVersion 15
         targetSdkVersion 20
         versionCode 1
@@ -18,9 +18,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
+    sourceSets{
+        main{
+            jniLibs.srcDir(['libs'])
+        }
+    }
 }
 
 dependencies {
-    compile files('libs/GifView.jar')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':baselibrary')
+    compile project(':baidumaplibrary')
 }

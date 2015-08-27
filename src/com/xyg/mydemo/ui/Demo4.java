@@ -1,8 +1,8 @@
-package com.xyg.mydemo.ui;
+package com.xyggun.mydemo.ui;
 
 import android.os.Bundle;
 
-import com.xyg.mydemo.R;
+import com.xyggun.mydemo.R;
 
 public class Demo4 extends BaseActivity {
 

@@ -1,19 +1,19 @@
-package com.xyg.mydemo.app;
+package com.xyggun.mydemo.app;
 
 import android.content.Context;
 import android.content.Intent;
 
-import com.xyg.mydemo.ui.Demo1;
-import com.xyg.mydemo.ui.Demo2;
-import com.xyg.mydemo.ui.Demo3;
-import com.xyg.mydemo.ui.Demo4;
+import com.xyggun.mydemo.ui.Demo1;
+import com.xyggun.mydemo.ui.Demo2;
+import com.xyggun.mydemo.ui.Demo3;
+import com.xyggun.mydemo.ui.Demo4;
 
 /**
- * ¼òµ¥Ò³ÃæÌø×ª¿ØÖÆÀà UrlTitle ¶ÔÓ¦ÓÚÒ³ÉÏÏÔÊ¾µÄtitle UrlActivity ¶ÔÓ¦Ð´ËÀµÄÌø×ªÁ´½Ó
+ * ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ UrlTitle ï¿½ï¿½Ó¦ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½title UrlActivity ï¿½ï¿½Ó¦Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
  * */
 public class AppRedirectUrl {
 	private static Context context;
-	public final static String[] UrlTitle = { "Ê¹ÓÃ AsyncTask À´ÏÂÔØÍ¼Æ¬", "Ê¹ÓÃ AsyncTask À´ÏÂÔØÍ¼Æ¬2" , "gif¶¯»­ÏÔÊ¾" ,"ÆÙ²¼Á÷"};
+	public final static String[] UrlTitle = { "Ê¹ï¿½ï¿½ AsyncTask ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬", "Ê¹ï¿½ï¿½ AsyncTask ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬2" , "gifï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾" ,"ï¿½Ù²ï¿½ï¿½ï¿½"};
 	public static Intent[] UrlActivity = null;
 
 	public AppRedirectUrl(Context context) {
@@ -23,10 +23,10 @@ public class AppRedirectUrl {
 
 	private Intent[] getIntents() {
 		Intent[] UrlActivity = { 
-				new Intent(context, Demo1.class), // Ìø×ªµ½demo1
-				new Intent(context, Demo2.class), // Ìø×ªµ½demo2
-				new Intent(context, Demo3.class), // Ìø×ªµ½demo3
-				new Intent(context, Demo4.class), // Ìø×ªµ½demo3
+				new Intent(context, Demo1.class), // ï¿½ï¿½×ªï¿½ï¿½demo1
+				new Intent(context, Demo2.class), // ï¿½ï¿½×ªï¿½ï¿½demo2
+				new Intent(context, Demo3.class), // ï¿½ï¿½×ªï¿½ï¿½demo3
+				new Intent(context, Demo4.class), // ï¿½ï¿½×ªï¿½ï¿½demo3
 		};
 		return UrlActivity;
 	}

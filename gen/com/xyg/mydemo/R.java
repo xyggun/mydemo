@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.xyg.mydemo;
+package com.xyggun.mydemo;
 
 public final class R {
     public static final class anim {
@@ -313,7 +313,7 @@ containing a value of this type.
             0x7f010000
         };
         /**
-          <p>This symbol is the offset where the {@link com.xyg.mydemo.R.attr#src}
+          <p>This symbol is the offset where the {@link com.xyggun.mydemo.R.attr#src}
           attribute's value can be found in the {@link #GifView} array.
 
 

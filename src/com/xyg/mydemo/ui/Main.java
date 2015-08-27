@@ -1,4 +1,4 @@
-package com.xyg.mydemo.ui;
+package com.xyggun.mydemo.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +8,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.xyg.mydemo.R;
-import com.xyg.mydemo.app.AppRedirectUrl;
+import com.xyggun.mydemo.R;
+import com.xyggun.mydemo.app.AppRedirectUrl;
 
 public class Main extends BaseActivity {
 
@@ -21,17 +21,17 @@ public class Main extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		
-		System.out.println("½øÈë"+this.toString());
+		System.out.println("ï¿½ï¿½ï¿½ï¿½"+this.toString());
 			
 		getControls();
 		initView();
 	}
 
-	private void getControls() {//»ñÈ¡¿Ø¼þ
+	private void getControls() {//ï¿½ï¿½È¡ï¿½Ø¼ï¿½
 		lvMian=(ListView)findViewById(R.id.listview_main);
 	}
 
-	private void initView() {//¶Ô¿Ø¼þÌí¼ÓÊÂ¼þ£¬¼°£¨¼òµ¥Êý¾Ý³õÊ¼»¯[²»½¨Òé]£©
+	private void initView() {//ï¿½Ô¿Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½Ê¼ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½]ï¿½ï¿½
 		lvAdapter=new ArrayAdapter<String>(this,R.layout.main_list_item, AppRedirectUrl.UrlTitle);
 		lvMian.setAdapter(lvAdapter);
 		

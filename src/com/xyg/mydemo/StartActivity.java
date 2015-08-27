@@ -1,10 +1,10 @@
-package com.xyg.mydemo;
+package com.xyggun.mydemo;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.xyg.mydemo.ui.BaseActivity;
-import com.xyg.mydemo.ui.Main;
+import com.xyggun.mydemo.ui.BaseActivity;
+import com.xyggun.mydemo.ui.Main;
 
 public class StartActivity extends BaseActivity {
 
