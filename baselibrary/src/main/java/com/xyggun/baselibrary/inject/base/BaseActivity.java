@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.xyggun.baselibrary.R;
@@ -16,8 +18,13 @@ public class BaseActivity extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		InjectorFactory.injectBeforeSetContentView(this);// 放入试图前对注解解析
+
+		getWindow().setFlags(
+				WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
+				WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 	}
 
 	protected void onStart() {

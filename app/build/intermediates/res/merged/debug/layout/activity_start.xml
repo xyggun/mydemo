@@ -8,9 +8,10 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="60dp"
+        style="@style/text_style24"
+        android:textColor="@color/white"
         android:text="@string/app_start_txt"/>
     
 </RelativeLayout>

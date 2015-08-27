@@ -7,12 +7,15 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
-import com.xyggun.mydemo.app.AppRedirectUrl;
 import com.xyggun.baselibrary.inject.InjectView;
 import com.xyggun.baselibrary.inject.SetContentView;
 import com.xyggun.baselibrary.inject.base.BaseActivity;
 import com.xyggun.mydemo.R;
+import com.xyggun.mydemo.app.AppContext;
+import com.xyggun.mydemo.app.AppManager;
+import com.xyggun.mydemo.app.AppRedirectUrl;
 
 @SetContentView(R.layout.activity_main)
 public class MainActivity extends BaseActivity {
@@ -22,13 +25,29 @@ public class MainActivity extends BaseActivity {
 
     ArrayAdapter<String> lvAdapter;
 
+    public AppContext appContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         System.out.println("进入" + this.toString());
 
+        AppManager.getAppManager().addActivity(this);
+        appContext = (AppContext) this.getApplication();
+
+        initHeader();
         initView();
+    }
+
+    private void initHeader() {
+        TextView back = (TextView)findViewById(R.id.back_title);
+        back.setVisibility(View.INVISIBLE);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishs();
+            }
+        });
     }
 
     private void initView() { //对控件添加事件，及（简单数据初始化[不建议]）

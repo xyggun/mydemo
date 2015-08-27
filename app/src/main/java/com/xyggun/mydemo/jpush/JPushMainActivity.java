@@ -34,6 +34,7 @@ public class JPushMainActivity extends InstrumentedActivity implements OnClickLi
         setContentView(R.layout.activity_jpush_main);
         initView();
         registerMessageReceiver();  // used for receive msg
+
     }
 
     private void initView() {

@@ -12,6 +12,8 @@ import com.xyggun.baselibrary.inject.base.BaseActivity;
 import com.xyggun.baidumaplibrary.MyLocationListener;
 import com.xyggun.mydemo.ui.MainActivity;
 
+import cn.jpush.android.api.JPushInterface;
+
 public class StartActivity extends BaseActivity {
 
     public LocationClient mLocationClient = null;
@@ -63,6 +65,18 @@ public class StartActivity extends BaseActivity {
         option.SetIgnoreCacheException(false);//可选，默认false，设置是否收集CRASH信息，默认收集
         option.setEnableSimulateGps(false);//可选，默认false，设置是否需要过滤gps仿真结果，默认需要
         mLocationClient.setLocOption(option);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        JPushInterface.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        JPushInterface.onPause(this);
     }
 
     @Override

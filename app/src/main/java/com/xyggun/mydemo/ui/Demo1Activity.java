@@ -2,7 +2,9 @@ package com.xyggun.mydemo.ui;
 
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.xyggun.mydemo.R;
 import com.xyggun.mydemo.common.GetImageTask;
@@ -25,7 +27,18 @@ public class Demo1Activity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        initHeader();
         initView();
+    }
+
+    private void initHeader() {
+        TextView back = (TextView)findViewById(R.id.back_title);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishs();
+            }
+        });
     }
 
     private void initView() {

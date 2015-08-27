@@ -10,7 +10,7 @@
     <string name="border_bottom">Border Bottom</string>
     <string name="image_url">Image Url</string>
     <string name="header_view_img">header_view_img</string>
-	<string name="app_start_txt">MYdemo</string>
+	<string name="app_start_txt">MYDEMO\n\n\n\n</string>
     <string name="demo_text_str">demo</string>
     <string name="demo1_txt_str">使用 AsyncTask 来下载图片</string>
 
@@ -25,4 +25,12 @@
     <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
     <string name="logining">程序在后台执行, 请查看日志！</string>
     <string name="setting_su">设置成功</string>
+    <string name="title_activity_baidu_map_demo">BaiduMapDemoActivity</string>
+
+    <!--baidu地图-->
+    <string name="action__map_normal">普通地图</string>
+    <string name="action_map_satelltle">卫星地图</string>
+    <string name="action_map_traffic_enabled">交通图</string>
+    <string name="action_heat_map_enabled">热力图</string>
+    <string name="app_back_text">返回</string>
 </resources>

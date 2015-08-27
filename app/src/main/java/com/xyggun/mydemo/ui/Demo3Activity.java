@@ -3,6 +3,7 @@ package com.xyggun.mydemo.ui;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.TextView;
 
 import com.ant.liao.GifView;
 import com.ant.liao.GifView.GifImageType;
@@ -20,8 +21,19 @@ public class Demo3Activity extends BaseActivity implements OnClickListener{
 		
 		getControls();
 		initView();
+		initHeader();
 	}
-	
+
+	private void initHeader() {
+		TextView back = (TextView)findViewById(R.id.back_title);
+		back.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				finishs();
+			}
+		});
+	}
+
 	private void getControls() {
 		// 从xml中得到GifView的句柄
 		gifTest0=(GifView)findViewById(R.id.gif_test0);

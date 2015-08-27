@@ -2,7 +2,9 @@ package com.xyggun.mydemo.ui;
 
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.xyggun.mydemo.R;
 import com.xyggun.mydemo.common.GetImageTaskOnImageView;
@@ -22,10 +24,21 @@ public class Demo2Activity extends BaseActivity {
 
         getControls();
         initView();
+        initHeader();
     }
 
     private void getControls() {
         imgViewTest = (ImageView) findViewById(R.id.imgView_test);
+    }
+
+    private void initHeader() {
+        TextView back = (TextView)findViewById(R.id.back_title);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishs();
+            }
+        });
     }
 
     private void initView() {

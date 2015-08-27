@@ -4,7 +4,12 @@
     android:layout_height="fill_parent"
     tools:context="com.xyggun.mydemo.StartActivity" >
 
+    <include
+        android:id="@+id/header"
+        layout="@layout/view_header" />
+
     <TextView
+        android:layout_below="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/demo_text_str" />
