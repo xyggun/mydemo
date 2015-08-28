@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="20" />
+        android:minSdkVersion="10"
+        android:targetSdkVersion="23" />
 
     <!-- Required 自定义用来收发消息的相关权限 -->
     <permission
@@ -35,15 +35,15 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
     <application
+        android:name=".app.AppContext"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:name=".app.AppContext">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".StartActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -168,7 +168,11 @@
 
         <activity
             android:name=".baidumap.BaiduMapDemoActivity"
-            android:label="@string/title_activity_baidu_map_demo">
+            android:label="@string/title_activity_baidu_map_demo" >
+        </activity>
+        <activity
+            android:name=".pullzoomdemo.recyclerview.PullToZoomRecyclerActivity"
+            android:label="@string/title_activity_pull_to_zoom_recycler" >
         </activity>
     </application>
 

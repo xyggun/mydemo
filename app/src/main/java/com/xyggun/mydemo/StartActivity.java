@@ -18,7 +18,7 @@ public class StartActivity extends BaseActivity {
 
     public LocationClient mLocationClient = null;
     public BDLocationListener myListener = new MyLocationListener();
-
+    private Handler mHandler;
     public void onCreate() {
 
     }
@@ -35,7 +35,7 @@ public class StartActivity extends BaseActivity {
         initLocation();
         mLocationClient.start();
 
-        Handler mHandler = new Handler();
+        mHandler = new Handler();
         mHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -84,5 +84,7 @@ public class StartActivity extends BaseActivity {
         super.onDestroy();
         mLocationClient.stop();
         mLocationClient.unRegisterLocationListener(myListener);
+        mHandler.removeCallbacksAndMessages(null);
+        System.gc();
     }
 }

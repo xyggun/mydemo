@@ -20,8 +20,10 @@ public class BaseActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
+		AppManager.getAppManager().addActivity(this);
 		InjectorFactory.injectBeforeSetContentView(this);// 放入试图前对注解解析
 
+        // 设置沉浸式标题栏
 		getWindow().setFlags(
 				WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
 				WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -68,6 +70,7 @@ public class BaseActivity extends FragmentActivity {
 	protected void onDestroy() {
 		super.onDestroy();
 		InjectorFactory.Destory(this); // 垃圾回收
+		AppManager.getAppManager().finishActivity(this);
 	}
 
 	@Override

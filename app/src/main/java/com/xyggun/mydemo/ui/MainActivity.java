@@ -14,7 +14,6 @@ import com.xyggun.baselibrary.inject.SetContentView;
 import com.xyggun.baselibrary.inject.base.BaseActivity;
 import com.xyggun.mydemo.R;
 import com.xyggun.mydemo.app.AppContext;
-import com.xyggun.mydemo.app.AppManager;
 import com.xyggun.mydemo.app.AppRedirectUrl;
 
 @SetContentView(R.layout.activity_main)
@@ -32,7 +31,6 @@ public class MainActivity extends BaseActivity {
 
         System.out.println("进入" + this.toString());
 
-        AppManager.getAppManager().addActivity(this);
         appContext = (AppContext) this.getApplication();
 
         initHeader();

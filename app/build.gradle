@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 20
+    compileSdkVersion 23
     buildToolsVersion "23.0.0"
 
     defaultConfig {
@@ -28,6 +28,9 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.android.support:recyclerview-v7:22.0.+'
     compile project(':baselibrary')
     compile project(':baidumaplibrary')
+    compile project(':pullzoomviewlibrary')
 }

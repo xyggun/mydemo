@@ -1,1 +1,1 @@
-include ':app', ':baselibrary', ':baidumaplibrary'
+include ':app', ':baselibrary', ':baidumaplibrary', ':pullzoomviewlibrary'

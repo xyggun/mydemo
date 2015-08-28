@@ -12,6 +12,8 @@ import com.xyggun.baselibrary.inject.InjectView;
 import com.xyggun.baselibrary.inject.SetContentView;
 import com.xyggun.baselibrary.inject.base.BaseActivity;
 
+import java.lang.ref.WeakReference;
+
 /**
  * 异步加载网络图片
  * 2014-9-29 17：52 xiangyg
@@ -23,6 +25,8 @@ public class Demo1Activity extends BaseActivity {
     @InjectView(R.id.imgView_test)
     ImageView imgViewTest;
 
+    private ImageView imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +36,7 @@ public class Demo1Activity extends BaseActivity {
     }
 
     private void initHeader() {
-        TextView back = (TextView)findViewById(R.id.back_title);
+        TextView back = (TextView) findViewById(R.id.back_title);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,9 +52,20 @@ public class Demo1Activity extends BaseActivity {
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         scWidth = dm.widthPixels; //宽度
         scHeight = dm.heightPixels; //高度
-        new GetImageTask(this, imgViewTest, "http://su.bdimg.com/static/superplus/img/logo_white_ee663702.png", scWidth, scHeight).execute("");
-        //new GetImageTask(this, imgViewTest, "http://testclientservice.laoshi321.com/clientservice/GetTwodimensionalcode?content=http://test.laoshi321.com/teacherinfo/10456.html",scWidth,scHeight).execute("");
+
+        WeakReference<ImageView> imageViewWeakReference = new WeakReference<ImageView>(imgViewTest);
+        imageView = imageViewWeakReference.get();
+        if (imageView != null) {
+            new GetImageTask(this, imageView, "http://su.bdimg.com/static/superplus/img/logo_white_ee663702.png", scWidth, scHeight).execute("");
+            //new GetImageTask(this, imgViewTest, "http://testclientservice.laoshi321.com/clientservice/GetTwodimensionalcode?content=http://test.laoshi321.com/teacherinfo/10456.html",scWidth,scHeight).execute("");
+        }
     }
 
+    @Override
+    protected void onDestroy() {
+        imageView = null;
+        super.onDestroy();
+        System.gc();
+    }
 }
                                                                                            

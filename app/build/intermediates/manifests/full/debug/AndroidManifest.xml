@@ -170,6 +170,13 @@
             android:name="com.xyggun.mydemo.baidumap.BaiduMapDemoActivity"
             android:label="@string/title_activity_baidu_map_demo" >
         </activity>
+        <activity
+            android:name="com.xyggun.mydemo.pullzoomdemo.recyclerview.PullToZoomRecyclerActivity"
+            android:label="@string/title_activity_pull_to_zoom_recycler" >
+        </activity>
+        <activity
+            android:name="android.support.v7.widget.TestActivity"
+            android:label="RecyclerViewTestActivity" />
 
         <service
             android:name="com.baidu.location.f"

@@ -34,4 +34,5 @@
     <string name="action_heat_map_enabled">热力图</string>
     <string name="action_map_location">定位到当前地址</string>
     <string name="app_back_text">返回</string>
+    <string name="title_activity_pull_to_zoom_recycler">PullToZoomRecyclerActivity</string>
 </resources>

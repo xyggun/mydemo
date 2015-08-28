@@ -50,5 +50,12 @@ public class Demo2Activity extends BaseActivity {
         scHeight = dm.heightPixels; //高度
         new GetImageTaskOnImageView(this, imgViewTest, "http://img.daimg.com/uploads/allimg/140923/3-140923001916.jpg", scWidth, scHeight).execute("");
     }
+
+    @Override
+    protected void onDestroy() {
+        imgViewTest = null;
+        super.onDestroy();
+        System.gc();
+    }
 }
                                                                                            

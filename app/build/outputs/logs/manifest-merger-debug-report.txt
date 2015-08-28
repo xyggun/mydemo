@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:2:1-175:12
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:2:1-179:12
 	package
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml
@@ -17,10 +17,18 @@ ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManife
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
 MERGED from [mydemo:baselibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
 MERGED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [mydemo:baselibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
+MERGED from [mydemo:pullzoomviewlibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/pullzoomviewlibrary/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:9:9-38
@@ -105,22 +113,30 @@ ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManife
 	android:name
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:35:22-76
 application
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:37:5-173:19
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:37:5-177:19
+MERGED from [com.android.support:appcompat-v7:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
 MERGED from [mydemo:baselibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/AndroidManifest.xml:11:5-14:19
 MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
 MERGED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:11:5-24:19
 MERGED from [mydemo:baselibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/AndroidManifest.xml:11:5-14:19
 MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
+MERGED from [mydemo:pullzoomviewlibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/pullzoomviewlibrary/unspecified/AndroidManifest.xml:11:5-14:19
+MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:40:9-41
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:41:9-41
 	android:allowBackup
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:38:9-35
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:39:9-35
 	android:icon
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:39:9-45
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:40:9-45
 	android:theme
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:41:9-40
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:42:9-40
 	android:name
-		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:42:9-39
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:38:9-39
 activity#com.xyggun.mydemo.StartActivity
 ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:43:9-52:20
 	android:label
@@ -355,6 +371,18 @@ ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManife
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:171:13-66
 	android:name
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:170:13-58
+activity#com.xyggun.mydemo.pullzoomdemo.recyclerview.PullToZoomRecyclerActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:173:9-176:20
+	android:label
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:175:13-73
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:174:13-81
+activity#android.support.v7.widget.TestActivity
+ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:23:9-25:56
+	android:label
+		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:25:13-53
+	android:name
+		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:24:13-66
 service#com.baidu.location.f
 ADDED from [mydemo:baidumaplibrary:unspecified] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baidumaplibrary/unspecified/AndroidManifest.xml:14:9-18:19
 	android:enabled
