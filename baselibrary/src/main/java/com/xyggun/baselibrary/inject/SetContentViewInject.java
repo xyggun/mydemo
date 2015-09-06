@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.xyggun.baselibrary.inject.base.BaseFragment;
+import com.xyggun.baselibrary.base.BaseFragment;
 
 public class SetContentViewInject {
 	/**

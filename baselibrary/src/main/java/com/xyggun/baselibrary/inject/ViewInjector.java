@@ -3,7 +3,7 @@ package com.xyggun.baselibrary.inject;
 import android.app.Activity;
 import android.view.View;
 
-import com.xyggun.baselibrary.inject.base.BaseFragment;
+import com.xyggun.baselibrary.base.BaseFragment;
 
 import java.lang.reflect.Field;
 

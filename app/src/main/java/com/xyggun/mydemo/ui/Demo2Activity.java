@@ -10,7 +10,7 @@ import com.xyggun.mydemo.R;
 import com.xyggun.mydemo.common.GetImageTaskOnImageView;
 import com.xyggun.baselibrary.inject.InjectView;
 import com.xyggun.baselibrary.inject.SetContentView;
-import com.xyggun.baselibrary.inject.base.BaseActivity;
+import com.xyggun.baselibrary.base.BaseActivity;
 
 @SetContentView(R.layout.activity_demo2)
 public class Demo2Activity extends BaseActivity {

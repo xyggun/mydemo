@@ -1,4 +1,4 @@
-package com.xyggun.baselibrary.inject.base;
+package com.xyggun.baselibrary.base;
 
 import android.app.Activity;
 import android.app.ActivityManager;

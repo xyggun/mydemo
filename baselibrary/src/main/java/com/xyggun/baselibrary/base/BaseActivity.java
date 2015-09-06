@@ -1,4 +1,4 @@
-package com.xyggun.baselibrary.inject.base;
+package com.xyggun.baselibrary.base;
 
 import android.content.Intent;
 import android.os.Bundle;

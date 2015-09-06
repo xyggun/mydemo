@@ -1,6 +1,6 @@
 package com.xyggun.baidumaplibrary;
 
-import com.xyggun.baselibrary.inject.base.enums.EnumsUtil;
+import com.xyggun.baselibrary.base.enums.EnumsUtil;
 
 /**
  * 百度地图错误枚举

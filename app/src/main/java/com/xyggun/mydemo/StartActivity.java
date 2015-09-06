@@ -8,7 +8,7 @@ import android.view.WindowManager;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
-import com.xyggun.baselibrary.inject.base.BaseActivity;
+import com.xyggun.baselibrary.base.BaseActivity;
 import com.xyggun.baidumaplibrary.MyLocationListener;
 import com.xyggun.mydemo.ui.MainActivity;
 

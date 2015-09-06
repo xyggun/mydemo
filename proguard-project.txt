@@ -18,3 +18,43 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+-libraryjars app/libs/GifView.jar
+-libraryjars app/libs/jpush-sdk-release1.8.0.jar
+-libraryjars app/libs/arm64-v8a/libjpush180.so
+-libraryjars app/libs/armeabi-/libjpush180.so
+-libraryjars app/libs/armeabi-v7a/libjpush180.so
+-libraryjars baidumaplibrary/libs/BaiduLBS_Android.jar
+-libraryjars baidumaplibrary/libs/httpmime-4.1.2.jar
+-libraryjars baidumaplibrary/libs/armeabi-v7a/libapp_BaiduNaviApplib.so
+-libraryjars baidumaplibrary/libs/armeabi-v7a/libapp_BaiduVIlib.so
+-libraryjars baidumaplibrary/libs/armeabi-v7a/libBaiduMapSDK_v3_5_0_27.so
+-libraryjars baidumaplibrary/libs/armeabi-v7a/libbd_etts.so
+-libraryjars baidumaplibrary/libs/armeabi-v7a/libbds.so
+-libraryjars baidumaplibrary/libs/armeabi-v7a/libBDSpeechDecoder_V1.so
+-libraryjars baidumaplibrary/libs/armeabi-v7a/libcurl.so
+-libraryjars baidumaplibrary/libs/armeabi-v7a/libgnustl_shared.so
+-libraryjars baidumaplibrary/libs/armeabi-v7a/liblocSDK6a.so
+-libraryjars baidumaplibrary/libs/armeabi/libapp_BaiduNaviApplib.so
+-libraryjars baidumaplibrary/libs/armeabi/libapp_BaiduVIlib.so
+-libraryjars baidumaplibrary/libs/armeabi/libBaiduMapSDK_v3_5_0_27.so
+-libraryjars baidumaplibrary/libs/armeabi/libbd_etts.so
+-libraryjars baidumaplibrary/libs/armeabi/libbds.so
+-libraryjars baidumaplibrary/libs/armeabi/libBDSpeechDecoder_V1.so
+-libraryjars baidumaplibrary/libs/armeabi/libcurl.so
+-libraryjars baidumaplibrary/libs/armeabi/libgnustl_shared.so
+-libraryjars baidumaplibrary/libs/armeabi/liblocSDK6a.so
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.**
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keep class com.baidu.** { *; }
+-keep class vi.com.gdi.bgl.android.**{*;}
+
+#-keep class com.bank.pingan.model.** { *; } 不混淆model类

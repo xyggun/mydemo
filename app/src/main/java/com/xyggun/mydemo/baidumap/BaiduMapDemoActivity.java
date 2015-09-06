@@ -28,7 +28,7 @@ import com.baidu.mapapi.model.LatLng;
 import com.xyggun.baidumaplibrary.MyLocationListener;
 import com.xyggun.baselibrary.inject.InjectView;
 import com.xyggun.baselibrary.inject.SetContentView;
-import com.xyggun.baselibrary.inject.base.BaseActivity;
+import com.xyggun.baselibrary.base.BaseActivity;
 import com.xyggun.mydemo.R;
 import com.xyggun.mydemo.util.DialogHelp;
 

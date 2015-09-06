@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.xyggun.baselibrary.inject.base.BaseFragment;
+import com.xyggun.baselibrary.base.BaseFragment;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

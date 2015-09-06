@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.TextView;
 
-import com.xyggun.baselibrary.inject.base.BaseActivity;
+import com.xyggun.baselibrary.base.BaseActivity;
 import com.xyggun.mydemo.R;
 import com.xyggun.mydemo.pullzoomdemo.PullToZoomRecyclerViewEx;
 

@@ -1,4 +1,4 @@
-package com.xyggun.baselibrary.inject.base;
+package com.xyggun.baselibrary.base;
 
 import com.xyggun.baselibrary.inject.InjectorFactory;
 

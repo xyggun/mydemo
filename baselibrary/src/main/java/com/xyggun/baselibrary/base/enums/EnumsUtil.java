@@ -1,4 +1,4 @@
-package com.xyggun.baselibrary.inject.base.enums;
+package com.xyggun.baselibrary.base.enums;
 
 
 import com.xyggun.baselibrary.inject.common.StringUtils;

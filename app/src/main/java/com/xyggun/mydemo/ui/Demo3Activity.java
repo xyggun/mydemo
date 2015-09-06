@@ -6,7 +6,7 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 import com.ant.liao.GifView;
-import com.xyggun.baselibrary.inject.base.BaseActivity;
+import com.xyggun.baselibrary.base.BaseActivity;
 import com.xyggun.mydemo.R;
 
 public class Demo3Activity extends BaseActivity implements OnClickListener {

@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-import com.xyggun.baselibrary.inject.base.BaseFragment;
+import com.xyggun.baselibrary.base.BaseFragment;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

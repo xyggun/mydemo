@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
-import com.xyggun.baselibrary.inject.base.BaseFragment;
+import com.xyggun.baselibrary.base.BaseFragment;
 
 import java.lang.reflect.Field;
 
