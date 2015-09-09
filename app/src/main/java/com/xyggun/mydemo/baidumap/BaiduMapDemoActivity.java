@@ -85,6 +85,7 @@ public class BaiduMapDemoActivity extends BaseActivity implements View.OnClickLi
 
         initHeader();
 
+        mMapView.showZoomControls(false);
         mBaiduMap = mMapView.getMap();
         //普通地图
         mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NORMAL);

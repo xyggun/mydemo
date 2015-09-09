@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:2:1-179:12
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:2:1-183:12
 	package
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml
@@ -113,7 +113,7 @@ ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManife
 	android:name
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:35:22-76
 application
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:37:5-177:19
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:37:5-181:19
 MERGED from [com.android.support:appcompat-v7:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:22:5-26:19
@@ -377,6 +377,12 @@ ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManife
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:175:13-73
 	android:name
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:174:13-81
+activity#com.xyggun.mydemo.ui.LifeCycleActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:177:9-180:20
+	android:label
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:179:13-62
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:178:13-49
 activity#android.support.v7.widget.TestActivity
 ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:23:9-25:56
 	android:label
