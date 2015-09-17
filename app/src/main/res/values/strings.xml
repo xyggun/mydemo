@@ -36,4 +36,6 @@
     <string name="app_back_text">返回</string>
     <string name="title_activity_pull_to_zoom_recycler">PullToZoomRecyclerActivity</string>
     <string name="title_activity_life_cycle">LifeCycleActivity</string>
+    <string name="title_activity_break_point_continue">BreakPointContinueActivity</string>
+    <string name="title_activity_toast_demo">ToastDemoActivity</string>
 </resources>

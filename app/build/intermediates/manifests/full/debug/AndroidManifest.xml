@@ -179,6 +179,14 @@
             android:label="@string/title_activity_life_cycle" >
         </activity>
         <activity
+            android:name="com.xyggun.mydemo.ui.BreakPointContinueActivity"
+            android:label="@string/title_activity_break_point_continue" >
+        </activity>
+        <activity
+            android:name="com.xyggun.mydemo.ui.ToastDemoActivity"
+            android:label="@string/title_activity_toast_demo" >
+        </activity>
+        <activity
             android:name="android.support.v7.widget.TestActivity"
             android:label="RecyclerViewTestActivity" />
 

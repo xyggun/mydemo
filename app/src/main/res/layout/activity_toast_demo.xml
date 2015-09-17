@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xyggun.mydemo.ui.ToastDemoActivity">
+
+    <include layout="@layout/view_header"
+        android:id="@+id/include2"></include>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="long_toast"
+        android:id="@+id/button"
+        android:layout_below="@+id/include2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="short_toast"
+        android:id="@+id/button2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义位置 activity"
+        android:id="@+id/button3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="loading_toast"
+        android:id="@+id/button4"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="loading_progressBar_toast"
+        android:id="@+id/button5"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

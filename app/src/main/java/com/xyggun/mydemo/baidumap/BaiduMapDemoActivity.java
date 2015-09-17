@@ -157,8 +157,6 @@ public class BaiduMapDemoActivity extends BaseActivity implements View.OnClickLi
      * @param bdLocation
      */
     private void setLocation(BDLocation bdLocation){
-
-
         mCurrentMode = MyLocationConfiguration.LocationMode.NORMAL;
         // 开启定位图层
         mBaiduMap.setMyLocationEnabled(true);
@@ -172,7 +170,7 @@ public class BaiduMapDemoActivity extends BaseActivity implements View.OnClickLi
         mBaiduMap.setMyLocationData(locData);
         // 设置定位图层的配置（定位模式，是否允许方向信息，用户自定义定位图标）
         mCurrentMarker = BitmapDescriptorFactory
-                .fromResource(R.drawable.loading_9);
+                .fromResource(R.drawable.ic_location_me);
         MyLocationConfiguration config = new MyLocationConfiguration(mCurrentMode, true, mCurrentMarker);
         mBaiduMap.setMyLocationConfigeration(config);
         // 当不需要定位图层时关闭定位图层
@@ -181,15 +179,15 @@ public class BaiduMapDemoActivity extends BaseActivity implements View.OnClickLi
 
     /**
      * 标记坐标点
-     * @param latutyde
+     * @param latitude
      * @param longitude
      */
-    private void markedPoint(double latutyde,double longitude){
+    private void markedPoint(double latitude,double longitude){
         //定义Maker坐标点
-        LatLng point = new LatLng(latutyde, longitude);
+        LatLng point = new LatLng(latitude, longitude);
         //构建Marker图标
         BitmapDescriptor bitmap = BitmapDescriptorFactory
-                .fromResource(R.drawable.loading_9);
+                .fromResource(R.drawable.ic_location_me);
         //构建MarkerOption，用于在地图上添加Marker
         OverlayOptions option = new MarkerOptions()
                 .position(point)

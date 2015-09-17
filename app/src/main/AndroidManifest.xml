@@ -178,6 +178,14 @@
             android:name=".ui.LifeCycleActivity"
             android:label="@string/title_activity_life_cycle" >
         </activity>
+        <activity
+            android:name=".ui.BreakPointContinueActivity"
+            android:label="@string/title_activity_break_point_continue" >
+        </activity>
+        <activity
+            android:name=".ui.ToastDemoActivity"
+            android:label="@string/title_activity_toast_demo" >
+        </activity>
     </application>
 
 </manifest>
