@@ -12,18 +12,28 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.xyggun.baselibrary.inject.InjectView;
+import com.xyggun.baselibrary.inject.SetContentView;
 import com.xyggun.mydemo.R;
 
-import cn.jpush.android.api.InstrumentedActivity;
 import cn.jpush.android.api.JPushInterface;
 
+@SetContentView(R.layout.activity_jpush_main)
+public class JPushMainActivity extends JPushBaseActivity implements OnClickListener {
 
-public class JPushMainActivity extends InstrumentedActivity implements OnClickListener {
-
+    @InjectView(R.id.init)
     private Button mInit;
+
+    @InjectView(R.id.setting)
     private Button mSetting;
+
+    @InjectView(R.id.stopPush)
     private Button mStopPush;
+
+    @InjectView(R.id.resumePush)
     private Button mResumePush;
+
+    @InjectView(R.id.msg_rec)
     private EditText msgText;
 
     public static boolean isForeground = false;
@@ -31,10 +41,20 @@ public class JPushMainActivity extends InstrumentedActivity implements OnClickLi
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jpush_main);
+
+        initHeader();
         initView();
         registerMessageReceiver();  // used for receive msg
+    }
 
+    private void initHeader() {
+        TextView back = (TextView) findViewById(R.id.back_title);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishs();
+            }
+        });
     }
 
     private void initView() {
@@ -55,19 +75,12 @@ public class JPushMainActivity extends InstrumentedActivity implements OnClickLi
         TextView mVersion = (TextView) findViewById(R.id.tv_version);
         mVersion.setText("Version: " + versionName);
 
-        mInit = (Button) findViewById(R.id.init);
+
         mInit.setOnClickListener(this);
-
-        mStopPush = (Button) findViewById(R.id.stopPush);
         mStopPush.setOnClickListener(this);
-
-        mResumePush = (Button) findViewById(R.id.resumePush);
         mResumePush.setOnClickListener(this);
-
-        mSetting = (Button) findViewById(R.id.setting);
         mSetting.setOnClickListener(this);
 
-        msgText = (EditText) findViewById(R.id.msg_rec);
     }
 
 

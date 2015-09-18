@@ -381,9 +381,11 @@
     <string name="app_start_txt">MYDEMO\n\n\n\n</string>
     <string name="border_bottom">Border Bottom</string>
     <string name="border_top">Border Top</string>
+    <string name="custom_exception_button_txt">捕获异常</string>
+    <string name="custom_exception_demo_title">错误捕获demo</string>
     <string name="demo1_txt_str">使用 AsyncTask 来下载图片</string>
     <string name="demo_text">使用 AsyncTask 来下载图片,同时用自定义控件显示gif</string>
-    <string name="demo_text_contentdescription">下载图片</string>
+    <string name="demo_text_content_description">下载图片</string>
     <string name="demo_text_str">demo</string>
     <string name="error_alias_empty">alias不能为空</string>
     <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
@@ -422,6 +424,8 @@
     <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
     <string name="title_activity_baidu_map_demo">BaiduMapDemoActivity</string>
     <string name="title_activity_break_point_continue">BreakPointContinueActivity</string>
+    <string name="title_activity_exception">ExceptionActivity</string>
+    <string name="title_activity_jpush_base">JPushBaseActivity</string>
     <string name="title_activity_life_cycle">LifeCycleActivity</string>
     <string name="title_activity_pull_to_zoom_recycler">PullToZoomRecyclerActivity</string>
     <string name="title_activity_toast_demo">ToastDemoActivity</string>

@@ -9,6 +9,7 @@
         layout="@layout/view_header" />
 
     <TextView
+        android:id="@+id/text"
         android:layout_below="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,10 +19,11 @@
         android:id="@+id/imgView_test"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
         android:layout_marginTop="@dimen/demo_img_margin_top"
         android:padding="@dimen/demo_img_padding"
         android:src="@drawable/loading"
-        android:contentDescription="@string/demo_text_contentdescription"
+        android:contentDescription="@string/demo_text_content_description"
         />
 
 </RelativeLayout>

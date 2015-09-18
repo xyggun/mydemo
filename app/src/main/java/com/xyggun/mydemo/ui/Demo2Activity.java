@@ -48,7 +48,7 @@ public class Demo2Activity extends BaseActivity {
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         scWidth = dm.widthPixels; //宽度
         scHeight = dm.heightPixels; //高度
-        new GetImageTaskOnImageView(this, imgViewTest, "http://img.daimg.com/uploads/allimg/140923/3-140923001916.jpg", scWidth, scHeight).execute("");
+        new GetImageTaskOnImageView(this, imgViewTest, "http://images.apple.com/cn/ipad-pro/images/overview/canvas_large_2x.jpg", scWidth, scHeight).execute("");
     }
 
     @Override

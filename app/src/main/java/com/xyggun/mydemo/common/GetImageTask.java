@@ -9,6 +9,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 
 import com.xyggun.mydemo.R;
@@ -25,7 +28,7 @@ public class GetImageTask extends AsyncTask<String, Void, Bitmap> {
     Context Context = null;
     int mScreenWidth, mImageHeight;// 屏幕宽度，图片高度
     String ImgUrl;// 图片地址
-    private View loadingview;
+    private View loadingView;
     private Dialog dialog;
 
     @SuppressLint("InflateParams")
@@ -37,14 +40,26 @@ public class GetImageTask extends AsyncTask<String, Void, Bitmap> {
         mScreenWidth = width;
         mImageHeight = height;
 
-        loadingview = ((Activity) context).getLayoutInflater().inflate(
+        loadingView = ((Activity) context).getLayoutInflater().inflate(
                 R.layout.view_loading, null);
+        // 为图片设置动画效果
+        ImageView imageView1 = (ImageView)loadingView.findViewById(R.id.imageView1);
+        // 设置动画化
+        Animation operatingAnim = AnimationUtils.loadAnimation(context, com.xyggun.baselibrary.R.anim.rotate_load);
+
+        // 旋转效果，可自定义 LinearInterpolator为匀速效果，Accelerateinterpolator为加速效果、DecelerateInterpolator为减速效果
+        LinearInterpolator lin = new LinearInterpolator();
+
+        // 为动画设置旋转速率
+        operatingAnim.setInterpolator(lin);
+        imageView1.setAnimation(operatingAnim);
+
         if (dialog != null && dialog.isShowing()) {
             dialog.dismiss();
         } else {
             dialog = new AlertDialog.Builder(context).show();
         }
-        dialog.setContentView(loadingview);
+        dialog.setContentView(loadingView);
     }
 
     @Override

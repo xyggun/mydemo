@@ -1,8 +1,5 @@
 package com.xyggun.mydemo.jpush;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
@@ -13,15 +10,18 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import cn.jpush.android.api.InstrumentedActivity;
-import cn.jpush.android.api.JPushInterface;
-
 import com.xyggun.mydemo.R;
 
-public class SettingActivity extends InstrumentedActivity implements OnClickListener {
+import java.util.HashSet;
+import java.util.Set;
+
+import cn.jpush.android.api.JPushInterface;
+
+public class SettingActivity extends JPushBaseActivity implements OnClickListener {
     TimePicker startTime;
     TimePicker endTime;
     CheckBox mMonday;
@@ -39,8 +39,20 @@ public class SettingActivity extends InstrumentedActivity implements OnClickList
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.set_push_time);
+
+        initHeader();
         init();
         initListener();
+    }
+
+    private void initHeader() {
+        TextView back = (TextView) findViewById(R.id.back_title);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishs();
+            }
+        });
     }
 
     @Override

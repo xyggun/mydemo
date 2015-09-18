@@ -187,6 +187,14 @@
             android:label="@string/title_activity_toast_demo" >
         </activity>
         <activity
+            android:name="com.xyggun.mydemo.jpush.JPushBaseActivity"
+            android:label="@string/title_activity_jpush_base" >
+        </activity>
+        <activity
+            android:name="com.xyggun.mydemo.ui.ExceptionActivity"
+            android:label="@string/title_activity_exception" >
+        </activity>
+        <activity
             android:name="android.support.v7.widget.TestActivity"
             android:label="RecyclerViewTestActivity" />
 

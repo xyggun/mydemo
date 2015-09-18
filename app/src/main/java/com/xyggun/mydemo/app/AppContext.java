@@ -4,6 +4,7 @@ import android.app.Application;
 import android.util.Log;
 
 import com.baidu.mapapi.SDKInitializer;
+import com.xyggun.mydemo.exception.CrashHandler;
 
 import cn.jpush.android.api.JPushInterface;
 
@@ -20,12 +21,16 @@ public class AppContext extends Application {
         Log.d(JPushTAG, "[ExampleApplication] onCreate");
         super.onCreate();
 
+
         instance = this;
         SDKInitializer.initialize(this);
 
+        // 初始化错误处理
+        CrashHandler crashHandler = CrashHandler.getInstance();
+        crashHandler.init(this);
+
         JPushInterface.setDebugMode(true); 	// 设置开启日志,发布时请关闭日志
         JPushInterface.init(this);     		// 初始化 JPush
-
     }
 
     public static AppContext getInstance() {

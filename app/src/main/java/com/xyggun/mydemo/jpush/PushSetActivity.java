@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.xyggun.mydemo.R;
@@ -20,12 +21,11 @@ import java.util.Set;
 
 import cn.jpush.android.api.BasicPushNotificationBuilder;
 import cn.jpush.android.api.CustomPushNotificationBuilder;
-import cn.jpush.android.api.InstrumentedActivity;
 import cn.jpush.android.api.JPushInterface;
 import cn.jpush.android.api.TagAliasCallback;
 
 
-public class PushSetActivity extends InstrumentedActivity implements OnClickListener {
+public class PushSetActivity extends JPushBaseActivity implements OnClickListener {
     private static final String TAG = "JPush";
 
     Button mSetTag;
@@ -39,8 +39,20 @@ public class PushSetActivity extends InstrumentedActivity implements OnClickList
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.push_set_dialog);
+
+        initHeader();
         init();
         initListener();
+    }
+
+    private void initHeader() {
+        TextView back = (TextView) findViewById(R.id.back_title);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishs();
+            }
+        });
     }
 
     private void init() {

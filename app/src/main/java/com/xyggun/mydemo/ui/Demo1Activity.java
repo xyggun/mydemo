@@ -56,7 +56,7 @@ public class Demo1Activity extends BaseActivity {
         WeakReference<ImageView> imageViewWeakReference = new WeakReference<ImageView>(imgViewTest);
         imageView = imageViewWeakReference.get();
         if (imageView != null) {
-            new GetImageTask(this, imageView, "http://su.bdimg.com/static/superplus/img/logo_white_ee663702.png", scWidth, scHeight).execute("");
+            new GetImageTask(this, imageView, "http://images.apple.com/cn/ipad-pro/images/overview/canvas_large_2x.jpg", scWidth, scHeight).execute("");
             //new GetImageTask(this, imgViewTest, "http://testclientservice.laoshi321.com/clientservice/GetTwodimensionalcode?content=http://test.laoshi321.com/teacherinfo/10456.html",scWidth,scHeight).execute("");
         }
     }

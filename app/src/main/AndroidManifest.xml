@@ -186,6 +186,14 @@
             android:name=".ui.ToastDemoActivity"
             android:label="@string/title_activity_toast_demo" >
         </activity>
+        <activity
+            android:name=".jpush.JPushBaseActivity"
+            android:label="@string/title_activity_jpush_base" >
+        </activity>
+        <activity
+            android:name=".ui.ExceptionActivity"
+            android:label="@string/title_activity_exception" >
+        </activity>
     </application>
 
 </manifest>
