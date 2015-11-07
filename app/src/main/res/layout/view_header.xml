@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/text_style16"
-        android:textColor="@color/white"
+        android:textColor="@drawable/back_text_color"
         android:padding="10dip"
         android:text="@string/app_back_text" />
 

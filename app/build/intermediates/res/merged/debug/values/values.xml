@@ -393,6 +393,7 @@
     <string name="error_tag_empty">tag不能为空</string>
     <string name="error_tag_gs_empty">格式不对</string>
     <string name="header_view_img">header_view_img</string>
+    <string name="hello">hello</string>
     <string name="hello_world">Hello world!</string>
     <string name="image_url">Image Url</string>
     <!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/res/values/values.xml -->
@@ -425,8 +426,10 @@
     <string name="title_activity_baidu_map_demo">BaiduMapDemoActivity</string>
     <string name="title_activity_break_point_continue">BreakPointContinueActivity</string>
     <string name="title_activity_exception">ExceptionActivity</string>
+    <string name="title_activity_handle_test">HandleTestActivity</string>
     <string name="title_activity_jpush_base">JPushBaseActivity</string>
     <string name="title_activity_life_cycle">LifeCycleActivity</string>
+    <string name="title_activity_merge_test">MergeTestActivity</string>
     <string name="title_activity_pull_to_zoom_recycler">PullToZoomRecyclerActivity</string>
     <string name="title_activity_toast_demo">ToastDemoActivity</string>
     <!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values/values.xml -->

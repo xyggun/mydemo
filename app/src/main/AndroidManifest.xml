@@ -194,6 +194,18 @@
             android:name=".ui.ExceptionActivity"
             android:label="@string/title_activity_exception" >
         </activity>
+        <activity
+            android:name=".ui.MergeTestActivity"
+            android:label="@string/title_activity_merge_test" >
+        </activity>
+        <activity
+            android:name=".ui.HandleTestActivity"
+            android:label="@string/title_activity_handle_test"
+            android:parentActivityName="com.xyggun.baselibrary.base.BaseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xyggun.baselibrary.base.BaseActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/view_header" />
+
+    <TextView  android:id="@+id/view_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        />
+
+    <Button android:id="@+id/btn_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="测试消息" />
+</LinearLayout><!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/res/layout/activity_handle_test.xml -->

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator" >
+
+    <translate
+        android:duration="400"
+        android:fromYDelta="-100%p"
+        android:toYDelta="0%p" />  
+
+</set><!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/baselibrary/src/main/res/anim/in_from_top.xml --><!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/baidumaplibrary/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/res/anim/in_from_top.xml -->

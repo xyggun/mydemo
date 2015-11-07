@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:2:1-199:12
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:2:1-211:12
 	package
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml
@@ -113,7 +113,7 @@ ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManife
 	android:name
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:35:22-76
 application
-ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:37:5-197:19
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:37:5-209:19
 MERGED from [com.android.support:appcompat-v7:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:22:5-26:19
@@ -407,6 +407,26 @@ ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManife
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:195:13-61
 	android:name
 		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:194:13-49
+activity#com.xyggun.mydemo.ui.MergeTestActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:197:9-200:20
+	android:label
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:199:13-62
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:198:13-49
+activity#com.xyggun.mydemo.ui.HandleTestActivity
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:201:9-208:20
+	android:label
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:203:13-63
+	android:parentActivityName
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:204:13-82
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:202:13-50
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:205:13-207:76
+	android:value
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:207:17-73
+	android:name
+		ADDED from /Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/AndroidManifest.xml:206:17-63
 activity#android.support.v7.widget.TestActivity
 ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/xyggun/AndroidStudioProjects/mydemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:23:9-25:56
 	android:label

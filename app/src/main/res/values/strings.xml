@@ -42,4 +42,7 @@
     <string name="title_activity_exception">ExceptionActivity</string>
     <string name="custom_exception_demo_title">错误捕获demo</string>
     <string name="custom_exception_button_txt">捕获异常</string>
+    <string name="title_activity_merge_test">MergeTestActivity</string>
+    <string name="title_activity_handle_test">HandleTestActivity</string>
+    <string name="hello">hello</string>
 </resources>

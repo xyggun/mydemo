@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xyggun.mydemo.baidumap.BaiduMapDemoActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/view_header" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/my_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+    </com.baidu.mapapi.map.MapView>
+
+    <LinearLayout
+        android:id="@+id/radio_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_map_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_map_normal" />
+
+        <Button
+            android:id="@+id/btn_map_satelltle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_map_satelltle" />
+
+        <Button
+            android:id="@+id/btn_map_traffic_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_map_traffic_enabled" />
+
+        <Button
+            android:id="@+id/btn_heat_map_enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_heat_map_enabled" />
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_map_location" />
+    </LinearLayout>
+</RelativeLayout>
+<!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/res/layout/activity_baidu_map_demo.xml -->

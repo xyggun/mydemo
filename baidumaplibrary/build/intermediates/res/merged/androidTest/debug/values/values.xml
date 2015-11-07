@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/baidumaplibrary/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <color name="black">#000000</color>
+    <color name="gold">#FFD700</color>
+    <color name="gray">#808080</color>
+    <color name="gray_slate">#708090</color>
+    <color name="gray_white">#F5F5F5</color>
+    <color name="green">#008000</color>
+    <color name="lemon_yellow">#FFFACD</color>
+    <color name="light_blue">#0083FF</color>
+    <color name="main_black">#333</color>
+    <color name="main_gray">#9A9A9A</color>
+    <color name="main_green">#40AA53</color>
+    <color name="main_purple">#576B95</color>
+    <color name="orange">#FFA500</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="pull_to_refresh_latest_update">@color/black</color>
+    <color name="pull_to_refresh_tips">@color/black</color>
+    <color name="purple">#800080</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white40">#40FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/baidumaplibrary/build/intermediates/bundles/debug/res/values/values.xml -->
+    <eat-comment/>
+    <string name="app_name">baiduMapLibrary</string>
+    <!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/baidumaplibrary/build/intermediates/exploded-aar/mydemo/baselibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="load_empty">暂无数据</string>
+    <string name="load_error">加载数据出错</string>
+    <string name="load_full">已加载全部</string>
+    <string name="load_ing">加载中···</string>
+    <string name="load_more">更多</string>
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_tap_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_update">最近更新：</string>
+    <style name="loading_small" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">21dip</item>
+        <item name="android:layout_height">21dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+</resources>

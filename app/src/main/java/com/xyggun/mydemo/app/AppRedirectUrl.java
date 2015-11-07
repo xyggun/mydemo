@@ -8,6 +8,7 @@ import com.xyggun.mydemo.jpush.JPushMainActivity;
 import com.xyggun.mydemo.pullzoomdemo.recyclerview.PullToZoomRecyclerActivity;
 import com.xyggun.mydemo.ui.BreakPointContinueActivity;
 import com.xyggun.mydemo.ui.ExceptionActivity;
+import com.xyggun.mydemo.ui.HandleTestActivity;
 import com.xyggun.mydemo.ui.LifeCycleActivity;
 import com.xyggun.mydemo.ui.ToastDemoActivity;
 
@@ -18,7 +19,7 @@ public class AppRedirectUrl {
     private static Context context;
     public final static String[] UrlTitle =
             {/*"使用 AsyncTask 来下载图片", "使用 AsyncTask 来下载图片2", "gif动画显示", "瀑布流", */"极光推送demo","百度地图demo"
-            ,"PullToZoomRecyclerActivity DEMO","activity 生命周期","断点续传demo","自定义 toast","自定义错误捕获"};
+            ,"PullToZoomRecyclerActivity DEMO","activity 生命周期","断点续传demo","自定义 toast","自定义错误捕获","handle 测试"};
     public static Intent[] UrlActivity = null;
 
     public AppRedirectUrl(Context context) {
@@ -39,6 +40,7 @@ public class AppRedirectUrl {
                 new Intent(context, BreakPointContinueActivity.class), // 跳转到断点续传页面
                 new Intent(context, ToastDemoActivity.class), // 跳转到toast 页面
                 new Intent(context, ExceptionActivity.class), // 跳转到自定义错误捕获页面
+                new Intent(context, HandleTestActivity.class), // 跳转到handle 测试页面
         };
         return UrlActivity;
     }

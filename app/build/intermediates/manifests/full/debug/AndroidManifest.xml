@@ -195,6 +195,18 @@
             android:label="@string/title_activity_exception" >
         </activity>
         <activity
+            android:name="com.xyggun.mydemo.ui.MergeTestActivity"
+            android:label="@string/title_activity_merge_test" >
+        </activity>
+        <activity
+            android:name="com.xyggun.mydemo.ui.HandleTestActivity"
+            android:label="@string/title_activity_handle_test"
+            android:parentActivityName="com.xyggun.baselibrary.base.BaseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xyggun.baselibrary.base.BaseActivity" />
+        </activity>
+        <activity
             android:name="android.support.v7.widget.TestActivity"
             android:label="RecyclerViewTestActivity" />
 

@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.xyggun.mydemo.StartActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/view_header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/demo_text" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test9"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test13"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test14"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test15"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test17"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test18"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test19"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test20"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test21"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test22"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test23"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test24"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test25"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test26"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test27"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test28"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test29"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+    
+    <com.ant.liao.GifView
+        android:id="@+id/gif_test30"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:paddingLeft="@dimen/demo3_gif_padding_left"
+        android:paddingTop="@dimen/demo3_git_padding_top" />
+
+</LinearLayout>
+	<!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/res/layout/activity_demo3.xml -->

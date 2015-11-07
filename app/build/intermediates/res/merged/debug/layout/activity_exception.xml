@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xyggun.mydemo.ui.ExceptionActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/view_header" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_below="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_exception_demo_title" />
+
+    <Button
+        android:id="@+id/button_catch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:text="@string/custom_exception_button_txt"/>
+
+</RelativeLayout>
+<!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/res/layout/activity_exception.xml -->

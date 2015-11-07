@@ -36,8 +36,8 @@ public class BreakPointContinueActivity extends BaseActivity implements Runnable
     private boolean mIsDownloading = false;
     private HttpURLConnection mConnection;
     private long mLoadedByteLength;
-    private String mFileName;// 下载的文件名
-    private String mFilePath;// 下载的文件所在的路径
+    private String mFileName; // 下载的文件名
+    private String mFilePath; // 下载的文件所在的路径
     private String mTempFilePath;
     private File mTargetFile;
     private long mTotalByteLength;
@@ -57,7 +57,7 @@ public class BreakPointContinueActivity extends BaseActivity implements Runnable
                 .permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        //开始下载
+        // 开始下载
         mBtnStart = (Button) findViewById(R.id.btn_start);
         mBtnStart.setOnClickListener(new View.OnClickListener() {
 
@@ -67,25 +67,24 @@ public class BreakPointContinueActivity extends BaseActivity implements Runnable
                 new Thread(BreakPointContinueActivity.this).start();
             }
         });
-        //暂停下载
+        // 暂停下载
         mBtnPause = (Button) findViewById(R.id.btn_pause);
         mBtnPause.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 mIsDownloading = false;
-
             }
 
         });
-        //继续下载
+        // 继续下载
         mBtnResume = (Button) findViewById(R.id.btn_resume);
         mBtnResume.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 mIsDownloading = true;
-                //取得断点以前保存的已经下载好的部分数据，然后继续下载
+                // 取得断点以前保存的已经下载好的部分数据，然后继续下载
                 getData();
                 new Thread(BreakPointContinueActivity.this).start();
             }
@@ -112,17 +111,17 @@ public class BreakPointContinueActivity extends BaseActivity implements Runnable
             URL url = new URL(downloadUrl);
             mConnection = (HttpURLConnection) url.openConnection();
             mConnection.setUseCaches(false);
-            if (mLoadedByteLength > 0) { //有过断点
+            if (mLoadedByteLength > 0) { // 有过断点
                 mConnection.setRequestProperty("Range", "bytes="
                         + mLoadedByteLength + "-");
-            } else { //第一次下载（没有断点过）
+            } else { // 第一次下载（没有断点过）
                 guessFileName();
                 String folderPath = getFilePath().substring(0,
                         getFilePath().lastIndexOf("/"));
                 File folder = new File(folderPath);
                 if (!folder.exists() || !folder.isDirectory()) {
                     folder.mkdirs();
-                } else { //如果已经存在下载的文件，则先删除这些文件
+                } else { // 如果已经存在下载的文件，则先删除这些文件
                     // deleteFile(getFilePath());
                     // deleteFile(getTempFilePath());
                     String path = getFilePath();
@@ -139,15 +138,15 @@ public class BreakPointContinueActivity extends BaseActivity implements Runnable
             mConnection.connect();
             int bufferSize = 1024;
             inputStream = new BufferedInputStream(mConnection.getInputStream(),
-                    bufferSize);//为InputStream类增加缓冲区功能
+                    bufferSize);// 为InputStream类增加缓冲区功能
             if (mTotalByteLength == 0) {
                 mTotalByteLength = mConnection.getContentLength();
             }
             if (!mTargetFile.exists()) {
                 mTargetFile.createNewFile();
             }
-            //写入中间文件
-            mOutputStream = new FileOutputStream(mTargetFile, true);//true表示向打开的文件末尾追加数据
+            // 写入中间文件
+            mOutputStream = new FileOutputStream(mTargetFile, true); // true表示向打开的文件末尾追加数据
             mByteOutput = new ByteArrayOutputStream();
             byte[] buffer = new byte[bufferSize];
             int length = -1;
@@ -157,7 +156,7 @@ public class BreakPointContinueActivity extends BaseActivity implements Runnable
                 // 通知handler去更新视图组件
                 handler.sendEmptyMessage(0);
                 Thread.sleep(1000);
-                //保存已经下载好的部分数据
+                // 保存已经下载好的部分数据
                 saveData();
             }
             inputStream.close();
@@ -270,10 +269,10 @@ public class BreakPointContinueActivity extends BaseActivity implements Runnable
                     .valueOf((mLoadedByteLength * 1.0 / mTotalByteLength * 100)))
                     .intValue();
             if (progress == 100) {
-            // downloadBt.setClickable(true);
-            // progressMessage.setText("下载完成！");
+                // downloadBt.setClickable(true);
+                // progressMessage.setText("下载完成！");
             } else {
-            // progressMessage.setText("当前进度:" + progress + "%");
+                // progressMessage.setText("当前进度:" + progress + "%");
                 Log.e("progress", "当前进度:" + progress + "%");
             }
             // downloadProgressBar.setProgress(progress);
@@ -281,19 +280,19 @@ public class BreakPointContinueActivity extends BaseActivity implements Runnable
 
     };
 
-    //保存数据
+    // 保存数据
     private void saveData() {
         JSONObject jsonObject = getJsonObject();
-        //获得SharedPreferences对象
+        // 获得SharedPreferences对象
         SharedPreferences settings = this.getSharedPreferences("downloadTool", 0);
-        //获得可编辑对象
+        // 获得可编辑对象
         SharedPreferences.Editor editor = settings.edit();
         editor.putString("downloadTool", jsonObject.toString());
         editor.commit();
     }
 
     private void getData() {
-        //取出已保存的数据
+        // 取出已保存的数据
         String json = this.getSharedPreferences("downloadTool",
                 Context.MODE_PRIVATE).getString("downloadTool", null);
         if (json != null) {

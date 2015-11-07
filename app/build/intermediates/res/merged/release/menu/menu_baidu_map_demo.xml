@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xyggun.mydemo.baidumap.BaiduMapDemoActivity">
+    <item android:id="@+id/action_normal" android:title="@string/action_map_normal"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/action_satelltle" android:title="@string/action_map_satelltle"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/action_traffic_enabled" android:title="@string/action_map_traffic_enabled"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/action_heat_map_enabled" android:title="@string/action_heat_map_enabled"
+        android:orderInCategory="100" android:showAsAction="never" />
+</menu>
+<!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/res/menu/menu_baidu_map_demo.xml -->

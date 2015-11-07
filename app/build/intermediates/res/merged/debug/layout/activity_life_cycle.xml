@@ -1,0 +1,11 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xyggun.mydemo.ui.LifeCycleActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/view_header" />
+
+</RelativeLayout>
+<!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/res/layout/activity_life_cycle.xml -->
