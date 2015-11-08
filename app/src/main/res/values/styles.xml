@@ -67,4 +67,13 @@
         <item name="android:textSize">14sp</item>
     </style>
 
+
+    <style name="loadingIos">
+        <item name="android:indeterminateDrawable">@drawable/progress_circle_loading</item>
+        <item name="android:minWidth">16dip</item>
+        <item name="android:maxWidth">16dip</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
 </resources>

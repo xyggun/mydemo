@@ -10,7 +10,7 @@ import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.xyggun.baselibrary.base.BaseActivity;
 import com.xyggun.baidumaplibrary.MyLocationListener;
-import com.xyggun.mydemo.ui.MainActivity;
+import com.xyggun.mydemo.ui.activity.MainActivity;
 
 import cn.jpush.android.api.JPushInterface;
 

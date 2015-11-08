@@ -50,11 +50,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.MainActivity" />
-        <activity android:name=".ui.Demo1Activity" />
-        <activity android:name=".ui.Demo2Activity" />
-        <activity android:name=".ui.Demo3Activity" />
-        <activity android:name=".ui.Demo4Activity" />
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".ui.activity.Demo1Activity" />
+        <activity android:name=".ui.activity.Demo2Activity" />
+        <activity android:name=".ui.activity.Demo3Activity" />
+        <activity android:name=".ui.activity.Demo4Activity" />
         <activity android:name=".jpush.JPushMainActivity" />
 
         <!-- For test only 测试高级功能 -->
@@ -175,15 +175,15 @@
             android:label="@string/title_activity_pull_to_zoom_recycler" >
         </activity>
         <activity
-            android:name=".ui.LifeCycleActivity"
+            android:name=".ui.activity.LifeCycleActivity"
             android:label="@string/title_activity_life_cycle" >
         </activity>
         <activity
-            android:name=".ui.BreakPointContinueActivity"
+            android:name=".ui.activity.BreakPointContinueActivity"
             android:label="@string/title_activity_break_point_continue" >
         </activity>
         <activity
-            android:name=".ui.ToastDemoActivity"
+            android:name=".ui.activity.ToastDemoActivity"
             android:label="@string/title_activity_toast_demo" >
         </activity>
         <activity
@@ -191,20 +191,24 @@
             android:label="@string/title_activity_jpush_base" >
         </activity>
         <activity
-            android:name=".ui.ExceptionActivity"
+            android:name=".ui.activity.ExceptionActivity"
             android:label="@string/title_activity_exception" >
         </activity>
         <activity
-            android:name=".ui.MergeTestActivity"
+            android:name=".ui.activity.MergeTestActivity"
             android:label="@string/title_activity_merge_test" >
         </activity>
         <activity
-            android:name=".ui.HandleTestActivity"
+            android:name=".ui.activity.HandleTestActivity"
             android:label="@string/title_activity_handle_test"
             android:parentActivityName="com.xyggun.baselibrary.base.BaseActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.xyggun.baselibrary.base.BaseActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.MainFragmentDemoActivity"
+            android:label="@string/title_activity_main_fragment_demo" >
         </activity>
     </application>
 

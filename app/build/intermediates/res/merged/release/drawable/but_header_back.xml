@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/header_but_bg_actived" android:state_pressed="true"/>
-    <item android:drawable="@drawable/header_but_bg_normal"/>
-</selector><!-- From: file:/Users/xyggun/AndroidStudioProjects/mydemo/app/src/main/res/drawable/but_header_back.xml -->

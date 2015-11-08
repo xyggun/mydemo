@@ -50,33 +50,33 @@ public final class R {
 	}
 	public static final class drawable {
 		public static final int anim_rotate_load = 0x7f02003e;
-		public static final int ic_load = 0x7f02004d;
-		public static final int ic_pulltorefresh_arrow = 0x7f02004f;
+		public static final int ic_load = 0x7f020050;
+		public static final int ic_pulltorefresh_arrow = 0x7f020052;
 	}
 	public static final class id {
-		public static final int head_arrowImageView = 0x7f0b00b4;
-		public static final int head_contentLayout = 0x7f0b00b3;
-		public static final int head_lastUpdatedTextView = 0x7f0b00b7;
-		public static final int head_progressBar = 0x7f0b00b5;
-		public static final int head_tipsTextView = 0x7f0b00b6;
+		public static final int head_arrowImageView = 0x7f0b00c2;
+		public static final int head_contentLayout = 0x7f0b00c1;
+		public static final int head_lastUpdatedTextView = 0x7f0b00c5;
+		public static final int head_progressBar = 0x7f0b00c3;
+		public static final int head_tipsTextView = 0x7f0b00c4;
 	}
 	public static final class layout {
-		public static final int pull_to_refresh_head = 0x7f030036;
+		public static final int pull_to_refresh_head = 0x7f03003b;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f05001a;
-		public static final int load_empty = 0x7f05002d;
-		public static final int load_error = 0x7f05002e;
-		public static final int load_full = 0x7f05002f;
-		public static final int load_ing = 0x7f050030;
-		public static final int load_more = 0x7f050031;
-		public static final int pull_to_refresh_pull_label = 0x7f050033;
-		public static final int pull_to_refresh_refreshing_label = 0x7f050034;
-		public static final int pull_to_refresh_release_label = 0x7f050035;
-		public static final int pull_to_refresh_tap_label = 0x7f050036;
-		public static final int pull_to_refresh_update = 0x7f050037;
+		public static final int load_empty = 0x7f05002f;
+		public static final int load_error = 0x7f050030;
+		public static final int load_full = 0x7f050031;
+		public static final int load_ing = 0x7f050032;
+		public static final int load_more = 0x7f050033;
+		public static final int pull_to_refresh_pull_label = 0x7f050036;
+		public static final int pull_to_refresh_refreshing_label = 0x7f050037;
+		public static final int pull_to_refresh_release_label = 0x7f050038;
+		public static final int pull_to_refresh_tap_label = 0x7f050039;
+		public static final int pull_to_refresh_update = 0x7f05003a;
 	}
 	public static final class style {
-		public static final int loading_small = 0x7f070131;
+		public static final int loading_small = 0x7f070132;
 	}
 }

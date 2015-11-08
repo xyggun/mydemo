@@ -45,4 +45,12 @@
     <string name="title_activity_merge_test">MergeTestActivity</string>
     <string name="title_activity_handle_test">HandleTestActivity</string>
     <string name="hello">hello</string>
+    <string name="title_activity_main_fragment_demo">MainFragmentDemoActivity</string>
+
+    <!-- fragmentTabDemo下面的按钮 -->
+    <string name="home">首页</string>
+    <string name="temai">tab1</string>
+    <string name="catg">tab2</string>
+    <string name="mine">tab3</string>
+
 </resources>

@@ -6,10 +6,10 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/common/GetImageTaskOnImageView.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/common/ImageLoader.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/common/LoadImageTask.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/ui/Demo1Activity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/ui/Demo2Activity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/ui/Demo3Activity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/ui/MainActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/ui/activity/Demo1Activity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/ui/activity/Demo2Activity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/ui/activity/Demo3Activity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/ui/activity/MainActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/weight/GifView.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/xyggun/mydemo/weight/MyScrollView.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/baselibrary/src/main/java/com/xyggun/baselibrary/base/AppManager.java" charset="UTF-8" />

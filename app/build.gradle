@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.xyggun.mydemo"
-        minSdkVersion 10
-            targetSdkVersion 20
+        minSdkVersion 16
+        targetSdkVersion 20
         versionCode 1
         versionName "1.0"
     }
@@ -19,8 +19,8 @@ android {
         }
     }
 
-    sourceSets{
-        main{
+    sourceSets {
+        main {
             jniLibs.srcDir(['libs'])
         }
     }
@@ -29,9 +29,10 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:23.0.0'
-    compile 'com.android.support:recyclerview-v7:22.0.+'
     compile project(':baselibrary')
     compile project(':baidumaplibrary')
     compile project(':pullzoomviewlibrary')
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.android.support:recyclerview-v7:23.0.0'
+    compile 'com.android.support:support-v4:23.0.0'
 }
